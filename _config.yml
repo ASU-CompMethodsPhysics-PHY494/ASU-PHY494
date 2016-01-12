@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               ASU Physics PHY 494
 tagline:             'Computational Methods in Physics'
 description:         ''
-url:                 'http://ASU-CompMethodsPhysics-PHY494.github.io/ASU-PHY494'
+url:                 'http://asu-compmethodsphysics-phy494.github.io/ASU-PHY494/'
 baseurl:             ''
 paginate:            5
 
