@@ -350,3 +350,10 @@ which should give something similar to
 like 3.4. or 3.5.
 
 
+# Next steps: Learning the shell
+
+Go to [Unix
+Basics](http://becksteinlab.physics.asu.edu/pages/unix/IntroUnix/p01_UNIX.html)
+and work through it.
+
+
