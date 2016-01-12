@@ -1,0 +1,22 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               ASU Physics PHY 494
+tagline:             'Computational Methods in Physics'
+description:         ''
+url:                 'http://ASU-CompMethodsPhysics-PHY494.github.io/ASU-PHY494'
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Oliver Beckstein
+  url:               http://becksteinlab.physics.asu.edu
+  email:             oliver.beckstein@asu.edu
+
+# Custom vars
+version:             1.0.0
