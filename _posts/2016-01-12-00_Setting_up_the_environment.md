@@ -301,9 +301,52 @@ required for scientific computing)
       </ol>
     </div>
   </div>
-  <p>
-  Once you are done installing the software listed above,
-  please go to <a href="setup/index.html">this page</a>,
-  which has instructions on how to test that everything was installed correctly.
-  </p>
 </div> <!-- End of 'Python' section. -->
+
+## Testing
+
+### Bash shell
+
+Open a *terminal* (Mac OS X, Linux) or open *Git Bash* (under
+*All Programs/Git/Git Bash*) in Windows.
+
+Type
+```
+echo $SHELL
+```
+
+Should show */usr/bin/bash* (or similar).
+
+We use "shell" and "terminal" (and "console") pretty
+interchangeably.
+
+### Git
+
+In the shell, type
+```
+git --version
+```
+which should show something like
+
+```
+git version 2.7.0
+```
+
+### Python
+
+In the shell, type
+
+```
+python -c 'import sys; print(sys.version)'
+```
+
+which should give something similar to 
+
+```
+3.5.1 |Anaconda 2.4.1 (64-bit); (default, Dec  7 2015, 15:00:12)
+```
+
+(and more stuff). Important: you should have Python 3, i.e., a version
+like 3.4. or 3.5.
+
+
