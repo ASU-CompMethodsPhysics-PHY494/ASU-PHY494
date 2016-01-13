@@ -5,16 +5,21 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               ASU Physics PHY 494
+title:               'ASU Physics PHY 494'
 tagline:             'Computational Methods in Physics'
-description:         ''
-url:                 'http://asu-compmethodsphysics-phy494.github.io'
-baseurl:             '/ASU-PHY494'
+description:         > 
+                     A <a
+                     href="http://becksteinlab.physics.asu.edu/learning/76/phy494-computational-physics">class
+                     at Arizona State University</a> that teaches
+                     students how to use the computer as a tool to
+                     solve problems in physics
+url:                 http://asu-compmethodsphysics-phy494.github.io
+baseurl:             /ASU-PHY494
 paginate:            5
 
 # About/contact
 author:
-  name:              Oliver Beckstein
+  name:              'Oliver Beckstein'
   url:               http://becksteinlab.physics.asu.edu
   email:             oliver.beckstein@asu.edu
 
