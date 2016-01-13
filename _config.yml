@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               ASU Physics PHY 494
 tagline:             'Computational Methods in Physics'
 description:         ''
-url:                 'http://asu-compmethodsphysics-phy494.github.io/ASU-PHY494/'
+url:                 'http://asu-compmethodsphysics-phy494.github.io/ASU-PHY494'
 baseurl:             '/ASU-PHY494'
 paginate:            5
 
@@ -19,8 +19,10 @@ author:
   email:             oliver.beckstein@asu.edu
 
 # Custom vars
-version:             1.0.0
+version:             'Fall 2016'
 
+course:
+ url:                http://becksteinlab.physics.asu.edu/learning/76/phy494-computational-physics
 
 
 #--------------------------------------------------------------------------------
