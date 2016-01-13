@@ -5,8 +5,8 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               'ASU Physics PHY 494'
-tagline:             'Computational Methods in Physics'
+title:               'Computational Methods in Physics'
+tagline:             'ASU Physics PHY 494'
 description:         > 
                      A <a
                      href="http://becksteinlab.physics.asu.edu/learning/76/phy494-computational-physics">class
