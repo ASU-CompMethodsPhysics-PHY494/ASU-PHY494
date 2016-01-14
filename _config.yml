@@ -15,12 +15,12 @@ description:         >
                      solve problems in physics
 url:                 http://asu-compmethodsphysics-phy494.github.io
 baseurl:             /ASU-PHY494
-paginate:            5
+paginate:            1
 
 # About/contact
 author:
   name:              'Oliver Beckstein'
-  url:               http://becksteinlab.physics.asu.edu
+  url:               http://becksteinlab.physics.asu.edu/people/11/oliver-beckstein
   email:             oliver.beckstein@asu.edu
 
 # Custom vars

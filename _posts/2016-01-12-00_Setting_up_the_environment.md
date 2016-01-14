@@ -3,18 +3,13 @@ layout: post
 title: 00 Installing the environment
 ---
 
-<!--
-  SETUP
-  Delete irrelevant sections from the setup instructions.  Each
-  section is inside a 'div' without any classes to make the beginning
-  and end easier to find.
-  This is the other place where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
 
-The instructions were taken from [Software Carpentry](http://software-carpentry.org/), in particular
-[David Dotson's recent workshop at ASU](http://smallerthings.org/2016-01-07_asu_physics/).
+The instructions were taken from [Software
+Carpentry](http://software-carpentry.org/), in particular [David
+Dotson's recent workshop at
+ASU](http://smallerthings.org/2016-01-07_asu_physics/).
+
+## Overview
 
 You will need to install
 
@@ -23,6 +18,13 @@ You will need to install
 3. a [text editor](#editor) (by default, `nano`)
 4. [Python](#python) (including a number of additional packages
 required for scientific computing)
+
+In each section, find the instructions for your operating system
+(Windows, Mac OS X, or Linux).
+
+Once you have installed everything, [test your
+installation](#testing).
+
 
 ## Setup
 
@@ -311,11 +313,12 @@ Open a *terminal* (Mac OS X, Linux) or open *Git Bash* (under
 *All Programs/Git/Git Bash*) in Windows.
 
 Type
-```
-echo $SHELL
-```
 
-Should show */usr/bin/bash* (or similar).
+{% highlight bash %}
+echo $SHELL
+{% endhighlight %}
+
+Should show `/bin/bash` or `/usr/bin/bash` (or similar).
 
 We use "shell" and "terminal" (and "console") pretty
 interchangeably.
@@ -323,37 +326,41 @@ interchangeably.
 ### Git
 
 In the shell, type
-```
-git --version
-```
-which should show something like
 
-```
-git version 2.7.0
-```
+{% highlight bash %}
+git --version
+{% endhighlight %}
+
+which should show something like `git version 2.7.0`.
+
+### nano
+
+In the shell, type
+
+{% highlight bash %}
+nano
+{% endhighlight %}
+
+You should see `GNU nano 2.0.6` (or similar in the top line) and at
+the bottom of the screen `^X Exit     ^J Justify` (and more). Quit
+nano by holding down the `control` key together with `X`,
+i.e. `control + X`. In Unix keystrokes, the control key is typically
+indicated with the caret character `^`.
+
 
 ### Python
 
 In the shell, type
 
-```
+{% highlight bash %}
 python -c 'import sys; print(sys.version)'
-```
+{% endhighlight %}
 
-which should give something similar to 
-
-```
-3.5.1 |Anaconda 2.4.1 (64-bit); (default, Dec  7 2015, 15:00:12)
-```
-
-(and more stuff). Important: you should have Python 3, i.e., a version
-like 3.4. or 3.5.
+which should give something similar to `3.5.1 |Anaconda 2.4.1
+(64-bit); (default, Dec 7 2015, 15:00:12)` (and more
+stuff). Important: you should have *Python 3*, i.e., a version like
+3.4. or 3.5.
 
 
-# Next steps: Learning the shell
-
-Go to [Unix
-Basics](http://becksteinlab.physics.asu.edu/pages/unix/IntroUnix/p01_UNIX.html)
-and work through it.
 
 
