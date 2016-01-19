@@ -92,22 +92,34 @@ Just use `ipython` instead of `python` for interactive work.
 ## Interactive Python with the Jupyter notebook
 
 Start the [Jupyter](http://jupyter.org) notebook interface (formerly
-called ipython notebook) with
+called *ipython notebook*) with
 
 {% highlight bash %}
-ipython notebook
+jupyter notebook
 {% endhighlight %}
 
-and open <http://localhost:8888> with a modern browser.
+and open <http://localhost:8888> with a modern browser. (Note:
+`ipython notebook` will also work but the name was recently
+changed.)
 
 We will often use the notebook interface to develop and demonstrate
 code. It is perfect for prototyping and quick analysis tasks as well
 as plotting.
 
+To open a new notebook: Go to the *New* menu and choose under
+*Notebooks: Python 3*. This will open a new browser window with an
+empty notebook. Press `ESC` and then `h` for help.
+
+
 
 # Tutorial
 
 The tutorial will be life-coded in a
-[Jupyter notebook](#interactive-python-with-the-jupyter-notebook). After
-the class, this link to the [tutorial notebook]() will be enabled.
+[Jupyter notebook](#interactive-python-with-the-jupyter-notebook). Open
+a new notebook and follow my lead. Type and run commands. Ask
+questions (use red stickies when stuck).
+
+After the class, this link to the [tutorial notebook]() will be
+enabled.
+
 
