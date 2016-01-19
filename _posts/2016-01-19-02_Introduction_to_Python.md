@@ -81,10 +81,13 @@ The [ipython](http://ipython.org) interpreter is like Python but with
 (one question mark directly following a command) and source code with
 `command??` (two question marks), commandline history, and many
 additional shell-like commands (so-called "magic" commands such as
-`%cd`, `%ls`, `%pwd`, `%time` and `%timeit` --- see `%magic` for
-help).
+`%cd`, `%ls`, `%pwd`, `%run`, `%time` and `%timeit` --- see `%magic`
+for help).
+
+To exit, give the `exit()` command or `^D` (`Control` + `D`).
 
 Just use `ipython` instead of `python` for interactive work.
+
 
 ## Interactive Python with the Jupyter notebook
 
@@ -100,6 +103,7 @@ and open <http://localhost:8888> with a modern browser.
 We will often use the notebook interface to develop and demonstrate
 code. It is perfect for prototyping and quick analysis tasks as well
 as plotting.
+
 
 # Tutorial
 
