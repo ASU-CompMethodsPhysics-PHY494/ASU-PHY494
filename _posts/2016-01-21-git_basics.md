@@ -38,7 +38,8 @@ develop as part of your assignments and projects.
 
 1. [Tutorial](#tutorial)
 2. [Set up your own GitHub repositories](#set-up-your-own-github-repositories)
-3. [Additional resources](#more)
+3. [Class resources on GitHub](#class-resources-on-github)
+4. [Additional resources](#more)
 
 ## Tutorial
 Let's use `git` to manage what we have done so far.
@@ -228,6 +229,46 @@ repository.)
 
 For the rest of the semester, commit what you did during each class
 session to the repository.
+
+## Class resources on GitHub
+
+Notebooks and files are being made available on GitHub in the
+repository
+[ASU-CompMethodsPhysics-PHY494/PHY494-resources](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources). If
+you have not done so already:
+
+~~~
+cd ~
+git clone https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources.git
+~~~
+
+Update:
+
+~~~
+cd ~/PHY494-resources
+git pull
+~~~
+
+You should get a new file, `02_python/02-intro-python.ipynb`. Copy it
+to *your* class directory:
+
+~~~
+cp ~/PHY494-resources/02_python/02-intro-python.ipynb ~/PHY494/02_python/
+~~~
+
+and create a new commit with it:
+
+~~~
+cd ~/PHY494/02_python/
+git add 02-intro-python.ipynb
+git commit -m "Lesson 02 Intro to Python notebook"
+~~~
+
+Open the notebook (`jupyter notebook`) and then we will continue with
+[02 Introduction to Python]({{site.baseurl}}/2016/01/19/02_Introduction_to_Python/).
+
+At the end of today's class, commit your changes to the notebook and
+push to your github repository.
 
 
 ## More... ##
