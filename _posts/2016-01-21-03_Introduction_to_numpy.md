@@ -6,9 +6,12 @@ title: 03 Introduction to NumPy
 We saw in the
 [Introduction to Python]({{site.baseurl}}/2016/01/19/02_Introduction_to_Python/)
 that the Python language has the control and data structures to do
-numerical calculations. For instance, a vector $$\vec{r} = (x, y, z)$$
+numerical calculations. For instance, a vector $$\mathbf{r} = \left(
+\begin{array}{c}x\\ y\\ z \end{array} \right)$$
 denoting the position of a particle could be represented as a Python
-list `[x, y, z]`.
+list `r = [x, y, z]` and a matrix $$\sigma_{y} = \left( \begin{array}{ccc} 0
+& -i \\ i & 0 \end{array} \right)$$ as a list of lists `sigma_y =
+[[0, -1j], [1j, 0]]`.
 
 When it comes to doing numerical work, Python by itself is rather
 slow. By slow we mean compared to languages like C and Fortran, which
