@@ -73,7 +73,8 @@ You can see a list of all your configuration settings with `git config
 
 
 Git commands always follow the pattern `git <verb> [options]
-[arguments ...]`. In particular, `--help` is always an option.
+[arguments ...]`. In particular, `--help` is always an option. Also
+try `git help` and `git help tutorial`.
 
 
 ### Creating a repository ###
