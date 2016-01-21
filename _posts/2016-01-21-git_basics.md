@@ -209,6 +209,8 @@ repository.)
 
 		git push --set-upstream origin master
 
+   You need to enter your username and password [^3].
+
    You only need the `--set-upstream origin master` for the first time
    (it tells git which "branches" to associate with each other in
    local and remote). All further push operations will then simply be
@@ -249,3 +251,10 @@ repository.)
      repositories for free(?) through the
      [GitHub educational discount](https://help.github.com/articles/discounted-private-accounts/).
 	 
+[^3]:
+
+     There are ways to set up remote repositories so that you don't
+     have to provide username and password for every push and which
+     are also more secure. Namely one can use SSH keys instead of the
+     HTTPS protocol, as described in the GitHub tutorial on
+     [Generating SSH keys](https://help.github.com/articles/generating-ssh-keys/).
