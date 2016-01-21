@@ -144,8 +144,11 @@ git commit
   - third and following lines: more details
   The first line is mandatory (you cannot have a commit without a
   message), the rest is optional.
-* After you wrote the message (in `nano`, `^O`) and exited (`^X`),
-  your changes will be committed to the repository.
+* After you wrote and saved the message (in `nano`, `^O`; in `vim`,
+  `i` to write, `ESC :wq` to save and exit) and exited (`^X` in
+  `nano`), your changes will be committed to the repository.
+* You can also supply the message as an argument: `git commit -m "one
+  line summary of changes"`.
 * Check the status with `git status`...
 
 For a new commit, [add files](#adding-files) and [commit](#committing)
