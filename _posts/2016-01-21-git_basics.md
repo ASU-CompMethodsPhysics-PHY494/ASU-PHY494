@@ -227,6 +227,19 @@ repository; this will not work for *PHY494-resources* but we will use
 it below for
 [your own GitHub repositories](#set-up-your-own-github-repositories)).
 
+### Contributing to Open Source on GitHub
+
+GitHub enables you to easily contribute to other projects. This
+includes
+
+* filing bug reports or feature requests (*raising issues*); for
+  instance, if you do not agree with some of the Star Wars data from
+  the previous lessons, raise an issue in the
+  [issue tracker for the PHY494-auxilliary repository](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-auxilliary/issues).
+* proposing to add your own code and changes through
+  *[pull requests](https://help.github.com/articles/using-pull-requests/)*
+  (but this is too advanced for a our short introduction today --- see
+  the additional resources under [More...](#more)).
 
 
 ## Set up your own GitHub repositories
