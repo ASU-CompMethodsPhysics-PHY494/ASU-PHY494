@@ -46,7 +46,8 @@ Let's use `git` to manage what we have done so far.
 ### Configuring Git ###
 
 The first time you use `git` you need to tell it who you are: this
-information will be the user information in the commit history.
+information will be the user information in the commit history. (*Use
+your own name and email address!*)
 
 ~~~
 git config --global user.name "Darth Vader"
