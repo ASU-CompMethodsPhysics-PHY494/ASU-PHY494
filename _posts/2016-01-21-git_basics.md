@@ -10,7 +10,7 @@ we will start with a short introduction to
 and in particular [Git](https://git-scm.com/).[^0]
 
 A **version control system** (VCS) manages files and tracks changes to
-those files. It stores the complete *history* and allows you to
+those files. It stores the complete **history** and allows you to
 recover files at any stage of the history (think "undo" to the
 beginning). Any serious software project uses version control but its
 uses go beyond software, e.g., documents and data can also be version
@@ -18,23 +18,23 @@ controlled.
 
 ![PhD Comics: "FINAL".doc (c) 2012 Jorge Charm](http://www.phdcomics.com/comics/archive/phd101212s.gif)
 
-A set of changes is called a *commit*. It typically contains changes
+A set of changes is called a **commit**. It typically contains changes
 to multiple files. It also contains a timestamp, information about
-the user who made the changes, and a *log message* that explains the
+the user who made the changes, and a **commit message** that explains the
 changes. The history consists of all the commits. The VCS stores the
-history in a storage area called a *repository*.
+history in a storage area called a **repository**.
 
 Modern distributed VCS such as *Git* or *mercurial* make it easy for
 multiple developers to work on the same project. They have support for
-*merging* changes from different people into a single new file, and
-for resolving *conflicts*, i.e., the case when the same part of a file
-was changed (the changes "collided"). Online platforms such as
+**merging changes** from different people into a single new file, and
+for **resolving conflicts**, i.e., the case when the same part of a
+file was changed (the changes "collided"). Online platforms such as
 [GitHub](https://github.com) or [Bitbucket](https://bitbucket.org/)
-provide free repositories in the cloud (but you don't need them to use
-a VCS!).
+provide free repositories in the cloud (but you don't need these
+platforms to use a VCS!).
 
 We will use [Git](https://git-scm.com/). For the class you should get
-into the habit to version control your work, both in class, home
+into the habit to version-control your work: in class notes, home
 works, and projects. You will later use GitHub to submit code that you
 develop as part of your assignments and projects.
 
@@ -52,16 +52,24 @@ The first time you use `git` you need to tell it who you are: this
 information will be the user information in the commit history. (*Use
 your own name and email address!*)
 
-~~~
+{% highlight bash %}
 git config --global user.name "Darth Vader"
 git config --global user.email "dvader@empire.gov"
 git config --global color.ui "auto"
-git config --global core.editor "nano -w"
-~~~
+{% endhighlight %}
 
 You also tell it how to color output and what editor to use to write
-commit messages [^1]. You can see a list of all your configuration
-settings with `git config --list`.
+commit messages [^1].
+
+{% highlight bash %}
+# choose your favorite editor
+# Windows users: First try without executing this command.
+#                If you have problems with 'git commit' later, ask!
+git config --global core.editor "nano -w"
+{% endhighlight %}
+
+You can see a list of all your configuration settings with `git config
+--list`.
 
 
 Git commands always follow the pattern `git <verb> [options]
@@ -117,7 +125,8 @@ git add .
 git status
 ~~~
 
-(Use `git rm --cached FILENAME` to unstage.)
+(Use `git rm --cached FILENAME` to unstage any files that you might
+have added accidentally.)
 
 The files are not committed yet. You can do more work, add more files...
 
@@ -179,6 +188,28 @@ Initialize a local repository from a remote source:
 git clone URL
 ~~~
 
+If you haven't
+[done so earlier]({{site.baseurl}}/2016/01/14/01_Unix_Shell/#using-git-to-get-data-for-the-class),
+clone the repository where code and data will be posted:
+
+~~~
+cd ~
+git clone https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources.git
+cd PHY494-resources
+~~~
+
+Note:
+
+* The local name of your repository can be any name you like but it is
+  customary (and less confusing) if you go with the default, which is
+  the remote repository name without the ".git" suffix, i.e.,
+  *PHY494-resources* for us.
+* For all other `git` commands you *must* be *inside* your local
+  repository:
+
+		cd ~/PHY494-resources
+
+
 Update your local repository with any "upstream" changes:
 
 ~~~
@@ -191,8 +222,12 @@ Update the remote repository with you local changes (commits):
 git push
 ~~~
 
-(For pushing to work, you must be allowed to write to the remote
-repository.)
+(For "pushing" to work, you must be allowed to write to the remote
+repository; this will not work for *PHY494-resources* but we will use
+it below for
+[your own GitHub repositories](#set-up-your-own-github-repositories)).
+
+
 
 ## Set up your own GitHub repositories
 
@@ -219,9 +254,10 @@ repository.)
 
    You need to enter your username and password [^3].
 
-   You only need the `--set-upstream origin master` for the first time
-   (it tells git which "branches" to associate with each other in
-   local and remote). All further push operations will then simply be
+   You only need the `--set-upstream origin master` (or `-u origin
+   master`) for the first time (it tells git which "branches" to
+   associate with each other in local and remote) [^4]. All further
+   push operations will then simply be
 
 		git push
 
@@ -302,6 +338,11 @@ push to your github repository.
 
      See also Software Carpentry's list of
      [git configuration options for different editors](http://swcarpentry.github.io/git-novice/02-setup.html).
+
+	 For problems with setting up editors in Windows, see the
+     StackOverflow question
+     [How can I set up an editor to work with Git on Windows?](http://stackoverflow.com/questions/10564/how-can-i-set-up-an-editor-to-work-with-git-on-windows)
+     as a starting point for various recipes.
 	 
 [^2]:
 
@@ -319,3 +360,10 @@ push to your github repository.
      are also more secure. Namely one can use SSH keys instead of the
      HTTPS protocol, as described in the GitHub tutorial on
      [Generating SSH keys](https://help.github.com/articles/generating-ssh-keys/).
+
+[^4]:
+
+    *Branching* is a more advanced topic, which is explained in the
+    materials linked under [More...](#more). We barely scratched the
+    surface of Git but this will be sufficient to already make good
+    use of this very powerful tool.
