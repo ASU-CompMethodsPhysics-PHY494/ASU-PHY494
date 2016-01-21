@@ -108,18 +108,44 @@ as plotting.
 
 To open a new notebook: Go to the *New* menu and choose under
 *Notebooks: Python 3*. This will open a new browser window with an
-empty notebook. Press `ESC` and then `h` for help.
+empty notebook. Press `ESC` and then `H` for help.
 
+A notebook has two modes, command mode and edit mode. 
+
+* `ESC` enables **command mode** with the following useful commands:
+  * `H` for help
+  * cursor keys: move between cells
+  * `B` for new cell below
+  * `A` for new cell above
+  * `X` to cut cell
+  * `M` to turn a cell into a text cell for notes
+  * `1` – `6` to make a text heading at level 1, 2, ... 6
+* `Enter` enables **edit mode** (type in a cell)
+* Cells can be executed by the Python "kernel" in either mode with
+    * `Control + Enter`: execute a cell
+    * `Shift + Enter`: execute cell and move one cell down
+    * `Alt + Enter`: execute cell and create a new one
+* Give the notebook a name by editing "Untitled" in the top bar.
+* Save with `S` in command mode (or use the mouse)
+* You can move between cells to edit code and rerun. As long as you
+  don't quit or restart the Python kernel, you have information from
+  all cells available in the whole notebook. If you open it new, you
+  have to evaluate all cells again.
 
 
 # Tutorial
 
-The tutorial will be life-coded in a
+The tutorial will be live-coded in a
 [Jupyter notebook](#interactive-python-with-the-jupyter-notebook). Open
 a new notebook and follow my lead. Type and run commands. Ask
 questions (use red stickies when stuck).
 
-After the class, this link to the [tutorial notebook]() will be
-enabled.
+After the class, this link to the [tutorial notebook](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/02_python/02-intro-python.ipynb) will be
+enabled. The notebook is stored in the git repository
+[ASU-CompMethodsPhysics-PHY494/PHY494-resources](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources):
+`git pull` to update and find [PHY494-resources/02_python/02-intro-python.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/02_python/02-intro-python.ipynb).
+
+
+
 
 
