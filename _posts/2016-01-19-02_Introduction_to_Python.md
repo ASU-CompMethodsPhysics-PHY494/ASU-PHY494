@@ -64,8 +64,8 @@ save it as `gutentag.py`.
 {% highlight python %}
 import os
 
-name = os.environ['USER']
-print("Guten Tag, ", name)
+homedir = os.environ['HOME']
+print("Guten Tag, Dein Heimatverzeichnis ist ", homedir)
 {% endhighlight %}
 
 Let Python execute the command:
