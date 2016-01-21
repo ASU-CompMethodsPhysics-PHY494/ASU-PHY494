@@ -36,6 +36,10 @@ into the habit to version control your work, both in class, home
 works, and projects. You will later use GitHub to submit code that you
 develop as part of your assignments and projects.
 
+1. [Tutorial](#tutorial)
+2. [Set up your own GitHub repositories](#set-up-your-own-github-repositories)
+3. [Additional resources](#more)
+
 ## Tutorial
 Let's use `git` to manage what we have done so far.
 
