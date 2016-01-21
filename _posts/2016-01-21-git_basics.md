@@ -125,8 +125,8 @@ git add .
 git status
 ~~~
 
-(Use `git rm --cached FILENAME` to unstage any files that you might
-have added accidentally.)
+(Use `git reset FILENAME` to unstage any files that you might have
+added accidentally.)
 
 The files are not committed yet. You can do more work, add more files...
 
