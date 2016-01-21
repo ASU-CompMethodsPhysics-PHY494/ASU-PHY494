@@ -7,7 +7,7 @@ Before we resume our
 [Introduction to Python]({{site.baseurl}}/2016/01/19/02_Introduction_to_Python/),
 we will start with a short introduction to
 [version control systems](http://swcarpentry.github.io/git-novice/reference.html#version-control)
-and in particular [Git](https://git-scm.com/).
+and in particular [Git](https://git-scm.com/).[^0]
 
 A **version control system** (VCS) manages files and tracks changes to
 those files. It stores the complete *history* and allows you to
@@ -15,6 +15,8 @@ recover files at any stage of the history (think "undo" to the
 beginning). Any serious software project uses version control but its
 uses go beyond software, e.g., documents and data can also be version
 controlled.
+
+![PhD Comics: "FINAL".doc (c) 2012 Jorge Charm](http://www.phdcomics.com/comics/archive/phd101212s.gif)
 
 A set of changes is called a *commit*. It typically contains changes
 to multiple files. It also contains a timestamp, information about
@@ -286,6 +288,15 @@ push to your github repository.
   
 
 #### Footnotes
+
+[^0]:
+
+     Acknowledgements: This lesson uses ideas from Software
+     Carpentry's
+     [Version Control with Git](http://swcarpentry.github.io/git-novice/)
+     and includes an image from Jorge Cham's
+     [PhD Comics](http://www.phdcomics.com/)
+     ["FINAL".doc](http://www.phdcomics.com/comics.php?n=1531) (which is &copy; 2012 Jorge Cham).
 
 [^1]:
 
