@@ -143,9 +143,19 @@ questions (use red stickies when stuck).
 After the class, this link to the [tutorial notebook](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/02_python/02-intro-python.ipynb) will be
 enabled. The notebook is stored in the git repository
 [ASU-CompMethodsPhysics-PHY494/PHY494-resources](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources):
-`git pull` to update and find [PHY494-resources/02_python/02-intro-python.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/02_python/02-intro-python.ipynb).
+`git pull` to update[^1] and find
+[PHY494-resources/02_python/02-intro-python.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/02_python/02-intro-python.ipynb).
 
+# Next steps
 
+Go to the next lesson:
+[03 Introduction to NumPy]({{site.baseurl}}/2016/01/21/03_Introduction_to_numpy/),
+where we will learn how to efficiently work with the scientist's
+favorite data structure: the *N*-dimensional *array* and how to plot
+data.
 
+#### Footnotes ####
 
+[^1]: For more on using `git` see [Git Basics]({{site.baseurl}}/2016/01/21/git_basics/).
 
+   
