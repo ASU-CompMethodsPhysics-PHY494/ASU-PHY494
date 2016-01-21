@@ -115,7 +115,7 @@ git add .
 git status
 ~~~
 
-(Use `git rm --cached FILENAME` to unstage.)
+(Use `git reset FILENAME` to unstage.)
 
 The files are not committed yet. You can do more work, add more files...
 
