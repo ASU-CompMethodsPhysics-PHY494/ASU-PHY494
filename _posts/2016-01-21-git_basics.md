@@ -218,7 +218,11 @@ repository.)
 		git push
 
    Look at the web interface at
-   https://github.com/USERNAME/PHY494-class and see your changes appear.
+   https://github.com/USERNAME/PHY494-class and see your changes
+   appear.
+
+For the rest of the semester, commit what you did during each class
+session to the repository.
 
 
 ## More... ##
