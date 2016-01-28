@@ -154,6 +154,8 @@ where we will learn how to efficiently work with the scientist's
 favorite data structure: the *N*-dimensional *array* and how to plot
 data.
 
+------------------------------------------------------------
+
 #### Footnotes ####
 
 [^1]: For more on using `git` see [Git Basics]({{site.baseurl}}/2016/01/21/git_basics/).

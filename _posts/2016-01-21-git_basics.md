@@ -339,7 +339,8 @@ push to your github repository.
   [Pro Git](https://git-scm.com/book/) book by Scott Chacon and Ben
   Straub.
   
-
+------------------------------------------------------------
+  
 #### Footnotes
 
 [^0]:
