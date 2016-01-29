@@ -10,3 +10,9 @@ pre.output {
 pre.error {
     color: Red;
 }
+
+/* overviw content list */
+
+ol.nonumbers {
+    list-style: none;
+}
