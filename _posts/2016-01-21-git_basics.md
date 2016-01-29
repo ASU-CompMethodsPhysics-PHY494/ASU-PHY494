@@ -4,7 +4,7 @@ title: Git Basics
 ---
 
 Before we resume our
-[Introduction to Python]({{site.baseurl}}/2016/01/19/02_Introduction_to_Python/),
+[Introduction to Python]({{site.baseurl}}{% post_url 2016-01-19-02_Introduction_to_Python %}),
 we will start with a short introduction to
 [version control systems](http://swcarpentry.github.io/git-novice/reference.html#version-control)
 and in particular [Git](https://git-scm.com/).[^0]
@@ -193,7 +193,7 @@ git clone URL
 ~~~
 
 If you haven't
-[done so earlier]({{site.baseurl}}/2016/01/14/01_Unix_Shell/#using-git-to-get-data-for-the-class),
+[done so earlier]({{site.baseurl}}{% post_url 2016-01-14-01_Unix_Shell%}#using-git-to-get-data-for-the-class),
 clone the repository where code and data will be posted:
 
 ~~~
@@ -320,7 +320,7 @@ git commit -m "Lesson 02 Intro to Python notebook"
 ~~~
 
 Open the notebook (`jupyter notebook`) and then we will continue with
-[02 Introduction to Python]({{site.baseurl}}/2016/01/19/02_Introduction_to_Python/).
+[02 Introduction to Python]({{site.baseurl}}{%post_url 2016-01-19-02_Introduction_to_Python%}).
 
 At the end of today's class, commit your changes to the notebook and
 push to your github repository.

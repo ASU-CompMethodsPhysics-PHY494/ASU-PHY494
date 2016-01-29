@@ -149,7 +149,7 @@ enabled. The notebook is stored in the git repository
 # Next steps
 
 Go to the next lesson:
-[03 Introduction to NumPy]({{site.baseurl}}/2016/01/26/03_Introduction_to_numpy/),
+[03 Introduction to NumPy]({{site.baseurl}}{%post_url 2016-01-26-03_Introduction_to_numpy%}),
 where we will learn how to efficiently work with the scientist's
 favorite data structure: the *N*-dimensional *array* and how to plot
 data.
@@ -158,6 +158,7 @@ data.
 
 #### Footnotes ####
 
-[^1]: For more on using `git` see [Git Basics]({{site.baseurl}}/2016/01/21/git_basics/).
+[^1]: For more on using `git` see
+      [Git Basics]({{site.baseurl}}{%post_url 2016-01-21-git_basics%}).
 
    

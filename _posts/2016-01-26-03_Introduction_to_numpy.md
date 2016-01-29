@@ -4,7 +4,7 @@ title: 03 Introduction to NumPy
 ---
 
 We saw in the
-[Introduction to Python]({{site.baseurl}}/2016/01/19/02_Introduction_to_Python/)
+[Introduction to Python]({{site.baseurl}}{%post_url 2016-01-19-02_Introduction_to_Python%})
 that the Python language has the control and data structures to do
 numerical calculations. For instance, a vector $$\mathbf{r} = \left(
 \begin{array}{c}x\\ y\\ z \end{array} \right)$$

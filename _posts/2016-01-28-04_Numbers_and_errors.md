@@ -34,7 +34,8 @@ notebook will be available after the class as
 
 For one problem you should obtain the notebook
 [04-problem-sine-series.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/04_numbers/04-problem-sine-series.ipynb),
-which already contains part of the code you will need. Pull [your PHY494-resources repository]({{site.baseurl}}/2016/01/21/git_basics/#class-resources-on-github):
+which already contains part of the code you will need. Pull
+[your PHY494-resources repository]({{site.baseurl}}{% post_url 2016-01-21-git_basics %}#class-resources-on-github):
 
 {% highlight bash %}
 cd ~/PHY494-resources
