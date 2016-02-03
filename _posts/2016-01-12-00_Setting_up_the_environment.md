@@ -5,7 +5,7 @@ title: 00 Installing the environment
 
 
 The instructions were taken from [Software
-Carpentry](http://software-carpentry.org/), in particular [David
+Carpentry]({[site.swc_site}}), in particular [David
 Dotson's recent workshop at
 ASU](http://smallerthings.org/2016-01-07_asu_physics/).
 
