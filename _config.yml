@@ -37,6 +37,10 @@ figs:                "public/figs"
 course:
  url:                http://becksteinlab.physics.asu.edu/learning/76/phy494-computational-physics
 
+resources:
+ name:               ASU-CompMethodsPhysics-PHY494/PHY494-resources
+ shortname:          PHY494-resources
+ url:                https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources
 
 
 #--------------------------------------------------------------------------------
