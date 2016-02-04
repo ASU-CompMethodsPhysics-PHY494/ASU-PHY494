@@ -17,6 +17,9 @@ a programming language widely used in scientific computing, and
 critically evaluate their numerical results. Problems will be drawn
 from diverse areas of physics.
 
+Resources for the interactive classes are provided in the GitHub
+repository [ASU-CompMethodsPhysics-PHY494/PHY494-resources](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources).
+
 For further details see the [PHY494 Course Page]({{site.course.url}}).
 
 ------------------------------------------------------------
