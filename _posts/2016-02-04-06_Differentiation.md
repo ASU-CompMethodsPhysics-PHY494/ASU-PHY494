@@ -9,11 +9,11 @@ $$
 \frac{dy(t)}{dt} := \lim_{h\rightarrow 0} \frac{y(t+h) - y(t)}{h}
 $$
 
-We will the derive different finite difference approximations to the
+We will then derive different finite difference approximations to the
 derivative and assess their error.
 
 You can follow the lecture in the slides
-[06_differentiation.ipynb](http://nbviewer.jupyter.org/format/slides/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/06_differentiation/06_differentiation-part-1.ipynb).
+[06_differentiation.ipynb](http://nbviewer.jupyter.org/format/slides/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/06_differentiation/06_differentiation.ipynb).
 
 For the problem that you should solve during the class, get the
 notebook
