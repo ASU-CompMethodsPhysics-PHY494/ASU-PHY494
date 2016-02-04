@@ -3,7 +3,7 @@ layout: post
 title: 07 Integration
 ---
 
-Numerical integration is based on the [Rieman definition of an integral](http://mathworld.wolfram.com/RiemannIntegral.html)
+Numerical integration is based on the [Riemann definition of an integral](http://mathworld.wolfram.com/RiemannIntegral.html)
 
 $$
 \int_a^b \!\!\!f(x)\, dx :=
@@ -19,13 +19,6 @@ preferred technique for higher-dimensional integrals).
 
 You can follow the lecture in the slides
 [07_integration.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/07_integration/07_integration-part-1.ipynb).
-
-{% comment %}
-For the problem that you should solve during the class, get the
-notebook
-[07_integration-students.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/07_integration/07_integration-students.ipynb)
-(`git pull` [your PHY494-resources repository]({{site.baseurl}}{% post_url 2016-01-21-git_basics %}#class-resources-on-github)).
-{% endcomment %}
 
 Additional resources:
 
