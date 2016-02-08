@@ -27,6 +27,7 @@ For further details see the [PHY494 Course Page]({{site.course.url}}).
 ### Acknowledgements and Support
 
 The class is supported by an Education Discount from the nice folks at
-[GitHub Education](https://education.github.com/).
+[GitHub Education](https://education.github.com/) and uses
+[Classroom for GitHub](https://classroom.github.com/).
 
 ![GitHub Education](https://dwa5x7aod66zk.cloudfront.net/assets/labtocat-0bb6a395e2d142d0713e3e34bff9f446.png)
