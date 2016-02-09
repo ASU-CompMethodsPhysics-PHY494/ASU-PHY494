@@ -23,5 +23,6 @@ You can follow the lecture in the slides
 Additional resources:
 
 * _Computational Physics_: Ch 5.7 -- 5.22
-
+* [scipy.integrate](http://docs.scipy.org/doc/scipy/reference/integrate.html)
+  for high performance integration algorithms for Python
 
