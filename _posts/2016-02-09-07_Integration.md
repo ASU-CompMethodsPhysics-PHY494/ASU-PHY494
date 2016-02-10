@@ -18,7 +18,7 @@ integration, which randomly samples the integrand and which is the
 preferred technique for higher-dimensional integrals).
 
 You can follow the lecture in the slides
-[07_integration.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/07_integration/07_integration-part-1.ipynb).
+[07_integration.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/07_integration/07_integration-part-2.ipynb).
 
 Additional resources:
 
