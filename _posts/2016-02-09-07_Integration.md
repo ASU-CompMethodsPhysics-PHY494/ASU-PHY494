@@ -12,10 +12,14 @@ $$
 
 In the simplest algorithm, the integral can be approximated by the
 finite sum over rectangles of width $$h$$ and height corresponding to
-the value of the function. More sophisticated algorithms are then
-variations on this theme (with the exception of Monte Carlo
-integration, which randomly samples the integrand and which is the
-preferred technique for higher-dimensional integrals).
+the value of the function.
+
+![Riemann sum. (Based on a figure Copyright © 2012 Landau, Páez, Bordeianu, used under CC-BY-NC-SA 3.0 license and licensed under CC-BY-NC-SA 4.0)]({{site.baseurl}}/{{site.figs}}/CompPhys2012_Riemann.png)
+
+More sophisticated algorithms are then variations on this theme (with
+the exception of Monte Carlo integration, which randomly samples the
+integrand and which is the preferred technique for higher-dimensional
+integrals).
 
 Instead of writing our own integration algorithms we typically used
 tried and tested and highly optimized code in *libraries* (or
