@@ -21,3 +21,12 @@ The lessons in chronological order so far:
     {% endfor %}
 </ol>
 
+Sometimes lessons span more than one lecture but this is not
+explicitly marked. The dates associated with each lesson indicate the
+day when the lesson was introduced for the first time.
+
+Most of the teaching material is available as Jupyter notebooks and
+linked from the lesson pages (typically, near the bottom). For
+lessons in progress, links initially only point to incomplete
+materials. Full materials including solutions to in-class problems are
+always made available after the completion of the lesson.
