@@ -37,5 +37,5 @@ always made available after the completion of the lesson.
 
 [^1]:
 
-     The list on this page was last updated on
-     {{ lastdate | date: "%B %-d, %Y"   }}.
+     The most recent lesson in the list on this page started on
+     {{ lastdate | date: "%B %-d, %Y" }}.
