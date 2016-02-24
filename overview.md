@@ -8,7 +8,8 @@ Generate a list for all "posts", i.e. the content pages, in
 chronological order.
 {% endcomment %}
 
-The lessons in chronological order so far:
+The lessons in chronological order so far[^1] (the list will be complete
+at the end of the semester):
 
 <ol class="nonumbers">
 {% assign pages_list = site.posts | sort:"url" %}
@@ -16,7 +17,8 @@ The lessons in chronological order so far:
 	   {% if node.title != null %}
             {% if node.layout == "post" %}
 				<li><a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
-			{% endif %}
+            {% assign lastdate = node.date %}
+            {% endif %}
 	   {% endif %}
     {% endfor %}
 </ol>
@@ -30,3 +32,10 @@ linked from the lesson pages (typically, near the bottom). For
 lessons in progress, links initially only point to incomplete
 materials. Full materials including solutions to in-class problems are
 always made available after the completion of the lesson.
+
+----
+
+[^1]:
+
+     The list on this page was last updated on
+     {{ lastdate | date: "%B %-d, %Y"   }}.
