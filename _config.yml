@@ -30,9 +30,10 @@ author:
 version:             'Fall 2016'
 
 
-# use as {{site.baseurl}}/{[site.data}}
+# use as {{site.baseurl}}/{{site.data}}
 data:                "public/data"
 figs:                "public/figs"
+lectures:            "public/lectures"
 
 course:
  url:                http://becksteinlab.physics.asu.edu/learning/76/phy494-computational-physics
