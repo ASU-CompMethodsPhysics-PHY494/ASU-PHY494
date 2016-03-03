@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git Basics
+title:  02' Git Basics
 ---
 
 Before we resume our
