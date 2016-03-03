@@ -19,7 +19,8 @@ $$
 \mathbf{F}_i = m_i\frac{d^2\mathbf{r}_i(t)}{dt^2}
 $$
 
-form a system of $$N$$ coupled second-order ODEs.
+form a system of $$3N$$ coupled second-order ODEs (because we have
+$$N$$ particles in 3-dimensional space).
 
 [Solving the ODEs](#integrating-the-equations-of-motions) yields the
 *trajectories* $$\mathbf{r}_i(t)$$ (and $$\mathbf{v}_i(t)$$) of all
