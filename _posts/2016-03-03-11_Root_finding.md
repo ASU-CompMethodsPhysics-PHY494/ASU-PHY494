@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 10 Root finding by trial-and-error
+title: 11 Root finding by trial-and-error
 ---
 
 An elementary numerical problem is to find the root $$x_0$$ of an equation
