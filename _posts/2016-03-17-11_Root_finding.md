@@ -26,16 +26,19 @@ analytic solutions are lacking or not practical.
 We will study two algorithms:
 *[bisection](http://mathworld.wolfram.com/Bisection.html)* and
 *[Newton-Raphson searching](http://mathworld.wolfram.com/NewtonsMethod.html)*.
-
-The Jupyter notebook [11_Root_finding.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/11_rootfinding/11_Root_finding.ipynb) will contain the lecture notes (which are
-life-coded). Skeleton code for in-class problem exercises can be found in the
-notebook
+ 
+The Jupyter notebook
+[11_Root_finding.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/11_rootfinding/11_Root_finding.ipynb)
+contains the lecture notes (which were life-coded). The [derivations of
+the bisection and the Newton-Raphson algorithms (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/11_rootfinding/11_Root-finding-algorithms.pdf) can be found in the board notes. Skeleton code for
+in-class problem exercises can be found in the notebook
 [11_Root_finding-students.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/11_rootfinding/11_Root_finding-students.ipynb).[^1]
 
 
 #### Additional resources:
 
 * _Computational Physics_: Chapter **7**
+* [11_Root_finding notebook (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/11_rootfinding/11_Root_finding.pdf)
 
 ------------------------------------------------------------
 
