@@ -31,7 +31,7 @@ operations on arrays: We load the [NumPy](http://www.numpy.org/) module:
 import numpy
 {% endhighlight %}
 
-# Tutorial
+## Class material
 
 The class will be live-coded in a Jupyter notebook. The annotated
 notebook is available as [03-intro-numpy.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/03_numpy/03-intro-numpy.ipynb).

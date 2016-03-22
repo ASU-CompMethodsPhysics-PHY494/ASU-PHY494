@@ -19,14 +19,7 @@ attempts at establishing exact equivalence, can have unexpected
 consequences.[^4]
 
 
-Additional resources:
-
-* _Computational Physics_: Ch 2.4, 2.5, 3
-* Python Tutorial
-[Floating Point Arithmetic: Issues and Limitations](https://docs.python.org/3/tutorial/floatingpoint.html)
-
-
-# Tutorial
+## Class Material
 
 The class will be live-coded in a Jupyter notebook. The annotated
 notebook will be available after the class as
@@ -43,6 +36,13 @@ git pull
 {% endhighlight %}
 
 and find it under `~/PHY494-resources/04_numbers/04-problem-sine-series.ipynb`.
+
+
+#### Additional resources
+
+* _Computational Physics_: Ch 2.4, 2.5, 3
+* Python Tutorial
+[Floating Point Arithmetic: Issues and Limitations](https://docs.python.org/3/tutorial/floatingpoint.html)
 
 ------------------------------------------------------------
 

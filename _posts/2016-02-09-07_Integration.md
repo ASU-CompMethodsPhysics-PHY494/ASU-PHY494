@@ -27,10 +27,12 @@ tried and tested and highly optimized code in *libraries* (or
 [scipy.integrate](http://docs.scipy.org/doc/scipy/reference/integrate.html),
 which is part of [SciPy](http://scipy.org).
 
+## Class Material
+
 You can follow the lecture in the slides
 [07_integration.ipynb](http://nbviewer.jupyter.org/format/slides/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/07_integration/07_integration.ipynb#/).
 
-Additional resources:
+#### Additional resources
 
 * _Computational Physics_: Ch 5.7 -- 5.22
 * [scipy.integrate](http://docs.scipy.org/doc/scipy/reference/integrate.html)
