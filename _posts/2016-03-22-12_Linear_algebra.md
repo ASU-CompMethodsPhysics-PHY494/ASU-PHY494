@@ -84,9 +84,26 @@ will be a useful answer:
   can be used to find all the vectors that span the solution space.
 
 ## Numerical solution
+
 Efficient algorithms exist to solve these problems and we will
 primarily use the optimized algorithms in the
-[numpy.linalg](http://docs.scipy.org/doc/numpy/reference/routines.linalg.html) package.
+[numpy.linalg](http://docs.scipy.org/doc/numpy/reference/routines.linalg.html)
+package:
+{% highlight python %}
+import numpy.linalg
+{% endhighlight %}
+
+For most linear algebra work you should be using *double precision*
+because diagonalization routines and eigenvalue solvers have
+problems with nearly singular matrices and the better the machine
+precision is, the better one can distinguish a nearly singular matrix
+from a truly singular one.
+
+## Class material
+
+The Jupyter notebook [12_Linear_Algebra.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_Linear_Algebra.ipynb) will contain the
+(life-coded) lecture notes. Skeleton code for in-class exercises can
+be found in [12_Linear_Algebra-students-1.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_Linear_Algebra-students-1.ipynb).[^4]
 
 
 #### Additional resources:
@@ -113,3 +130,8 @@ primarily use the optimized algorithms in the
 
 [^3]: The *underdetermined* system does not typically have a unique
       solution because is has $$M < N$$.
+
+[^4]: As usual, `git pull` the
+      [resources repository](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources)
+      to get a local copy of the notebook. Then copy the notebook into
+      your work directory in order to complete the exercises.
