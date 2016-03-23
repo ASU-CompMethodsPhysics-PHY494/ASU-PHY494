@@ -101,9 +101,9 @@ from a truly singular one.
 
 ## Class material
 
-The Jupyter notebook [12_Linear_Algebra.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_Linear_Algebra.ipynb) will contain the
+The Jupyter notebook [12_Linear_Algebra.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra.ipynb) will contain the
 (life-coded) lecture notes. Skeleton code for in-class exercises can
-be found in [12_Linear_Algebra-students-1.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_Linear_Algebra-students-1.ipynb).[^4]
+be found in [12_Linear_Algebra-students-1.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra-students-1.ipynb).[^4]
 
 
 #### Additional resources:

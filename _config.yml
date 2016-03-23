@@ -43,6 +43,9 @@ resources:
  shortname:          PHY494-resources
  url:                https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources
 
+nbviewer:
+   show:             http://nbviewer.jupyter.org/github
+   resources:        http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
 
 #--------------------------------------------------------------------------------
 # Standard Software Carpentry settings - only included what is be needed
