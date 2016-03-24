@@ -101,14 +101,20 @@ from a truly singular one.
 
 ## Class material
 
-The Jupyter notebook [12_Linear_Algebra.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra.ipynb) will contain the
+The Jupyter notebook [12_Linear_Algebra.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra.ipynb) contains the
 (life-coded) lecture notes. Skeleton code for in-class exercises can
 be found in [12_Linear_Algebra-students-1.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra-students-1.ipynb).[^4]
+
+To get started on the *2 masses/3 strings problem* work with the
+notebook
+[12_String_Problem-Students.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_String_Problem-Students.ipynb).
+
 
 
 #### Additional resources:
 
 * _Computational Physics_: Chapter **6**
+* [12_Linear_Algebra notebook (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_Linear_Algebra.pdf)
 * _[Numerical Recipes in C](http://apps.nrbook.com/c/index.html)_, WH
   Press, SA Teukolsky, WT Vetterling, BP Flannery. 2nd
   ed, 2002. Cambridge University Press. Chapter **2**.
