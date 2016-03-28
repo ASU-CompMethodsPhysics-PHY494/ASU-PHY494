@@ -99,13 +99,46 @@ problems with nearly singular matrices and the better the machine
 precision is, the better one can distinguish a nearly singular matrix
 from a truly singular one.
 
+## Problem: One rod, two masses, three strings
+![Problem: What are the angles $$\theta_i$$ and tensions $$T_i$$, given the geometry of the rod and strings and the two masses?]({{site.baseurl}}/{{site.figs}}/1rod2masses3strings.png)
+
+Following _Computational Physics_ (Chapter 6), we want to solve the
+problem of two masses suspended via three strings from a horizontal
+rod. The problem with a single mass is trivial and fully determined by
+the geometry. The problem with two masses is hard but by formulating
+it as a system of nine coupled non-linear equations in nine unknowns
+(the three tensions $$T_i$$ and, for convenience, we treat
+$$\sin\theta_i$$ and $$\cos\theta_i$$ as independent)
+
+\begin{gather}
+\mathbf{f}(\mathbf{x}) = \mathbf{0}
+\end{gather}
+
+we can use the generalization of the
+[Newton-Raphson algorithm]({{site.baseurl}}/{%post_url 2016-03-17-11_Root_finding%}) to $$n$$ dimensions to solve it.
+The generalization involves the computation of the "$$n$$-dimensional
+derivative", the
+[Jacobian matrix](http://mathworld.wolfram.com/Jacobian.html) $$J_{ij}
+= \frac{\partial f_i}{\partial x_j}$$, and the Newton-Raphson method
+becomes to repeatedly solve the linear matrix problem
+
+$$
+\mathsf{J}(\mathbf{x}) \mathbf{\Delta x} = -\mathbf{f}(\mathbf{x})
+$$
+
+in order to improve the guess for the solution, $$\mathbf{x}$$, with
+
+$$
+\mathbf{x} \leftarrow \mathbf{x} + \mathbf{\Delta x}.
+$$
+
 ## Class material
 
 The Jupyter notebook [12_Linear_Algebra.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra.ipynb) contains the
 (life-coded) lecture notes. Skeleton code for in-class exercises can
 be found in [12_Linear_Algebra-students-1.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra-students-1.ipynb).[^4]
 
-To get started on the *2 masses/3 strings problem* work with the
+To get started on the *1 rod/2 masses/3 strings problem* work with the
 notebook
 [12_String_Problem-Students.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_String_Problem-Students.ipynb).
 
@@ -115,6 +148,7 @@ notebook
 
 * _Computational Physics_: Chapter **6**
 * [12_Linear_Algebra notebook (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_Linear_Algebra.pdf)
+* [Lecture notes for the 1 rod/2 masses/3 strings problem (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_String_Problem_lecture_notes.pdf)
 * _[Numerical Recipes in C](http://apps.nrbook.com/c/index.html)_, WH
   Press, SA Teukolsky, WT Vetterling, BP Flannery. 2nd
   ed, 2002. Cambridge University Press. Chapter **2**.
