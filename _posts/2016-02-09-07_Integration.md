@@ -14,7 +14,7 @@ In the simplest algorithm, the integral can be approximated by the
 finite sum over rectangles of width $$h$$ and height corresponding to
 the value of the function.
 
-![Riemann sum. (Based on a figure Copyright © 2012 Landau, Páez, Bordeianu, used under CC-BY-NC-SA 3.0 license and licensed under CC-BY-NC-SA 4.0)]({{site.baseurl}}/{{site.figs}}/CompPhys2012_Riemann.png)
+![Riemann sum. (Based on a figure Copyright (c) 2012 Landau, Paez, Bordeianu, used under CC-BY-NC-SA 3.0 license and licensed under CC-BY-NC-SA 4.0)]({{site.baseurl}}/{{site.figs}}/CompPhys2012_Riemann.png)
 
 More sophisticated algorithms are then variations on this theme (with
 the exception of Monte Carlo integration, which randomly samples the
