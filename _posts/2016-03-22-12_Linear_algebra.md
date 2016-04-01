@@ -135,20 +135,26 @@ $$
 ## Class material
 
 The Jupyter notebook [12_Linear_Algebra.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra.ipynb) contains the
-(life-coded) lecture notes. Skeleton code for in-class exercises can
+(life-coded) lecture notes on **basic linear algebra**. Skeleton code for in-class exercises can
 be found in [12_Linear_Algebra-students-1.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_Linear_Algebra-students-1.ipynb).[^4]
 
-To get started on the *1 rod/2 masses/3 strings problem* work with the
+To get started on the **1 rod/2 masses/3 strings problem** work with the
 notebook
-[12_String_Problem-Students.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_String_Problem-Students.ipynb).
+[12_String_Problem-Students.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_String_Problem-Students.ipynb). The
+full solution can be found in [12_String_Problem.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_String_Problem.ipynb).
 
+The notebook
+[12_SVD.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_SVD.ipynb)
+shows the principles and applications of **SVD** (with skeleton code
+in [12_SVD-Students-1.ipynb]({{site.nbviewer.resources}}/12_linear_algebra/12_SVD-Students-1.ipynb)).
 
 
 #### Additional resources:
 
 * _Computational Physics_: Chapter **6**
 * [12_Linear_Algebra notebook (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_Linear_Algebra.pdf)
-* [Lecture notes for the 1 rod/2 masses/3 strings problem (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_String_Problem_lecture_notes.pdf)
+* [Lecture notes for the 1 rod/2 masses/3 strings problem (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_String_Problem_lecture_notes.pdf) and [solution for the problem (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_String_Problem.pdf)
+* [12_SVD notebook (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_linear_algebra/12_SVD.pdf)
 * _[Numerical Recipes in C](http://apps.nrbook.com/c/index.html)_, WH
   Press, SA Teukolsky, WT Vetterling, BP Flannery. 2nd
   ed, 2002. Cambridge University Press. Chapter **2**.
