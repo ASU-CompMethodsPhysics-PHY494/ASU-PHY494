@@ -43,6 +43,11 @@ resources:
  shortname:          PHY494-resources
  url:                https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources
 
+org:
+ name:               ASU-CompMethodsPhysics-PHY494
+ shortname:          GitHub site
+ url:                https://github.com/ASU-CompMethodsPhysics-PHY494/
+
 nbviewer:
    show:             http://nbviewer.jupyter.org/github
    resources:        http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
