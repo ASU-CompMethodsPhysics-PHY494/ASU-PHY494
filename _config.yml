@@ -42,6 +42,8 @@ resources:
  name:               ASU-CompMethodsPhysics-PHY494/PHY494-resources
  shortname:          PHY494-resources
  url:                https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources
+ fileurl:            https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
+
 
 org:
  name:               ASU-CompMethodsPhysics-PHY494
