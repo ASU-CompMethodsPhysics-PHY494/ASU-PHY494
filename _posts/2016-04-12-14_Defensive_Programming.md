@@ -23,6 +23,11 @@ In this lesson, we will learn about various flavors of testing code, including:
 
 and we will write some of our own, too.
 
+## Class material
+
+See the refined version of the live notebook used in class for the detailed lesson:
+[Defensive_Programming.ipynb]({{site.nbviewer.resources}}/14_testing/Defensive_Programming.ipynb)
+
 #### Additional resources
 
 * [Python Testing](http://katyhuff.github.io/python-testing/) by Kathryn Huff
