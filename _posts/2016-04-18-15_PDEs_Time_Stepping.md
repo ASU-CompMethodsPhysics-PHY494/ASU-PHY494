@@ -21,8 +21,8 @@ Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. 
 
 ## Class material
 
-[15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb)
-
+* Student notebook [15_PDEs-Students.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs-Students.ipynb)
+* Lecture notebook [15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb)  (not yet available)
 
 #### Additional resources  ####
 
