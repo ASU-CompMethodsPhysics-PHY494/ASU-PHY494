@@ -22,7 +22,7 @@ Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. 
 ## Class material
 
 * Student notebook [15_PDEs-Students.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs-Students.ipynb)
-* Lecture notebook [15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb)  (not yet available)
+* Lecture notebook [15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb) and [derivation of of the heat equation (PDF)]({{site.resources.fileurl}}/15_PDEs/15_PDEs_LectureNotes_HeatEquation.pdf)
 
 #### Additional resources  ####
 
