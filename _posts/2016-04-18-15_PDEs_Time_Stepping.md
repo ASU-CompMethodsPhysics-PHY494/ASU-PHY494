@@ -21,8 +21,14 @@ Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. 
 
 ## Class material
 
-* Student notebook [15_PDEs-Students.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs-Students.ipynb)
-* Lecture notebook [15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb) and [derivation of of the heat equation (PDF)]({{site.resources.fileurl}}/15_PDEs/15_PDEs_LectureNotes_HeatEquation.pdf)
+* Student notebooks
+  * Leap-frog method for the heat equation and von Neumann stability
+    analysis: [15_PDEs-Students.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs-Students.ipynb)
+  * Crank-Nicholson method applied to the heat equation:
+    [15_CrankNicholson-Students.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_CrankNicholson-Students.ipynb)
+* Lecture notebooks (correspond to the student notebooks):
+  * [15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb) and [derivation of of the heat equation (PDF)]({{site.resources.fileurl}}/15_PDEs/15_PDEs_LectureNotes_HeatEquation.pdf)
+  * [15_CrankNicholson.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_CrankNicholson.ipynb)
 
 #### Additional resources  ####
 
