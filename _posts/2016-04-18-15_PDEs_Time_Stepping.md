@@ -29,6 +29,7 @@ Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. 
 * Lecture notebooks (correspond to the student notebooks):
   * [15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb) and [derivation of of the heat equation (PDF)]({{site.resources.fileurl}}/15_PDEs/15_PDEs_LectureNotes_HeatEquation.pdf)
   * [15_CrankNicholson.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_CrankNicholson.ipynb)
+    and [derivation of the Crank-Nicholson algorithm (PDF)]({{site.resources.fileurl}}/15_PDEs/15_LectureNotes_CrankNicholson.pdf)
 
 #### Additional resources  ####
 
