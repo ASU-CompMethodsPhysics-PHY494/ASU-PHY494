@@ -13,7 +13,7 @@ which describes how temperature changes over time in a material with thermal con
 
 ## Leap frog algorithm for solving the heat equation
 
-We can then transform the PDE into a finite difference equation on a $$\Delta x, \Delta t$$ lattice. The difference equation can be solved with a **time stepping scheme** where we start from the initial values and solve the spatial component for increasing times $$t = \Delta t, 2\Delta t, 3\Delta t, \dots$$ using either an explicit method such as the *Leapfrog algorithm* or an implicit method such as the *Crank-Nicolson method*.
+We can then transform the PDE into a finite difference equation on a $$\Delta x, \Delta t$$ lattice. The difference equation can be solved with a **time stepping scheme** where we start from the initial values and solve the spatial component for increasing times $$t = \Delta t, 2\Delta t, 3\Delta t, \dots$$ using either an explicit method such as the *Leapfrog algorithm* or an implicit method such as the *Crank-Nicholson method*.
 
 ## Von Neumann stability analysis
 
