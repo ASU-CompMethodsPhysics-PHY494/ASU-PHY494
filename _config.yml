@@ -3,9 +3,6 @@
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 
-# Since Feb 1 and Jekyll 3.0, relative_permalinks do not work anymore
-# https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
-### relative_permalinks: true
 
 # Setup
 title:               'Computational Methods in Physics'
@@ -29,6 +26,11 @@ author:
 # Custom vars
 version:             'Fall 2016'
 
+# see https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
 
 # use as {{site.baseurl}}/{{site.data}}
 data:                "public/data"
