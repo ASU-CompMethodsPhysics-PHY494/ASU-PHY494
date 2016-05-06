@@ -15,7 +15,7 @@ Seven teams looked at problems ranging from navigation in the solar system to th
 | 4  | Digital Signal Processing Techniques in Python | @izymandias, @skyhugo, @tvanenge  | [final-digital-signal-processor][soundprocessor] |
 | 5  | Predictive Model of the 2016 March Madness Tournament | @bkatterm, @ja-martinez | [final-march-madness][march madness] | 
 | 6  | Rendezvous with Rama: Ramageddon! | @jbboyd, @aamascar, @andywinhold | [final-rendezvous-with-ramageddon][rama] |
-| 7  | Stern-Gerlach Simulation  | @andrewdurkiewicz, @ion201 | [final-stern-gerlach-simulation][Stern-Gerlach] |
+| 7  | Stern-Gerlach Simulation  | @andrewdurkiewicz, @ion201, @gvetaw | [final-stern-gerlach-simulation][Stern-Gerlach] |
 
 
 [ATLAS]: https://github.com/ASU-CompMethodsPhysics-PHY494/final-atlas-mission "final-atlas-mission"
