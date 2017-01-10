@@ -3,6 +3,11 @@ layout: post
 title: 00 Installing the environment
 ---
 
+----
+
+Note: the course website is accessible at **https://goo.gl/bXs7NE**
+
+----
 
 The instructions were taken from [Software
 Carpentry]({[site.swc_site}}), in particular [David
@@ -184,19 +189,43 @@ installation](#testing).
       <p>
         nano is a basic editor and the default that is used in the class.
         To install it,
-        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
+        download the <a href="{{site.swc*installer}}">Software Carpentry Windows installer</a>
         and double click on the file to run it.
         <strong>This installer requires an active internet connection.</strong>
       </p>
       <p>
         Others editors that you can use are
         <a href="http://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
         <strong>Be aware that you must
           add its installation directory to your system path.</strong>
         Please ask your instructor to help you do this.
       </p>
+      </div>
+    <div class="col-md-4">
+	<h4 id="editor-windows-asu">Windows (on ASU laptop without superuser
+      privileges)</h4>
+	  
+      <p>On the ASU school laptops, <b>Sublime Text 3</b> is pre-installed
+    and you can use it instead of <tt>nano</tt> (which cannot be installed
+    without superuser privileges). Launch the editor from the Start Menu.
+    </p>
+	
+	<p>Customize the PATH environment so that you can launch
+    <tt>sublime_text.exe</tt> from the command line:</p>
+	<ol>
+		<li>Open the Git-Bash command line</li>
+		<li>Create the file <tt>$HOME/.bash_profile</tt> with the following content by typing
+		<pre>
+cat > $HOME/.bash_profile << 'EOF'
+# PHY494 bash startup
+export PATH="/c/Program Files/Sublime Text 3/:$PATH"
+EOF
+</pre>This will instruct Bash to look for your sublime text
+editor.</li>
+    </ol>
     </div>
+
     <div class="col-md-4">
       <h4 id="editor-macosx">Mac OS X</h4>
       <p>
@@ -206,7 +235,7 @@ installation](#testing).
       <p>
         Others editors that you can use are
         <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
       </p>
     </div>
     <div class="col-md-4">
@@ -219,7 +248,7 @@ installation](#testing).
         Others editors that you can use are
         <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
         <a href="http://kate-editor.org/">Kate</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
+        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
       </p>
     </div>
   </div>
@@ -243,20 +272,21 @@ installation](#testing).
     <p>
       Regardless of how you choose to install it,
       <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.4 is fine).
+      (e.g., 3.4 or 3.5 is fine).
     </p>
 
     <p>
-      We will teach Python using the IPython notebook, a programming environment
+      We will teach Python using the Jupyter notebook, a programming environment
       that runs in a web browser. For this to work you will need a reasonably
       up-to-date browser. The current versions of the Chrome, Safari and
       Firefox browsers are all <a
       href='http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility'>supported</a>
       (some older browsers, including Internet Explorer version 9
       and below, are not).
-    </p>
+      </p>
 
-  <div class="row">
+<div class="row">
+
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
       <ol>
@@ -265,24 +295,55 @@ installation](#testing).
         <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
       </ol>
     </div>
+
+    <div class="col-md-4">
+      <h4 id="python-windows-asu">Windows (on ASU laptops without
+      sysadmin and existing system anaconda)</h4>
+	  <p>If you are stuck with a laptop where you can only install as
+    a user <em>and</em> there is already a system-wide anaconda installation
+    present then you will need to install your own anaconda <em>and</em> make
+    sure that it is being used.</p>
+      <ol>
+        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
+        <li>Download the Python 3 installer for Windows.</li>
+        <li>Install Python 3 using all of the defaults for
+    installation <em>except</em> make sure to check <strong>Make
+    Anaconda the default Python</strong>.</li>
+		<li>Open the Git-Bash command line</li>
+		<li>Append (<tt>>></tt>) to the file <tt>$HOME/.bash_profile</tt> the following content by typing
+		<pre>
+cat >> $HOME/.bash_profile << 'EOF'
+# PHY494 bash startup for local Anaconda
+MYCONDA="$HOME/Anaconda3"
+export PATH="$MYCONDA:$MYCONDA/Scripts:$MYCONDA/libs/bin:$PATH"
+unset MYCONDA
+EOF
+</pre>This will instruct Bash to look for your conda installation
+before anything else.</li>
+    <li>Close the Git-Bash window.</li>
+	<li>Open a new Git-Bash window (so that your changes take effect).</li>
+    </ol>
+    </div>
+
     <div class="col-md-4">
       <h4 id="python-macosx">Mac OS X</h4>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
         <li>Download the Python 3 installer for OS X.</li>
-        <li>Install Python 3 using all of the defaults for installation.</li>
+        <li>Install Python 3 using all of the defaults for
+		installation.</li>
       </ol>
-    </div>
+      </div>
+	  
     <div class="col-md-4">
       <h4 id="python-linux">Linux</h4>
-      </p>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
         <li>Download the Python 3 installer for Linux.</li>
         <li>Install Python 3 using all of the defaults for installation.
         (Installation requires using the shell. If you aren't
         comfortable doing the installation yourself
-        stop here and request help at the workshop.)</li>
+        stop here and request help.)</li>
         <li>
           Open a terminal window.
         </li>
@@ -302,8 +363,47 @@ installation](#testing).
         </li>
       </ol>
     </div>
-  </div>
+
 </div> <!-- End of 'Python' section. -->
+
+
+  <h3>VPython</h3>
+
+<p>For 3D visualization, we will use Jupyter <a href="http://vpython.org/">vpython</a> within the Jupyter notebook
+interface. This is not part of anaconda and so we need to install it separately after the anaconda installation.
+</p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="vpython-windows">Windows</h4>
+      <ol>
+        <li>Open the git-bash shell commandline (Start Menu: All
+    Programs: Git: Git Bash)</li>
+    <li>Type in the command line
+	<pre>pip install vpython</pre>
+	</li>
+    </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="vpython-macosx">Mac OS X</h4>
+      <ol>
+      <li>Open the Terminal (command line)</li>
+      <li>Type
+         <pre>pip install vpython</pre>
+	   </li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="vpython-linux">Linux</h4>
+      <ol>
+	   <li>Open the Terminal (command line)</li>
+            <li>Type <pre>pip install vpython</pre></li>
+      </ol>
+    </div>
+  </div> <!-- End of 'VPython' section. -->
+</div>
+
+
 
 ## Testing
 
@@ -347,6 +447,9 @@ nano by holding down the `control` key together with `X`,
 i.e. `control + X`. In Unix keystrokes, the control key is typically
 indicated with the caret character `^`.
 
+(If you don't have `nano` but some other editor such as `Sublime Text`
+check the section on <a href="#editor-windows-asu">Editor under
+Windows (ASU)</a> and ask an instructor for help.)
 
 ### Python
 
@@ -356,11 +459,66 @@ In the shell, type
 python -c 'import sys; print(sys.version)'
 {% endhighlight %}
 
-which should give something similar to `3.5.1 |Anaconda 2.4.1
-(64-bit); (default, Dec 7 2015, 15:00:12)` (and more
+which should give something similar to `3.5.2 |Anaconda 4.2.0
+(64-bit); (default, Jul  2 2016, 17:53:06)` (and more
 stuff). Important: you should have *Python 3*, i.e., a version like
-3.4. or 3.5.
+3.4.x or 3.5.x.
 
 
 
+### Jupyter notebook and VPython
 
+<ol>
+<li>
+In the shell, type
+
+{% highlight bash %}
+jupyter notebook
+{% endhighlight %}
+
+This should open a browser window at <a href="http://localhost:8888">http://localhost:8888</a>. 
+</li>
+<li>Open the <tt>New</tt> menu on the right hand side.</li>
+<li>Under <tt>Notebooks</tt> select <tt>Python [conda root]</tt></li>
+<li>In the new window ("Untitled"), type
+{% highlight python %}
+print("Hello World!")
+{% endhighlight %}
+and press <tt>shift</tt> and <tt>return</tt> keys simultaneously to evaluate the
+cell. It should print "Hello World!".</li>
+<li>Close the browser tab with menu <tt>File: Close and Halt</tt>.</li>
+<li>In the files listing, select from <tt>New</tt> under <tt>Notebooks</tt> select
+<tt>VPython</tt></li>
+<li>In the new window ("Untitled2"), type
+{% highlight python %}
+import vpython as vp
+box = vp.box()
+{% endhighlight %}
+and press <tt>shift</tt> and <tt>return</tt> keys simultaneously to evaluate the
+cell. It should open a graphics window in the notebook showing a
+cube. Use the mouse with right mouse button presse to turn the cube
+(on Mac OS X, press <tt>control</tt> while clicking/pressing the touch pad to
+get "right click").</li>
+<li>Close the browser tab with menu <tt>File: Close and Halt</tt>.</li>
+</ol>
+
+<p>
+If you have problems, ask an instructor.
+</p>
+
+
+#### Common problems
+
+* On Mac OS X, if you get the error *OSError: [Errno 49] Can't assign
+  requested address* you might need to use `jupyter notebook
+  --ip=127.0.0.1`
+* Wrong `conda` is used. Check `which conda` in the terminal: it
+  should show a path in your home directory (e.g., for user "physics":
+  Windows: `/c/Users/Physics/Anaconda3/conda`, Mac OS X:
+  `/Users/physics/Anaconda3/conda`, Linux:
+  `/home/physics/Anaconda3/conda`). Try exiting the terminal and open
+  a new terminal (or git bash) and try again. Changes to PATH only
+  take effect when a new shell is opened.
+* The spinning box in VPython is not visible, only a blank square. Try
+  opening the notebook in the Chrome web browser instead of
+  Explorer/Edge: Just type `http://localhost:8888` in Chrome's URL bar.
