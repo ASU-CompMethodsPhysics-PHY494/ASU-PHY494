@@ -1,0 +1,642 @@
+---
+layout: post
+title: 01 The Unix Shell
+---
+
+This lesson introduces the **shell**, also known as the **command
+line**. There are many different shells: We are using the
+**[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))** shell.
+
+This lesson builds on [An Introduction to the command
+line](http://becksteinlab.physics.asu.edu/learning/24/introduction-to-the-command-line)
+with [Unix
+Basics](http://becksteinlab.physics.asu.edu/pages/unix/IntroUnix/p01_UNIX.html)
+and the [Software Carpentry lesson on The Unix
+Shell](http://swcarpentry.github.io/shell-novice/).
+
+1. [Background and Motivation](#background-and-motivation)
+2. [Tutorial](#tutorial)
+    * [Accessing the shell](#accessing-the-shell)
+    * [Navigating Files and Directories](#navigating-files-and-directories)
+	* [Copy, rename, delete](#copy-rename-delete)
+	* [Pipes and Filters](#pipes-and-filters)
+	* [Using `git` to get data for the class](#using-git-to-get-data-for-the-class)
+	* [Shell scripts](#shell-scripts)
+
+# Background and Motivation
+
+As a computational scientist you have one primary tool at your hand: a
+computer. And like an experimental scientist, you will have to be able
+to interact with it, adjust it, tweak it, fix it, and generally make
+it do things that it has never done before.
+
+You are probably used to interacting with a computer via a graphical
+user interface ("GUI") — windows, browsers, a mouse or touch
+screen. Although convenient, this limits you to the interactions
+designed into the interface. To get more out of a machine you have to
+talk to it more directly.
+
+We will interact with the computer using the text-based terminal
+through a so-called *command line interface* (CLI). The user types
+input commands; the commands are read, executed, and output is
+printed. The program responsible for doing this is called the
+**shell** (because it "encloses" the operating system to simplify user
+interaction with it).
+
+The shell is a program like any other but it's primary purpose is to
+run other programs; most of the input "commands" are in fact other
+programs. The shell is very good at working with the file system
+(files and directories), combining multiple existing tools in powerful
+ways, and automating tasks. On a
+[Unix](http://en.wikipedia.org/wiki/Unix)-like operating systems
+(typically used for high-performance computing) using the shell is a
+very powerful (and essential) way to interact with the computer.
+
+# Tutorial
+
+## Accessing the shell
+
+* On a typical **Linux** system you open an application called
+  *terminal* or *xterm* or *kterm* (or similar).
+
+* On **Mac OS X** you open *Terminal.app* (in the *Utilities* folder in
+  *Applications*).
+
+* On Windows we use *Git Bash*: Find it in the Program menu under *All
+  Programs/Git/Git Bash*
+
+You should be greeted by the *prompt*, which can look like this
+
+~~~
+$
+~~~
+
+with the cursor as an underline or block showing that you can
+type. Often your prompt is more elaborate, e.g.
+
+~~~
+dvader@deathstar.empire.gov  ~$
+~~~
+
+Type
+
+{% highlight bash %}
+whoami
+{% endhighlight %}
+
+and hit enter. You should see your username being printed to the
+screen.
+
+Type 
+
+{% highlight bash %}
+cd
+{% endhighlight %}
+
+and hit enter to begin the lesson. From now on, input will just be
+shown and you should enter it.
+
+
+## Navigating Files and Directories
+
+### Commands
+* `pwd` (print working directory)
+* `ls` (list directory)
+* `cd` (change directory)
+
+Commands generally take *arguments* (what to operate on, required) and
+*options* (modify the standard behavior, optional).
+
+{% highlight bash %}
+command_name -v -o optarg --long-opt  arg1 arg2
+{% endhighlight %}
+
+Often, omitting the argument also works and a default is assumed. You
+can learn more about commands with the help function (try running just
+with option `-h` or `--help` or on Linux/Mac OS X, `man command_name`;
+the *Git Bash* installation does not come with man pages but you can
+use services on the web such as the
+[Debian man pages](http://manpages.debian.org/cgi-bin/man.cgi)).
+
+
+
+### Paths
+
+A *path* consists of *directory names* separated by forward-slashes
+"`/`" and possibly a final *file name*. 
+
+* `/` (the actual name of the "root" directory)
+* `/home/dvader` or `/Users/dvader`
+* `/usr/bin/nano`
+* `books.txt`
+* `/Users/dvader/Documents/deathstar/weaknesses.pdf`
+* `Documents/deathstar/weaknesses.pdf`
+
+Paths starting with `/` are called *absolute paths*; anything else is
+a *relative* path, starting from the current working directory (check
+with `pwd`).
+
+### Moving around
+
+Assume user dvader has the following directory layout in his *home
+directory* `/Users/dvader`:
+
+~~~
+/Users/dvader/
+	     Documents/
+		      deathstar/
+			       weaknesses.pdf
+			       electrical_bill.dat
+		      work/
+	     data/
+		 planets.dat
+		 bases
+~~~
+                      
+If he executes the `cd` command
+
+{% highlight bash %}
+cd /Users/dvader/Documents/deathstar
+{% endhighlight %}
+
+then he will have moved to the `deathstar` directory.
+
+The `cd` command took an *argument*, the directory to go to.
+
+{% highlight bash %}
+pwd
+{% endhighlight %}
+
+will print
+
+~~~
+/Users/dvader/Documents/deathstar
+~~~
+{: .output}
+
+If he runs
+
+{% highlight bash %}
+ls
+{% endhighlight %}
+
+he will see 
+
+~~~ 
+electrical_bill.dat  weaknesses.pdf
+~~~
+{: .output}
+
+In order to get to the `data` directory he could use the command `cd
+/Users/dvader/data` but instead he uses the *special directory* `..`
+(which means "the directory above this one"):
+
+{% highlight bash %}
+cd ../../data
+{% endhighlight %}
+
+(Use the `TAB` key while typing: *autocompletion* is one of the best
+features of the shell! The other great interactive feature is the
+history: try using the cursor-up and -down keys.)
+
+A second special directory is `.` ("this directory"). `.` and `..`
+are understood by all commands.
+
+### Activity
+
+1. What does the following sequence of commands show?
+
+        cd
+        ls -a
+
+2. Go to the `bin` directory that is located in the `usr` directory,
+   which itself is located in the root directory. List the files
+   there. Did you find "nano" and "grep"?
+3. What does `ls -R /usr` show? (Try `^C`...)
+4. Try other options of `ls` such as `-sh` or `-sha`. --- ask `ls` for
+   help!
+5. Is there a difference between `ls -sha`, `ls -ash`, and `ls -a -s
+   -h`?
+
+
+
+### Tips to make your life easy
+
+* Use the shell's convenience features:
+  * `TAB` completion 
+  * up/down arrow to get commands that you already typed. 
+  * `history` shows all the commands you typed so far
+  * Try out `Control`+`R` (`^R`) to search through your shell
+    *history*.
+  * `^A` and `^E` will likely take you to the beginning and end of a
+    line
+* Use `cd ..` to go up, `cd ../..` to go up twice etc.
+* Use `cd -` to go to *the previous directory I was in* (only works
+  for `cd`).
+* Use the tilde character `~` for your home directory, e.g. `cd
+  ~/Documents` is equivalent to `cd /Users/dvader/Documents`.
+
+
+## Copy, rename, delete
+
+### Commands
+
+* `mkdir` (make directory)
+* `cp` (copy file, `cp -r` copy recursively, including directories)
+* `mv` (move, i.e. rename)
+* `rmdir` (remove empty directory)
+* `rm` (remove file, `rm -r` remove recursively (**dangerous!**))
+
+### Directory structure for the class
+
+Make a directory `PHY494` in your home directory for the class and
+inside it, one called `01_shell` for today's lesson:
+
+{% highlight bash %}
+cd ~
+mkdir PHY494
+cd PHY494
+mkdir 01_shell
+{% endhighlight %}
+
+Note: 
+
+* *Avoid spaces and most special characters in file names.* All
+  letters and numbers together with underscore `_`, minus sign `-`,
+  and period `.` are ok.
+* Plain `mkdir` cannot create multiple directories deep in one go
+  unless you have the `-p` option (check!).
+
+### Activity
+
+1. Inside your `01_shell` directory, create three directories, `data`
+   and `Documents/work`.
+2. Go to `Documents/work`
+
+### Creating text files with a text editor
+
+Run `nano`:
+{% highlight bash %}
+nano
+{% endhighlight %}
+
+You should see something like this:
+
+![Nano screenshot]({{site.baseurl}}/{{site.figs}}/nano.png)
+
+(Note: for real work use a more powerful editor such as
+[Emacs](http://www.gnu.org/software/emacs/) or
+[Vim](http://www.vim.org/) (both of which come with a steep learning
+curve), or a graphical editor such as
+[Gedit](http://projects.gnome.org/gedit/). On Windows, a free editor is
+[Notepad++](http://notepad-plus-plus.org/).)
+
+Create a todo list with content
+
+    Plan for today:
+
+    1. find rebel base
+    2. destroy!
+
+Save it to file 'TODO' with the command `^O` and type the file name
+`TODO` and exit with `^X`. Check that the file is there with `ls`.
+
+### Activity
+
+1. Make a backup (call it `TODO.bak`) of the TODO list with the `cp`
+   command.
+2. Rename `TODO` to `TODO.txt` with the `mv` command.
+3. Make a directory `notes` under the `data` directory: You should now
+   have a directory tree similar to
+
+        ~/PHY494/01_shell/
+                          Documents/
+                                    work/
+                                         TODO.txt
+                                         TODO.bak
+                          data/
+                              notes/
+
+   Check with `ls -R ~/PHY494`.
+4. Put a copy of `TODO.txt` into the `notes` directory (using `cp`).
+5. Create a new text file `data/notes/hints.txt` and write any
+   [hints](https://en.wikipedia.org/wiki/Ice_planet)  for possible
+   rebel bases into this file.
+6. Open `TODO.txt` in `nano` and add a note to item 1 too look in the
+   hints.txt file. Save and exit.
+7. Make a copy of your `notes` directory in your work directory:
+
+        ~/PHY494/01_shell/
+                          Documents/
+                                    work/
+                                         TODO.txt
+                                         TODO.bak
+                                         notes/
+                                              TODO.txt
+                                              hints.txt
+                          data/
+                              notes/
+                                    TODO.txt
+                                    hints.txt
+
+8. Remove `data/notes/hints.txt` with `rm`.
+9. Remove `data/notes` with `rmdir`. (Hint: Read the error message!)
+10. Move `work/notes/hints.txt` into the `work` directory.
+11. Remove the useless `work/notes` directory with `rm -r` (careful !)
+
+**WARNING: There is no "Trashcan" or built in backup. Once you `rm`
+something, it is gone.** Be especially careful with `rm -r`.
+
+Note: all these commands can also work on multiple filenames.
+
+## Pipes and Filters
+
+### Commands
+
+* `cat`
+* `head`
+* `tail`
+* `less`
+* `wc`
+* `sort`
+* `uniq`
+* `cut` and `paste`
+* `grep`
+
+and special shell characters
+
+* `|` ("pipe", joins commands together)
+* `>` (redirects output to a file)
+* `<` (redirects file to input)
+
+### Working with redirection and command pipelines
+
+Download [planets.dat]({{site.baseurl}}/{{site.data}}/planets.dat)[^1]
+and put it in the directory `data/`. You can do this with your web
+browser or if you have the `curl` program installed, try
+
+{% highlight bash %}
+curl {{site.url}}{{site.baseurl}}/{{site.data}}/planets.dat -O
+{% endhighlight %}
+
+(all on one line).
+
+Output the whole file to the screen:
+
+{% highlight bash %}
+cat planets.dat
+{% endhighlight %}
+
+Look at the first three lines of the file
+
+{% highlight bash %}
+head -3 planets.dat
+{% endhighlight %}
+
+should give
+
+~~~
+Alderaan             12500  grasslands/mountains
+Yavin_IV             10200  jungle/rainforests
+Hoth                  7200  tundra/icecaves/mountainranges
+~~~
+{: .output}
+
+Count the number of planets
+
+{% highlight bash %}
+wc planets.dat
+{% endhighlight %}
+
+~~~
+      60     180    2944 planets.dat
+~~~
+{: .output}
+
+Make a file in which all planets are duplicated:
+
+{% highlight bash %}
+cat planets.dat planets.dat > planets_2.dat
+{% endhighlight %}
+
+(`cat` concatenates files and then you redirect it to a new file.)
+
+
+#### Activity
+
+1. Test that `wc -l` gives just the number of lines ("60").
+2. What does `wc planets.dat planets_2.dat` do?
+3. What happens when you do `wc < planets.dat`?
+4. Run `wc` then type any number of lines of text (pressing enter
+   to terminate each line) and when you get bored, press `^D`
+   (control+D). What happened?
+
+#### Pipes
+
+Sort by name and look at the first five using a **pipes** and
+**filters**:
+
+{% highlight bash %}
+sort planets.dat | head -5
+{% endhighlight %}
+
+Sort by diameter (`-k2,2` is column 2 and numeric sort `-n`), biggest
+first (`-r` reverse sort), and write the top 3 to a file
+`biggest_planets`:
+
+{% highlight bash %}
+sort -k2,2 -n -r planets.dat | head -3 > biggest_planets
+{% endhighlight %}
+
+Count the number of planets with unknown diameter:
+
+{% highlight bash %}
+grep "unknown" planets.dat | wc -l
+{% endhighlight %}
+
+Get the first letter of each planet name and sort alphabetically:
+
+{% highlight bash %}
+cut -b 1,1 planets.dat | sort
+{% endhighlight %}
+
+Get the terrain types
+
+{% highlight bash %}
+cut -b 29-  planets.dat
+{% endhighlight %}
+
+### Activity
+
+1. Count the number of planets in `planets_2.dat`.
+2. Find planets where the rebel might have a base (hint: you know it's
+   cold there... use `grep`). How many planets will you investigate
+   more closely? Write the list to the file `bases`.
+3. How many *unique* terrain types are there? (Hint: `uniq` needs a
+   sorted list as input)
+4. What is the most frequent and the least frequent first letter
+   amongst these planets? (Hint: `uniq -c`)
+
+
+### Shell glob patterns
+
+Use the character `*` to match "any part of a file name", e.g.
+
+{% highlight bash %}
+ls *.dat
+{% endhighlight %}
+
+will list all files ending in `.dat`.
+
+The `?` character matches a single character. Neither of them matches
+a leading `.` in a file name or a space.
+
+
+## Using `git` to get data for the class ##
+
+`git` is a version control software and we will come back to explain
+its main functionality later. Right now we use it as a convenient tool
+to get additional data. 
+
+There is a "repository" at
+<https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources>
+that contains data and code to be used during the class. It will be
+updated as we go along.
+
+Get the data for today by **cloning** the repository:
+
+~~~
+cd ~
+git clone https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources.git
+~~~
+
+(You only need to do this *once*.)
+
+At any later time, **pull** in the latest updates from inside the
+repository::
+
+~~~
+cd PHY494-resources
+git pull
+~~~
+
+(This can be done as often as you like.)
+
+Go into the `PHY494-resources/01_shell/data` directory.
+
+### Activity
+
+1. Read the `README` file (e.g. using `nano` or `cat` or `less` (for
+the latter, use `h` to get help and `q` to quit)).
+
+2. Count the number of entries in *all files ending in "csv"*. (Hint:
+use a glob pattern)
+
+3. Use `cut -f 1  -d ',' people.csv` to extract each name to a file
+`names` and a similar command to extract weight to a file `weights`.
+
+4. Use the `paste` command to generate a new list that contains
+   "weight name" (reordered and separated by space):
+
+        paste weights names
+
+   Use this approach to sort the people in order of decreasing weight.
+
+## Shell scripts
+
+You can save commands in a file. This is called a **script**. A script
+allows you to reuse commands (laziness is a programmer's virtue!)
+without having to retype them over and over again. It also allows you
+to solve a task once and then forget about how you did it in detail
+because it is written in the script.
+
+Make directory `~/bin` for your scripts in your home directory.
+
+{% highlight bash %}
+mkdir ~/bin
+{% endhighlight %}
+
+(I strongly suggest you do this really in your home directory because
+in the following I will assume it; if you changed the path to
+e.g. `~/classes/2016/PHY494/bin` then you will need to use that path
+in all the following examples.)
+
+Using`nano`, create the following script `~/bin/update_resources.sh`:
+
+{% highlight bash %}
+# PHY 494 script to update the resources repository
+
+GIT_REPOSITORY="${HOME}/PHY494-resources"
+
+cd "${GIT_REPOSITORY}"
+git pull
+
+echo "Updated resources in ${GIT_REPOSITORY}"
+{% endhighlight %}
+
+(You create the script by (1) `nano ~/bin/update_resources.sh` (opens
+empty file if it does not exist), (2) type all the lines into the
+editor (or copy & paste), (3) save the file and exit the editor.)
+
+Notes:
+
+* *All* the lines above should be in your file (first line will start
+  with `# PHY 494` and the last line will begin with `echo`).
+
+* The line starting with `#` is a *comment*: it is not a shell command
+  and is ignored by the shell. However, adding comments to scripts is
+  **a really, really good idea!**
+
+* The shell has **variables**: Some like `HOME` are pre-defined,
+  others you can define yourself (`GIT_REPOSITORY=...`). Using
+  all-caps is a convention that you should follow.
+
+  The contents (value) of variables is accessed with the dollar `$`
+  sign in front of the variable name.
+
+* `echo` prints to the standard output (typically, the screen)
+
+Execute the script with
+
+{% highlight bash %}
+bash ~/bin/update_resources.sh
+{% endhighlight %}
+
+It should show output similar to 
+
+~~~
+Already up-to-date.
+Updated resources in /Users/oliver/PHY494-resources
+~~~
+
+However, during the course of the year more data will be added to the
+repository and then you can just run your update command to get the
+data and you might see output like the following:
+
+~~~
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 15 (delta 2), reused 15 (delta 2), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+From https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources
+   c3b5c04..23a4083  master     -> origin/master
+Updating c3b5c04..23a4083
+Fast-forward
+ 01_shell/bin/update_resources.sh | 8 ++++++++
+ 02_python/gutentag.py            | 4 ++++
+ 2 files changed, 12 insertions(+)
+ create mode 100644 01_shell/bin/update_resources.sh
+ create mode 100644 02_python/gutentag.py
+Updated resources in /Users/oliver/PHY494-resources
+~~~
+
+------------------------------------------------------------
+
+#### Footnotes ####
+
+[^1]:
+
+	Star Wars data courtesy of [SWAPI](https://swapi.co/). See
+	[PHY494-auxilliary/star_wars](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-auxilliary/tree/master/star_wars)
+	for Python code to pull the data from SWAPI.
+
