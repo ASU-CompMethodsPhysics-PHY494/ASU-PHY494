@@ -28,6 +28,16 @@
   <!-- RSS -->
   {% feed_meta %}
 
+  <!-- deep header links https://github.com/bryanbraun/anchorjs -->
+  <script src="{{ site.baseurl }}/public/js/anchor.min.js"></script>
+  <script>
+     // https://www.bryanbraun.com/anchorjs/#basic-usage
+     // Add anchors on DOMContentLoaded
+     document.addEventListener("DOMContentLoaded", function(event) {
+     anchors.add();
+     });
+  </script>
+  
   <!-- MathJax with kramdown: http://jekyllrb.com/docs/extras/ -->
   <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>

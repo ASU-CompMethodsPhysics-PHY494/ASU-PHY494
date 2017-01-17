@@ -37,7 +37,7 @@ data:                "public/data"
 figs:                "public/figs"
 lectures:            "public/lectures"
 docs:                "public/docs"
-siteresources:           "public/resources"
+siteresources:       "public/resources"
 
 course:
  url:                http://becksteinlab.physics.asu.edu/learning/76/phy494-computational-physics
