@@ -390,6 +390,7 @@ Conversion complete
 ~~~~~
 
 Note:
+
 * `for VARIABLE in SEQUENCE` is the for-loop in Python.
 * The body of the for loop is executed for each element in
   `SEQUENCE` and `VARIABLE` is set to this element.
