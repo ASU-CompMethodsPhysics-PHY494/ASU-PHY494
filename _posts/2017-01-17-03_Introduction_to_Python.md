@@ -15,8 +15,8 @@ incompatibilities between 2 and 3) but once you know Python 3 you will
 have no problems dealing with Python 2 code.
 
 1. [Resources](#resources)
-2. [Starting Python](#starting-python)
-3. [Tutorial](#tutorial)
+2. [Starting Python](#getting-started-)
+3. Today's lesson: [Python Fundamentals](#python-fundamentals)
 
 ## Resources ##
 
@@ -61,8 +61,9 @@ or similar.
 
 ### editor
 
-You will also edit files with *your editor*. If you use a
-point-and-click editor, make sure that you can find the work directory.
+You will also edit files with *your editor* (see the lesson on
+[creating text files with a text editor]({{site.baseurl}}{%post_url 2017-01-12-01_Unix_Shell%}#creating-text-files-with-a-text-editor)). If you use a
+point-and-click editor, make sure that you can [find the work directory]({{site.baseurl}}{%post_url 2017-01-17-02_HelloWorld%}#fn:1).
 
 ### python
 
@@ -403,10 +404,10 @@ Note:
 2. modify `temperature.py` so that the results are stored in a new
    list `temp_Kelvin`
 
-####  `range()` for loops
+####  Loops with `range()`
 The
 [range()](https://docs.python.org/3.5/library/functions.html#func-range)
-"function" provides "standard" (as in e.g., C) for loop behavior:
+"function" provides "standard" (as in e.g., C) for-loop behavior:
 
 `range(stop)` iterates through 0, 1, 2, ..., stop-1
 
@@ -428,7 +429,7 @@ yielding `1 3 5`.
 Add code to `temperature2.py` (below) to print a
 table of the temperature in F and in K side by side by iterating
 through the lists `temperatures` and `temp_Kelvin`
-simulataneously. (Hint: You can use `len()` and `range()`.)
+simultaneously. (Hint: You can use `len()` and `range()`[^1])
 
 {% highlight python %}
 # temperature conversion
@@ -626,3 +627,17 @@ Other packages that we are going to use
 ## Objects
 
 To come...
+
+
+------------------------------------------------------------
+
+#### Footnotes ####
+
+[^1]:
+
+     If you already know how to solve the problem with `len()`,
+     `range()`, and indexing, try to figure out how to do it more
+     elegantly with the
+     [zip()](https://docs.python.org/3/library/functions.html#zip)
+     function 
+
