@@ -193,7 +193,7 @@ raises a `ValueError`.
   * [comparison operators](https://docs.python.org/3.5/library/stdtypes.html#comparisons),
 	e.g., `x == y`, `x != y`, `x > y`, `x <= y`, ...
 
-  * [numerical operators](https://docs.python.org/3.5/library/stdtypes.html#numeric-types-int-float-complex)),
+  * [numerical operators](https://docs.python.org/3.5/library/stdtypes.html#numeric-types-int-float-complex),
     e.g., `x + y`, `x - y`, `x * y`, `x / y`, `x ** y` (power). Also
     *in-place* operations, which combine numerical operation with
     assignment (`x += y` is the same as `x = x + y`)	
