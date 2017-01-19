@@ -216,11 +216,13 @@ $$
 *Lists* ("arrays") and *tuples* are
 [sequences](https://docs.python.org/3.5/library/stdtypes.html#sequence-types-list-tuple-range)
 and support a broad set of common operations. *Dictionaries* (dicts)
-contain key-value pairs.
+contain key-value pairs.[^1]
 
 ### Lists
 
-A list (uses square brackets `[]` or `list()`):
+A [list](https://docs.python.org/3/library/stdtypes.html#list) (uses
+square brackets `[]` or `list()`):
+
 {% highlight python %}
 temperatures = [60.1, 78.3, 98.8, 97.1, 101.3, 110.0]
 stuff = ["dog", 42, -1.234, "cat", [3, 2, 1]]
@@ -296,9 +298,11 @@ gives `['dog', 42, -1.234, 'cat', [3, 2, 1]]` as above.
 
 
 ### Tuples
-List-like ("sequence"), defined by comma `,` (but often parentheses
-are added for clarity or when defining a 1-tuple or an empty tuple) or
-use `tuple()`:
+
+A [tuple](https://docs.python.org/3/library/stdtypes.html#tuple) is a
+list-like container("sequence"), defined by comma `,` (but often
+parentheses are added for clarity or when defining a 1-tuple or an
+empty tuple) or use `tuple()`:
 
 {% highlight python %}
 point = -3, 5
@@ -328,7 +332,9 @@ x, y, z = 0, 0, 1
 
 
 ### Dictionaries
-Mutable containers with arbitrary (constant) keys (uses curly braces
+
+A [dict](https://docs.python.org/3/library/stdtypes.html#dict) is a
+mutable container with arbitrary (constant) keys (uses curly braces
 `{}` or `dict()`):
 
 {% highlight python %}
@@ -429,7 +435,7 @@ yielding `1 3 5`.
 Add code to `temperature2.py` (below) to print a
 table of the temperature in F and in K side by side by iterating
 through the lists `temperatures` and `temp_Kelvin`
-simultaneously. (Hint: You can use `len()` and `range()`[^1])
+simultaneously. (Hint: You can use `len()` and `range()`[^2])
 
 {% highlight python %}
 # temperature conversion
@@ -634,7 +640,14 @@ To come...
 #### Footnotes ####
 
 [^1]:
+     There are more container types available in Python (e.g.,
+     [set](https://docs.python.org/3/library/stdtypes.html#set) and
+     the
+     [collections](https://docs.python.org/3/library/collections.html)
+     module in the Standard Library) but understanding *list*,
+     *tuple*, and *dict* will already get you a long way.
 
+[^2]:
      If you already know how to solve the problem with `len()`,
      `range()`, and indexing, try to figure out how to do it more
      elegantly with the
