@@ -360,12 +360,24 @@ In [21]: print(ages)
 
 
 ## Flow control
+
+Flow control is essential for any programming language.
+
 * [loops](#loops): `for` and `while`
 * [conditionals](#conditionals): `if ... elif ... else`
-* exceptions: `try ... except`
+* exceptions: `try ... except` (will be discussed another time)
 
 ### Loops
-Convert all the measured temperatures from Fahrenheit to Kelvin.
+
+Computers are excellent at repeating instructions. Looping constructs
+are used to repeat a block of code for a fixed number of iterations or
+until a given condition is met.
+
+#### The `for` loop
+
+**Example**: Convert all the measured temperatures from Fahrenheit to
+Kelvin, using a
+[for loop](https://docs.python.org/3/tutorial/controlflow.html#for-statements).
 
 Create a python program `temperatures.py`
 {% highlight python %}
@@ -404,13 +416,14 @@ Note:
 * **White-space indentation** demarcates a **block**: Convention: Use
   4 spaces for each indentation level (not TABS)
 
-#### Activity: for loop
+##### Activity: for loop #####
 
 1. create `temperature.py` as above and run it
 2. modify `temperature.py` so that the results are stored in a new
    list `temp_Kelvin`
 
-####  Loops with `range()`
+##### Loops with `range()` #####
+
 The
 [range()](https://docs.python.org/3.5/library/functions.html#func-range)
 "function" provides "standard" (as in e.g., C) for-loop behavior:
@@ -430,7 +443,7 @@ for i in range(1, 7, 2):
 yielding `1 3 5`.
 
 
-#### Activity: range
+##### Activity: range #####
 
 Add code to `temperature2.py` (below) to print a
 table of the temperature in F and in K side by side by iterating
@@ -453,8 +466,15 @@ for theta in temperatures:
 
 #### The `while` loop
 
-The program `countup.py` will run until `t` has exceeded a preset
+The
+[while loop](https://docs.python.org/3/reference/compound_stmts.html#while)
+(see also the
+[while loop in the Python Tutorial](https://docs.python.org/3/tutorial/introduction.html#first-steps-towards-programming))
+iterates until a condition is `False`.
+
+**Example**: The program `countup.py` will run until `t` has exceeded a preset
 value `tmax`:
+
 {% highlight python %}
 # countup.py
 
@@ -467,16 +487,40 @@ while t <= tmax:
 print("Finished")
 {% endhighlight %}
 
-### Conditionals
-Any programming language needs to be able to make decisions. Python
-has the `if` statement.
 
-Consider an implementation of the
-[Heaviside step function](http://mathworld.wolfram.com/HeavisideStepFunction.html)
+**Example**: The program `fibonacci.py` will compute the
+[Fibonacci series](http://mathworld.wolfram.com/FibonacciNumber.html)
+
+$$
+F_n = F_{n-1} + F_{n-2} \quad\text{with}\ F_1 = F_2 = 1
+$$
+
+up to `Fmax`:
+
+{% highlight python %}
+# fibonacci.py
+
+Fmax = 100
+a, b = 0, 1
+
+while b < Fmax:
+   print(b, end=' ')
+   a, b = b, a+b
+print()
+{% endhighlight %}
+
+
+### Conditionals
+
+Any programming language needs to be able to make decisions. Python
+has the
+[if](https://docs.python.org/3/tutorial/controlflow.html#if-statements) statement.
+
+**Example**: Consider an implementation of the [Heaviside step function](http://mathworld.wolfram.com/HeavisideStepFunction.html)
 
 $$
 \Theta(x) = \begin{cases}
-  0 & x \leq 0 \\
+  0 & x < 0 \\
   \frac{1}{2} & x = 0\\
   1 & x > 0
   \end{cases}
@@ -520,7 +564,7 @@ def func_name(arg1, arg2, ...):
     """documentation string (optional)"""
     # body
     ...
-	return results
+    return results
 {% endhighlight %}
 
 Repackage our step function:
@@ -542,9 +586,10 @@ def heaviside(x):
    return theta
 {% endhighlight %}
 
-When you run it... then nothing happens: The function was defined.
+When you run it... then nothing happens: The function was defined but
+not called.
 
-Now add at the end
+Now add at the end of `heaviside.py`
 
 {% highlight python %}
 
@@ -554,15 +599,44 @@ theta = heaviside(x)
 print("Theta(" + str(x) + ") = " + str(theta))
 {% endhighlight %}
 
-and run.
+and run it. Now the function is being called (`theta = heaviside(x)`)
+and its return value assigned to the variable `theta`.
 
-
-### Activity: create functions
+### Activity: create functions (optional)
 
 1. create a file `myfuncs.py`
 2. add `heaviside()` to the file
 3. add a function to convert from Fahrenheit to Kelvin
 4. add a function to convert from Kelvin to Celsius (subtract 273.15).
+
+## Activity: Plotting the step function
+
+Perform this activity using *pair programming*[^3].
+
+Use what you learnt about [loops](#loops) and [functions](#functions)
+to plot the Heaviside step function. Create a program `step_plot.py`
+that
+
+1. defines the Heaviside step function $$\Theta(x)$$ 
+   (use [`heaviside(x)` from above](#functions));
+2. generates a list of $$x$$ values
+   `[-4, -3.5, -3, ..., 0, 0.5, 1, 1.5, ... 4]`;
+3. evaluates $$\Theta(x)$$ for all $$x$$ values and stores the results
+   in a list;
+4. prints the lists of $$x$$ and $$\Theta(x)$$ values;
+5. BONUS: plots $$\Theta(x)$$ against $$x$$; see the
+   [Basic Plotting]({{site.baseurl}}{%post_url
+   2017-01-17-02_HelloWorld%}#basic-plotting) example, namely you can
+   use code like
+   
+   {% highlight python %}
+   import matplotlib.pyplot as plt
+   plt.plot(xvalues, thetas, '-o', color="red", linewidth=2)
+   plt.show()
+   {% endhighlight %}
+   
+   Does your graph look the way that you expect it?
+
 
 ## Modules
 
@@ -589,7 +663,7 @@ import constants
 two_pi = 2 * constants.pi
 h_bar = constants.h / two_pi
 
-print(;h_bar:', h_bar)
+print('h_bar:', h_bar)
 {% endhighlight %}
 
 Contents of a module are accessed with the "dot" operator, e.g,
@@ -654,3 +728,22 @@ To come...
      [zip()](https://docs.python.org/3/library/functions.html#zip)
      function 
 
+[^3]:
+
+	 We will try a software engineering technique called
+     [pair programming](http://guide.agilealliance.org/guide/pairing.html)
+     (borrowed from
+     agile/[extreme programming](http://www.extremeprogramming.org/))
+	 
+	 1. Split into teams of 2. (Be nice. Introduce yourselves.) 
+	 2. Sit next to each other at one desk.
+	 3. Decide whose laptop you are going to use.
+	 4. [Flip a coin](https://www.random.org/coins/?num=1&cur=60-usd.0100c-washington)
+        to decide who will start out as the *navigator* and who will
+        be the *driver*.		
+	 5. Roles:
+		- *driver*: keyboard & types
+		- *navigator* reads code, provides directions, catches bugs
+		- *Both* constantly talk to each other: comment on what you're
+          typing, comment on what is being typed		
+	 6. Switch roles every ~5 minutes
