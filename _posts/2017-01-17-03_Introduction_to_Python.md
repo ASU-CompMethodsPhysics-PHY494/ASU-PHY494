@@ -706,7 +706,180 @@ Other packages that we are going to use
 
 ## Objects
 
-To come...
+Using functions is the most important way to write scientific
+code. The basic approach is to have blocks of code that take in data
+and return results; this is called *procedural programming*. But there
+is also another way in which data and functions are combined into
+something called an *object*, which leads to
+[object oriented programming](https://python.swaroopch.com/oop.html)
+(OOP). An object contains data (held in variables that are called
+*attributes*) and it also contains functions (called *methods*) that
+know how to operate on the data in the object.
+
+Python is an *object oriented* (OO) language and objects are
+everywhere --- in fact *everything* is an object in Python.
+
+### Creating objects: classes
+
+In Python one creates an object by first defining a
+[class](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes):
+
+{% highlight python %}
+class Sphere:
+   """A simple sphere."""
+ 
+   def __init__(self, pos, radius=1):
+       self.pos = tuple(pos)
+       self.radius = float(radius)
+
+   def volume(self):
+       return 4/3 * math.pi * self.radius**3
+
+   def translate(self, t):
+       self.pos = tuple(xi + ti for xi, ti in zip(self.pos, t))
+{% endhighlight %}
+
+and then *instantiating* the object (creating an instance of the class)
+
+{% highlight python %}
+ball = Sphere((0, 0, 10), radius=2)
+{% endhighlight %}
+
+Notes on the class definition above:
+* `__init__()` is a special [method](#attributes-and-methods) that is
+  called when the class is instantiated: it is used to populate the
+  object with user-defined values.
+* The first argument of each [method](#attributes-and-methods)
+  (including `__init__()`) is always
+  called `self` and refers to the class itself.
+* So-called instance [attributes](#attributes-and-methods) are created with
+  `self.ATTRIBUTE_NAME`, e.g., `self.pos`.
+* [Methods](#attributes-and-methods) are defined just like ordinary
+  Python [functions](#functions) except that the first argument is `self`.
+
+In this example we created an object named `ball`, which is of type
+`Sphere`:
+
+{% highlight python %}
+In [3]: type(ball)
+Out[3]: __main__.Sphere
+{% endhighlight %}
+
+### Attributes and Methods
+
+Objects contain **attributes** (variables that are associated with the
+object) and **methods** (functions that are associated with the
+object). Attributes and methods are accessed with the "dot"
+operator. (Within the *class definition*, attributes and methods are
+also accessed with the dot-operator but the class itself is referred
+to as `self` --- this is just the first argument in each method and
+*you should always, always name it self*.)
+
+In the example, `pos` and `radius` are
+attributes, and can be accessed as `ball.pos` and `ball.radius`. For
+instance, the `Sphere` object named `ball` has position
+
+{% highlight python %}
+In [4]: ball.pos
+Out[4]: (0, 0, 10)
+
+In [5]: ball.radius
+Out[5]: 2.0
+{% endhighlight %}
+
+because we provided the `pos` argument `(0, 0, 10)` on
+instantiation. Similarly, we created a ball with radius 2.
+
+One can assign to these attributes as usual, e.g., directly change the position 
+{% highlight python %}
+In [6]: ball.pos = (-5, 0, 0)
+
+In [7]: ball.pos
+Out[7]: (-5, 0, 0)
+{% endhighlight %}
+
+
+The `Sphere.volume()` method computes the volume of the sphere:
+
+{% highlight python %}
+In [8]: ball.volume()
+Out[8]: 33.510321638291124
+{% endhighlight %}
+
+The `Sphere.translate()` method changes the position of the object by
+adding a translation vector `t` to `Sphere.pos`:
+
+{% highlight python %}
+In [9]: ball.translate((5, 0, 0))
+
+In [10]: ball.pos
+Out[10]: (0, 0, 0)
+{% endhighlight %}
+
+Note that this method did not return any values but it changed the
+data in `Sphere.pos`.
+
+### Independence of instances
+
+Each instance of a class is independent from the other instances. For
+example, `ball` and a new `balloon` can be moved independently
+even though we start them at the same position:
+
+{% highlight python %}
+In [11]: ball = Sphere((0, 0, 10), radius=2)
+
+In [12]: balloon = Sphere((0, 0, 10), radius=6)
+
+In [13]: ball.pos = (-1, -1, 0)
+
+In [14]: print(ball.pos, balloon.pos)
+(-1, -1, 0) (0, 0, 10)
+{% endhighlight %}
+
+
+### Inheritance
+
+New classes can be build on existing classes in such a way that the
+new class contains the functionality of the existing class. This is
+called *inheritance* and is a very powerful way to organize large code
+bases.
+
+Only a small example is given to illustrate the basic idea: We use our
+`Sphere` class to create planets. A planet is (almost) a sphere but it
+also has a name and a mass
+
+{% highlight python %}
+class Planet(Sphere):
+   def __init__(self, name, pos, mass, radius):
+       self.name = str(name)
+       self.pos = tuple(pos)
+       self.mass = float(mass)
+       self.radius = float(radius)
+
+   def density(self):
+       """Compute density of the planet"""
+       return self.mass / self.volume()
+
+# quantities from http://www.wolframalpha.com
+# lengths in m and mass in kg
+earth = Planet("Earth", (1.4959802296e11 , 0, 0), 5.9721986e24, 6371e3)
+print(earth.density())
+{% endhighlight %}
+
+gives 5513 kg/m<sup>^3</sup> because the `Planet` class inherited the
+`volume()` method from `Sphere`.
+
+### Final comments on objects
+
+For most of the class you will not need to work with classes, i.e.,
+you do not have to design your programs in an object-oriented
+manner. However, everything is an object and we will constantly create
+objects and work with their methods and attributes. For example
+`list.append()` is a method of a `list` object. Even modules are
+objects and therefore you are using the dot operator to access its
+contents.
+
+
 
 
 ------------------------------------------------------------
