@@ -372,7 +372,7 @@ everywhere --- in fact *everything* is an object in Python.
 ### Creating objects: classes
 
 In Python one creates an object by first defining a
-[class](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes):
+[class](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes):[^4]
 
 {% highlight python %}
 class Sphere:
@@ -518,7 +518,7 @@ earth = Planet("Earth", (1.4959802296e11 , 0, 0), 5.9721986e24, 6371e3)
 print(earth.density())
 {% endhighlight %}
 
-gives 5513 kg/m<sup>^3</sup> because the `Planet` class inherited the
+gives 5513 kg/m<sup>3</sup> because the `Planet` class inherited the
 `volume()` method from `Sphere`.
 
 ### Final comments on objects
@@ -570,3 +570,14 @@ contents.
 		- *Both* constantly talk to each other: comment on what you're
           typing, comment on what is being typed		
 	 6. Switch roles every ~5 minutes
+
+[^4]:
+
+    It is convenient to put the class definition into a separate
+    module, let's say `bodies.py`, and then you can import the class
+    definitions as
+
+        from bodies import Sphere
+
+    This tends to be more manageable than working interactively and
+    it is an excellent way to modularize code.
