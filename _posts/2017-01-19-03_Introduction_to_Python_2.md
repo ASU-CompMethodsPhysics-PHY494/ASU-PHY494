@@ -375,6 +375,8 @@ In Python one creates an object by first defining a
 [class](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes):[^4]
 
 {% highlight python %}
+import math
+
 class Sphere:
    """A simple sphere."""
  
@@ -530,6 +532,12 @@ objects and work with their methods and attributes. For example
 `list.append()` is a method of a `list` object. Even modules are
 objects and therefore you are using the dot operator to access its
 contents.
+
+**Tip**: In `ipython` you can list all the attributes and methods of
+an object by typing the object's name, a dot, and then hitting the TAB
+key twice. TAB-completion together with the question mark (help)
+operator is how most programmers quickly learn about Python classes
+and objects.
 
 
 ------------------------------------------------------------
