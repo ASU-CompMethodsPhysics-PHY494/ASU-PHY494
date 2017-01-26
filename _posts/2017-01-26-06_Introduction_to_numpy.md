@@ -34,7 +34,56 @@ import numpy
 ## Class material
 
 The class will be live-coded in a Jupyter notebook. The annotated
-notebook is available as [03-intro-numpy.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources-2016/blob/master/03_numpy/03-intro-numpy.ipynb).
+notebook is available as [06-intro-numpy.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-numpy.ipynb).
+
+You can load the notebook yourself: first update your local [PHY494-resources
+repository]({{site.resources.url}})[^0]
+
+{% highlight bash %}
+cd ~/PHY494-resources
+git pull
+{% endhighlight %}
+
+Copy the notebook to your work directory
+
+{% highlight bash %}
+cd
+mkdir ~/PHY494/06_numpy
+cd ~/PHY494/06_numpy
+cp ~/PHY494-resources/06_numpy/06-intro-numpy.ipynb .
+{% endhighlight %}
+
+
+and launch the Jupyter notebook interface in your web browser[^1]:
+
+{% highlight bash %}
+jupyter notebook
+{% endhighlight %}
+
+Select the notebook *06-intro-numpy.ipynb* from the list.
+
+Basic Jupyter notebook commands:
+
+* Look at the **Help** menu! (see also the
+  [Jupyter Notebook Online Help](http://nbviewer.jupyter.org/github/ipython/ipython/blob/3.x/examples/Notebook/Index.ipynb))
+* A notebook has
+  [two modes](http://nbviewer.jupyter.org/github/ipython/ipython/blob/3.x/examples/Notebook/Notebook%20Basics.ipynb#Modal-editor)
+  * **edit mode**:
+    * green box around a cell: you can type into the cell
+    * enter edit mode by pressing `Enter` (or `Return`) or click on a
+      cell
+  * **command mode**:
+    * gray box around a cell (you *cannot* type into a cell!)
+    * keys perform many different actions (don't type randomly...),
+      e.g., cursor keys move up/down, `c` copies a cell, `shift +
+      enter` evaluates a cell.
+	* enter command mode by pressing `ESC` or clicking outside a
+      cell's area
+* Evaluate a cell: in command mode (gray cells with blue side bar):  `shift + return`
+* Change a cell type: menu (*code* is Python, *Markdown* is text in
+  [Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+  format)
+
 
 ## Resources
 * NumPy [Quickstart Tuorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
@@ -42,3 +91,23 @@ notebook is available as [03-intro-numpy.ipynb](http://nbviewer.jupyter.org/gith
   [Analysing data with numpy and matplotlib](http://swcarpentry.github.io/python-novice-inflammation-2.7/01-numpy.html)
 * Software Carpentry
   [Advanced NumPy](http://paris-swc.github.io/advanced-numpy-lesson/index.html)
+
+
+----------
+
+#### Footnotes
+
+[^0]:
+
+    If you have not set up your PHY494-resources repository then
+    revisit [04 Git Basics: Class resources]({{site.baseurl}}{% post_url
+    2017-01-24-04_Git_basics %}#class-resources-on-github).
+
+[^1]:
+
+    If you have problems launching the notebook interface on Mac OS X,
+    try
+
+         jupyter notebook --ip=127.0.0.1
+
+    If problems persist, google for the error message and ask for help.
