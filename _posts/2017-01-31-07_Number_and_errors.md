@@ -33,12 +33,18 @@ The class will be presented in a Jupyter notebook. The annotated
 notebook is
 [07-numbers.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/07-numbers.ipynb).
 
+#### Problem: Sine Series
 For one problem you should obtain the notebook
 [07-problem-sine-series.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/07-problem-sine-series.ipynb),
 which already contains part of the code you will need. `git pull` the
 `PHY494-resources` repository and find it under
-`~/PHY494-resources/07_numbers_errors/07-problem-sine-series.ipynb`.
+`~/PHY494-resources/07_numbers_errors/07-problem-sine-series.ipynb`;
+as usual, copy it to your work directory
+(`~/PHY494/07_numbers_errors`) and work on it there.
 
+(The solution
+[07-solution-sine-series.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/07-solution-sine-series.ipynb)
+will be made available later.)
 
 ### Additional resources for Numbers
 
@@ -59,7 +65,7 @@ operations or the computational cost.
 ### Class material for Errors
 
 You can follow the lecture in the notebook
-[05_errors.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/07_errors.ipynb).
+[07-errors.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/07-errors.ipynb).
 
 ### Additional resources for Errors
 
