@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-# PHY494 --- Topic: Computational Methods in Physics
+## PHY494 --- Topic: Computational Methods in Physics
 
 **Computational Methods in Physics** is an undergraduate class run in
 the [Department of Physics](http://physics.asu.edu) at [Arizona State
@@ -17,14 +17,14 @@ a programming language widely used in scientific computing, and
 critically evaluate their numerical results. Problems will be drawn
 from diverse areas of physics.
 
-## Resources
+### Resources ###
 
 Resources for the interactive classes are provided in the GitHub
 repository [{{site.resources.name}}]({{site.resources.url}}).
 
 For further details see the [PHY494 Course Page]({{site.course.url}}).
 
-## Books
+### Books ###
 
 The two **recommended books** for the class are
 
@@ -43,7 +43,7 @@ Additional books on online resources
 
 ------------------------------------------------------------
 
-### Acknowledgements and Support
+#### Acknowledgements and Support ####
 
 The class is supported by an Education Discount from the nice folks at
 [GitHub Education](https://education.github.com/) and uses
