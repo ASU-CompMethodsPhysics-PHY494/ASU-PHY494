@@ -29,15 +29,15 @@ consequences.[^4]
 
 ### Class Material on Numbers
 
-The class will be live-coded in a Jupyter notebook. The annotated
+The class will be presented in a Jupyter notebook. The annotated
 notebook is
-[04-numbers-and-errors.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources-2016/blob/master/04_numbers/04-numbers-and-errors.ipynb).
+[07-numbers.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/07-numbers.ipynb).
 
 For one problem you should obtain the notebook
-[04-problem-sine-series.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources-2016/blob/master/04_numbers/04-problem-sine-series.ipynb),
+[07-problem-sine-series.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/07-problem-sine-series.ipynb),
 which already contains part of the code you will need. `git pull` the
 `PHY494-resources` repository and find it under
-`~/PHY494-resources-2016/04_numbers/04-problem-sine-series.ipynb`.
+`~/PHY494-resources/07_numbers_errors/07-problem-sine-series.ipynb`.
 
 
 ### Additional resources for Numbers
@@ -59,7 +59,7 @@ operations or the computational cost.
 ### Class material for Errors
 
 You can follow the lecture in the notebook
-[05_errors.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources-2016/blob/master/05_errors/05_errors.ipynb).
+[05_errors.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/07_errors.ipynb).
 
 ### Additional resources for Errors
 
@@ -74,7 +74,7 @@ You can follow the lecture in the notebook
 
      Python integers can be used for arbitrary precision integer
      arithmetic; they will not overflow. NumPy integer
-     [data types](http://docs.scipy.org/doc/numpy-1.10.1/user/basics.types.html)
+     [data types](http://docs.scipy.org/doc/numpy/user/basics.types.html)
      such as `int32`, however, will wrap around.
 
 [^2]:
@@ -98,5 +98,5 @@ You can follow the lecture in the notebook
      See Bruce M Bush's
      [The Perils of Floating Point](http://www.lahey.com/float.htm)
      and a notebook
-     [Perils_of_Floating_Point.ipynb](http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources-2016/blob/master/04_numbers/Perils_of_Floating_Point.ipynb)
+     [Perils_of_Floating_Point.ipynb]({{site.nbviewer.resources}}/07_numbers_errors/Perils_of_Floating_Point.ipynb)
      based on that article.
