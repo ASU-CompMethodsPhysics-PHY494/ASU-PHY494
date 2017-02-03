@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 09 Differentiation
+title: 10 Differentiation
 ---
 
 Taking numerical derivatives is based on the elementary definition
@@ -15,12 +15,12 @@ derivative and assess their error.
 ## Class material
 
 You can follow the lecture in the slides
-[09-differentiation.ipynb]({{site.nbviewer.resources}}/09_differentiation/09-differentiation-part-1.ipynb).
+[10-differentiation.ipynb]({{site.nbviewer.resources}}/10_differentiation/10-differentiation-part-1.ipynb).
 [^1]
 
 For the problem that you should solve during the class, get the
 notebook
-[09-differentiation-students.ipynb]({{site.nbviewer.resources}}/09_differentiation/09-differentiation-students.ipynb)
+[10-differentiation-students.ipynb]({{site.nbviewer.resources}}/10_differentiation/10-differentiation-students.ipynb)
 (`git pull` [your PHY494-resources repository]({{site.baseurl}}{%
 post_url 2017-01-24-04_Git_basics %}#class-resources-on-github)).
 
@@ -37,5 +37,5 @@ post_url 2017-01-24-04_Git_basics %}#class-resources-on-github)).
 
     The notebook is not complete yet ("part 1"); the full notebook
     will be posted *after* the student exercise
-    [09-differentiation-students.ipynb]({{site.nbviewer.resources}}/09_differentiation/09-differentiation-students.ipynb)
+    [10-differentiation-students.ipynb]({{site.nbviewer.resources}}/10_differentiation/10-differentiation-students.ipynb)
     has been completed.
