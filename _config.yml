@@ -57,6 +57,7 @@ org:
 nbviewer:
    show:             http://nbviewer.jupyter.org/github
    resources:        http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
+   slides:           http://nbviewer.jupyter.org/format/slides/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
 
 #--------------------------------------------------------------------------------
 # Standard Software Carpentry settings - only included what is be needed
