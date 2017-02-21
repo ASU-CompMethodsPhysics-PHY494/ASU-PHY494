@@ -24,10 +24,14 @@ notebook
 (`git pull` [your PHY494-resources repository]({{site.baseurl}}{%
 post_url 2017-01-24-04_Git_basics %}#class-resources-on-github)).
 
+
 #### Additional resources
 
 * _Computational Physics_: Ch 5.1 -- 5.6
-
+* If you are interested in *integration* then see
+  [the lectures on integration in 2016](https://asu-compmethodsphysics-phy494.github.io/ASU-PHY494-2016/2016/02/09/07_Integration/);
+  this year we are skipping this part in favor of more in-depth
+  programming exercises.
 
 --------
 
