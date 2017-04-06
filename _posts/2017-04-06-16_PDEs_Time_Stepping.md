@@ -1,0 +1,41 @@
+---
+layout: post
+title: 16 Solving PDEs with time stepping
+---
+
+[Partial differential equations (PDEs)]({{site.baseurl}}{% post_url 2017-03-30-15_PDEs %}) may depend on both space and time derivatives such as the parabolic *heat equation*
+
+$$
+\frac{\partial T(\mathbf{x}, t)}{\partial t} = \frac{K}{C\rho} \nabla^2 T(\mathbf{x}, t),
+$$
+
+which describes how temperature changes over time in a material with thermal conductivity $$K$$, heat capacity $$C$$, and density $$\rho$$. Importantly, in order to solve such PDEs, we need to know both the initial values $$T(\mathbf{x}, 0)$$ at all positions in space at $$t=0$$ *and* the boundary conditions at all later times $$t$$.
+
+## Leap frog algorithm for solving the heat equation
+
+We can then transform the PDE into a finite difference equation on a $$\Delta x, \Delta t$$ lattice. The difference equation can be solved with a **time stepping scheme** where we start from the initial values and solve the spatial component for increasing times $$t = \Delta t, 2\Delta t, 3\Delta t, \dots$$ using either an explicit method such as the *Leapfrog algorithm* or an implicit method such as the *Crank-Nicholson method*.
+
+## Von Neumann stability analysis
+
+Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. Using *Von Neumann stability analysis* one can determine analytically the relationship between the discretizations in space and time that lead to stable solutions. The analysis is based on determining the stable eigenmodes of the finite difference equation, i.e., we determine the conditions under which no modes grow in time. This then implies that solutions, which can be written as linear superpositions of these eigenmodes, will also not grow in time and are therefore stable.
+
+## Class material
+
+* Student notebooks
+  * Leap-frog method for the heat equation and von Neumann stability
+    analysis: [16_PDEs-Students.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_PDEs-Students.ipynb)
+  * Crank-Nicholson method applied to the heat equation:
+    [16_CrankNicholson-Students.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_CrankNicholson-Students.ipynb)
+* Lecture notebooks (correspond to the student notebooks):
+  * [16_PDEs.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_PDEs.ipynb) and [derivation of of the heat equation (PDF)]({{site.resources.fileurl}}/16_PDEs/16_PDEs_LectureNotes_HeatEquation.pdf)
+  * [16_CrankNicholson.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_CrankNicholson.ipynb)
+    and [derivation of the Crank-Nicholson algorithm (PDF)]({{site.resources.fileurl}}/16_PDEs/16_LectureNotes_CrankNicholson.pdf)
+
+#### Additional resources  ####
+
+* _Computational Physics_, Ch **20**
+* _[Numerical Recipes in C](http://apps.nrbook.com/c/index.html)_, WH
+  Press, SA Teukolsky, WT Vetterling, BP Flannery. 2nd
+  ed, 2002. Cambridge University Press. Chapter **19**.
+
+
