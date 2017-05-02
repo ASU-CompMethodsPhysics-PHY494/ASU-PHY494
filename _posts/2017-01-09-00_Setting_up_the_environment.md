@@ -189,7 +189,7 @@ installation](#testing).
       <p>
         nano is a basic editor and the default that is used in the class.
         To install it,
-        download the <a href="{{site.swc*installer}}">Software Carpentry Windows installer</a>
+        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
         and double click on the file to run it.
         <strong>This installer requires an active internet connection.</strong>
       </p>
