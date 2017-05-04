@@ -33,7 +33,7 @@ The winner of the **Poster Prize** was team #x with the project [][y].[^2]
 
 #### Notes
 
-[^1]: Each discussion was timed for 6 minutes and graded. Students
+[^1]: Each discussion was timed for about 10 minutes and graded. Students
       were awarded a grade for their final that consisted of a grade
       for the whole project (collectively graded for the whole team)
       and the Q&A garde, which provides an individual component.
