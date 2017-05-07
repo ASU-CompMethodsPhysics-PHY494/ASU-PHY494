@@ -24,20 +24,17 @@ Six teams looked at problems ranging from quantum mechanics to astrophysics. Eac
 [light-curve]: https://github.com/ASU-CompMethodsPhysics-PHY494/final-2017-wasp_analyzer "final-2017-wasp_analyzer"
 
 
-The code and the posters are available in the GitHub repositories. Further details, including abstracts and licensing information, is available in the [Symposium Program (PDF)]({{site.baseurl}}/{{site.docs}}/program_symposium_2017.pdf).
+The proposals, code, and the posters are available in the public GitHub repositories. Further details, including abstracts and licensing information, is available in the [Symposium Program (PDF)]({{site.baseurl}}/{{site.docs}}/program_symposium_2017.pdf).
 
-{% comment %}
-The winner of the **Poster Prize** was team #x with the project [][y].[^2] 
-{% endcomment %}
+The winner of the **Poster Prize** was team #2 with the project [Visualizing Quantum Wavepackets][wavepackets].[^2] 
+
 --------
 
 #### Notes
 
-[^1]: Each discussion was timed for about 10 minutes and graded. Students
+[^1]: Each discussion was timed for 6 minutes and graded. Students
       were awarded a grade for their final that consisted of a grade
       for the whole project (collectively graded for the whole team)
-      and the Q&A garde, which provides an individual component.
+      and the Q&A grade, which provides an individual component.
 
-{% comment %}
 [^2]: The Poster Prize was awarded based on a vote by all participants.
-{% endcomment %}
