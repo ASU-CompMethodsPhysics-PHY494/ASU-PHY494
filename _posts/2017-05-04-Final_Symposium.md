@@ -28,6 +28,8 @@ The proposals, code, and the posters are available in the public GitHub reposito
 
 The winner of the **Poster Prize** was team #2 with the project [Visualizing Quantum Wavepackets][wavepackets].[^2] 
 
+![Winner of the Poster Prize: Visualizing Quantum Wavepackets](https://github.com/ASU-CompMethodsPhysics-PHY494/final-2017-bogus_project/raw/master/poster/2_visualizing_wave_packets.JPG)
+
 --------
 
 #### Notes
