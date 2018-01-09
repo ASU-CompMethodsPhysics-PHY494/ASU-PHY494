@@ -26,7 +26,7 @@ You will need to install
 required for scientific computing)
 
 In each section, find the instructions for your operating system
-(Windows, Mac OS X, or Linux).
+(Windows, macOS, or Linux).
 
 Once you have installed everything, [test your
 installation](#testing).
@@ -103,7 +103,7 @@ installation](#testing).
       <p>This will provide you with both Git and Bash in the Git Bash program.</p>
     </div>
     <div class="col-md-4">
-      <h4 id="shell-macosx">macOS and Mac OS X</h4>
+      <h4 id="shell-macosx">macOS / Mac OS X</h4>
       <p>
         The default shell in all versions of macOS (formerly Mac OS X) is Bash, so no
         need to install anything.  You access Bash from the Terminal
@@ -147,7 +147,7 @@ installation](#testing).
       </p>
     </div>
     <div class="col-md-4">
-      <h4 id="git-macosx">Mac OS X</h4>
+      <h4 id="git-macosx">macOS / Mac OS X</h4>
       <p>
         <strong>For OS X 10.9 and higher</strong>, install Git for Mac
         by downloading and running the most recent "mavericks" installer from
@@ -177,7 +177,7 @@ installation](#testing).
   <p>
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
-    color-coding of key words.  The default text editor on Mac OS X and
+    color-coding of key words.  The default text editor on macOS and
     Linux is usually set to <a href="http://www.vim.org/">Vim</a>, which is not famous for being
     intuitive.  if you accidentally find yourself stuck in it, try
     typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
@@ -234,7 +234,7 @@ editor.</li>
     </div>
 
     <div class="col-md-4">
-      <h4 id="editor-macosx">macOS and Mac OS X</h4>
+      <h4 id="editor-macosx">macOS / Mac OS X</h4>
       <p>
 		We recommend <a href="https://atom.io/">atom</a> as a good editor that is
         suitable for professional coding but also accessible to
@@ -355,7 +355,7 @@ before anything else.</li>
     </div>
 
     <div class="col-md-4">
-      <h4 id="python-macosx">Mac OS X</h4>
+      <h4 id="python-macosx">macOS / Mac OS X</h4>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
         <li>Download the Python 3 installer for OS X.</li>
@@ -414,7 +414,7 @@ interface. This is not part of anaconda and so we need to install it separately 
     </ol>
     </div>
     <div class="col-md-4">
-      <h4 id="vpython-macosx">Mac OS X</h4>
+      <h4 id="vpython-macosx">macOS / Mac OS X</h4>
       <ol>
       <li>Open the Terminal (command line)</li>
       <li>Type
@@ -438,7 +438,7 @@ interface. This is not part of anaconda and so we need to install it separately 
 
 ### Bash shell
 
-Open a *terminal* (Mac OS X, Linux) or open *Git Bash* (under
+Open a *terminal* (macOS, Linux) or open *Git Bash* (under
 *All Programs/Git/Git Bash*) in Windows.
 
 Type
@@ -552,7 +552,7 @@ box = vp.box()
 and press <tt>shift</tt> and <tt>return</tt> keys simultaneously to evaluate the
 cell. It should open a graphics window in the notebook showing a
 cube. Use the mouse with right mouse button presse to turn the cube
-(on Mac OS X, press <tt>control</tt> while clicking/pressing the touch pad to
+(on macOS, press <tt>control</tt> while clicking/pressing the touch pad to
 get "right click").</li>
 <li>Close the browser tab with menu <tt>File: Close and Halt</tt>.</li>
 </ol>
@@ -564,12 +564,12 @@ If you have problems, ask an instructor.
 
 #### Common problems
 
-* On Mac OS X, if you get the error *OSError: [Errno 49] Can't assign
+* On macOS, if you get the error *OSError: [Errno 49] Can't assign
   requested address* you might need to use `jupyter notebook
   --ip=127.0.0.1`
 * Wrong `conda` is used. Check `which conda` in the terminal: it
   should show a path in your home directory (e.g., for user "physics":
-  Windows: `/c/Users/Physics/Anaconda3/conda`, Mac OS X:
+  Windows: `/c/Users/Physics/Anaconda3/conda`, macOS:
   `/Users/physics/Anaconda3/conda`, Linux:
   `/home/physics/Anaconda3/conda`). Try exiting the terminal and open
   a new terminal (or git bash) and try again. Changes to PATH only
