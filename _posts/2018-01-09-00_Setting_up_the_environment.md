@@ -514,10 +514,9 @@ In the shell, type
 python -c 'import sys; print(sys.version)'
 {% endhighlight %}
 
-which should give something similar to `3.5.2 |Anaconda 4.2.0
-(64-bit); (default, Jul  2 2016, 17:53:06)` (and more
+which should give something similar to `3.5.3 |Anaconda custom (x86_64)| (default, Mar  6 2017, 12:15:08)` (and more
 stuff). Important: you should have *Python 3*, i.e., a version like
-3.4.x or 3.5.x.
+3.5.x or 3.6.x
 
 
 
@@ -543,7 +542,7 @@ and press <tt>shift</tt> and <tt>return</tt> keys simultaneously to evaluate the
 cell. It should print "Hello World!".</li>
 <li>Close the browser tab with menu <tt>File: Close and Halt</tt>.</li>
 <li>In the files listing, select from <tt>New</tt> under <tt>Notebooks</tt> select
-<tt>VPython</tt></li>
+<tt>Python [conda root]</tt> (or <tt>VPython</tt> if available)</li>
 <li>In the new window ("Untitled2"), type
 {% highlight python %}
 import vpython as vp
