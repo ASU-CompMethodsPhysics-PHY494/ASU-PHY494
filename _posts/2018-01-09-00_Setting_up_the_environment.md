@@ -76,7 +76,7 @@ installation](#testing).
               <strong>
                 Select "Use Git from the Windows Command Prompt" and click on "Next".
               </strong>
-                If you forgot to do this programs that you need for the workshop will not work properly.
+                If you forgot to do this programs that you need for the class will not work properly.
                 If this happens rerun the installer and select the appropriate option.
             </li>
             <!-- Configuring the line ending conversions -->
@@ -109,7 +109,7 @@ installation](#testing).
         need to install anything.  You access Bash from the Terminal
         (found in
         <code>/Applications/Utilities</code>). You may want to keep
-        Terminal in your dock for this workshop.
+        Terminal in your dock for this class.
       </p>
     </div>
     <div class="col-md-4">
@@ -286,10 +286,7 @@ editor.</li>
   </div>
 </div> <!-- End of 'editor' section. -->
 
-<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
-           the workshop will teach Python using something other than
-           the IPython notebook.
-           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
+<div id="python"> 
   <h3>Python</h3>
 
   <p>
