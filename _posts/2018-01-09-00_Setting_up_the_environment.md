@@ -10,9 +10,10 @@ Note: the course website is accessible at **https://goo.gl/bXs7NE**
 ----
 
 The instructions were taken from [Software
-Carpentry]({[site.swc_site}}), in particular [David
-Dotson's recent workshop at
-ASU](http://smallerthings.org/2016-01-07_asu_physics/).
+Carpentry]({[site.swc_site}}) (in particular [David
+Dotson's 2016 workshop at
+ASU](http://smallerthings.org/2016-01-07_asu_physics/)) and adapted
+for the PHY 494 class.
 
 ## Overview
 
@@ -20,7 +21,7 @@ You will need to install
 
 1. [The Bash Shell](#shell)
 2. [Git](#git)
-3. a [text editor](#editor) (by default, `nano`)
+3. a [text editor](#editor) (by default, `atom`)
 4. [Python](#python) (including a number of additional packages
 required for scientific computing)
 
@@ -102,9 +103,9 @@ installation](#testing).
       <p>This will provide you with both Git and Bash in the Git Bash program.</p>
     </div>
     <div class="col-md-4">
-      <h4 id="shell-macosx">Mac OS X</h4>
+      <h4 id="shell-macosx">macOS and Mac OS X</h4>
       <p>
-        The default shell in all versions of Mac OS X is Bash, so no
+        The default shell in all versions of macOS (formerly Mac OS X) is Bash, so no
         need to install anything.  You access Bash from the Terminal
         (found in
         <code>/Applications/Utilities</code>). You may want to keep
@@ -133,8 +134,8 @@ installation](#testing).
     version of your code
     on <a href="https://github.com/">github.com</a>. You will need a
     <a href="https://help.github.com/articles/supported-browsers/">supported</a>
-    web browser (current versions of Chrome, Firefox or Safari,
-    or Internet Explorer version 9 or above).
+    web browser (current versions of Chrome, Firefox, Safari,
+    Microsoft Edge, or Internet Explorer version 11 or above).
   </p>
 
   <div class="row">
@@ -177,7 +178,7 @@ installation](#testing).
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
     color-coding of key words.  The default text editor on Mac OS X and
-    Linux is usually set to Vim, which is not famous for being
+    Linux is usually set to <a href="http://www.vim.org/">Vim</a>, which is not famous for being
     intuitive.  if you accidentally find yourself stuck in it, try
     typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
     exclamation mark), then hitting Return to return to the shell.
@@ -187,16 +188,23 @@ installation](#testing).
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
       <p>
-        nano is a basic editor and the default that is used in the class.
+	    <a href="https://atom.io/">atom</a> is a good editor that is
+        suitable for professional coding but also accessible to
+		newcomers with is graphical user interface.
         To install it,
-        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
+        download a suitable installer from <a href="https://atom.io/">atom.io</a>
+        and double click on the file to run it. (If you cannot find an
+		appropriate installer, look for a file "AtomSetup-x64.exe" or
+		"AtomSetup.exe" in the  <a
+		href="https://github.com/atom/atom/releases/latest">list of
+    latest releases</a>.)
+	For more details see <a
+		href="https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-windows">Installing atom on Windows</a>.
       </p>
       <p>
         Others editors that you can use are
         <a href="http://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
         <strong>Be aware that you must
           add its installation directory to your system path.</strong>
         Please ask your instructor to help you do this.
@@ -207,8 +215,7 @@ installation](#testing).
       privileges)</h4>
 	  
       <p>On the ASU school laptops, <b>Sublime Text 3</b> is pre-installed
-    and you can use it instead of <tt>nano</tt> (which cannot be installed
-    without superuser privileges). Launch the editor from the Start Menu.
+    and you can use it instead of <tt>atom</tt>. Launch the editor from the Start Menu.
     </p>
 	
 	<p>Customize the PATH environment so that you can launch
@@ -227,28 +234,53 @@ editor.</li>
     </div>
 
     <div class="col-md-4">
-      <h4 id="editor-macosx">Mac OS X</h4>
+      <h4 id="editor-macosx">macOS and Mac OS X</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
+		We recommend <a href="https://atom.io/">atom</a> as a good editor that is
+        suitable for professional coding but also accessible to
+		newcomers with is graphical user interface.
+        To install it,
+        download a suitable installation zip file from <a href="https://atom.io/">atom.io</a>
+        and double click on the file to unpack it. Open your
+		Applications directory from the Finder in the Go menu. Drag the unpacked
+		Atom application to your Applications directory. (If you cannot find an
+		appropriate installer, look for a file "atom-mac.zip" or
+		in the  <a
+		href="https://github.com/atom/atom/releases/latest">list of
+		latest releases</a>.) For more details see <a
+		href="https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-mac">Installing atom on Mac</a>.
+        </p>
+		<p>
+        Alternatively, <a href="https://www.nano-editor.org/">nano</a> is a basic editor.
         It should be pre-installed.
       </p>
       <p>
         Others editors that you can use are
         <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="editor-linux">Linux</h4>
       <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
+		We recommend <a href="https://atom.io/">atom</a> as a good editor that is
+        suitable for professional coding but also accessible to
+		newcomers with is graphical user interface.
+
+        Please follow the instructions on <a
+		href="https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux">Installing
+		atom on Linux</a> and ask an instructor for help if anything
+		is unclear.
+	</p>
+	  <p>
+	  Alternatively, <a href="https://www.nano-editor.org/">nano</a> is a basic editor.
+      It should be pre-installed.
       </p>
       <p>
         Others editors that you can use are
         <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
         <a href="http://kate-editor.org/">Kate</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
+        <a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
     </div>
   </div>
@@ -433,23 +465,49 @@ git --version
 
 which should show something like `git version 2.7.0`.
 
-### nano
+### editor (atom)
+
+
+(If you don't have `atom` but some other editor such as `Sublime Text`
+check the section on <a href="#editor-windows-asu">Editor under
+Windows (ASU)</a> and ask an instructor for help.)
+
+
+#### First time
+
+Open `atom` using your GUI
+* Windows: from the start menu
+* macOS: from the Application folder
+* Linux: varies (but you might be able to skip to "From the shell"
+
+A window should open showing the atom logo and welcome screen, similar
+to 
+
+![atom welcome screenshot]({{site.baseurl}}/{{site.figs}}/atom_welcome.jpg)
+
+If it tries to install additional commands (`atom` and `apm`) then let
+it do it and provide your system administrator password if required.
+
+Then exit the editor again (Quit from the menu or close the
+window).
+
+#### From the shell
 
 In the shell, type
 
 {% highlight bash %}
-nano
+atom
 {% endhighlight %}
 
-You should see `GNU nano 2.0.6` (or similar in the top line) and at
-the bottom of the screen `^X Exit     ^J Justify` (and more). Quit
-nano by holding down the `control` key together with `X`,
-i.e. `control + X`. In Unix keystrokes, the control key is typically
-indicated with the caret character `^`.
+It should open the editor. Exit the editor.
 
-(If you don't have `nano` but some other editor such as `Sublime Text`
-check the section on <a href="#editor-windows-asu">Editor under
-Windows (ASU)</a> and ask an instructor for help.)
+If this does not work then you need to let atom install additional commands.
+Open the  ([Command
+Palette](http://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette)),
+choosing the instructions appropriate for your platform. In the
+Command Palette type `Window: Install Shell Commands` (and provide
+your system administrator password if requested).
+
 
 ### Python
 
