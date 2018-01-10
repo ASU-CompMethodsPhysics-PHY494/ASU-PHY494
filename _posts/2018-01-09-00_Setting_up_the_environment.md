@@ -40,9 +40,10 @@ installation](#testing).
   need an up-to-date web browser.
 </p>
 <p>
-  SoftwareCarpentry maintains a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  If you encounter <strong>problems during the installation</strong>
+  ask an instructor for help.  We also maintain resources for <a
+  href="https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting">trouble
+  shooting problems during the installation</a>.
 </p>
 
 <div id="shell"> <!-- Start of 'shell' section. -->
