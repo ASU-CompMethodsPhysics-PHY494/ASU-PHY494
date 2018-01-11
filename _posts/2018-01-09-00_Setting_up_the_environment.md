@@ -185,6 +185,21 @@ installation](#testing).
     exclamation mark), then hitting Return to return to the shell.
   </p>
 
+  <p>For this class we will use <a href="https://atom.io/">atom</a> as
+  the default editor. It is free, open source, available on Windows,
+  macOS, and Linux, powerful but also accessible for entry-level
+  programmers.</p>
+  
+  <!-- 
+    Other editors that you can consider for serious work are
+	[Emacs](http://www.gnu.org/software/emacs/),
+	[Vim](http://www.vim.org/) (both of which come with a steep
+	learning curve), or a graphical editor such as
+	[Gedit](http://projects.gnome.org/gedit/), [Sublime
+	Text](https://www.sublimetext.com/). On Windows, a free editor is
+	[Notepad++](http://notepad-plus-plus.org/).
+	-->
+  
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
@@ -583,3 +598,5 @@ If you have problems, ask an instructor.
   Explorer/Edge: Just type `http://localhost:8888` in Chrome's URL bar.
 
 See also [trouble shooting problems during the installation](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting)
+
+
