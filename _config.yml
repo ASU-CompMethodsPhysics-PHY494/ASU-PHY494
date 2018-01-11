@@ -54,6 +54,11 @@ org:
  shortname:          GitHub site
  url:                https://github.com/ASU-CompMethodsPhysics-PHY494/
 
+wiki:
+ name:               ASU Comp Phys PHY494 Wiki
+ shortname:          Wiki
+ url:                https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki
+
 nbviewer:
    show:             http://nbviewer.jupyter.org/github
    resources:        http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
