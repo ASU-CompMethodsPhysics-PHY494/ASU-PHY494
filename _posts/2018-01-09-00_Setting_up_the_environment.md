@@ -534,7 +534,8 @@ jupyter notebook
 This should open a browser window at <a href="http://localhost:8888">http://localhost:8888</a>. 
 </li>
 <li>Open the <tt>New</tt> menu on the right hand side.</li>
-<li>Under <tt>Notebooks</tt> select <tt>Python [conda root]</tt></li>
+<li>Under <tt>Notebooks</tt> select <tt>Python</tt> or <tt>Python
+[conda root]</tt> (if it is shown)</li>
 <li>In the new window ("Untitled"), type
 {% highlight python %}
 print("Hello World!")
@@ -543,7 +544,7 @@ and press <tt>shift</tt> and <tt>return</tt> keys simultaneously to evaluate the
 cell. It should print "Hello World!".</li>
 <li>Close the browser tab with menu <tt>File: Close and Halt</tt>.</li>
 <li>In the files listing, select from <tt>New</tt> under <tt>Notebooks</tt> select
-<tt>Python [conda root]</tt> (or <tt>VPython</tt> if available)</li>
+<tt>Python [conda root]</tt> or <tt>VPython</tt> (if available)</li>
 <li>In the new window ("Untitled2"), type
 {% highlight python %}
 import vpython as vp
@@ -564,6 +565,9 @@ If you have problems, ask an instructor.
 
 #### Common problems
 
+* On Windows, the `pip` or `python` commands are not found. Follow the
+  steps under [solution: pip or python are not found in
+  git-bash](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting#pip-or-python-are-not-found-in-git-bash)
 * On macOS, if you get the error *OSError: [Errno 49] Can't assign
   requested address* you might need to use `jupyter notebook
   --ip=127.0.0.1`
@@ -574,6 +578,8 @@ If you have problems, ask an instructor.
   `/home/physics/Anaconda3/conda`). Try exiting the terminal and open
   a new terminal (or git bash) and try again. Changes to PATH only
   take effect when a new shell is opened.
-* The spinning box in VPython is not visible, only a blank square. Try
+* The box in VPython is not visible, only a blank square. Try
   opening the notebook in the Chrome web browser instead of
   Explorer/Edge: Just type `http://localhost:8888` in Chrome's URL bar.
+
+See also [trouble shooting problems during the installation](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting)
