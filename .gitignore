@@ -1,2 +1,6 @@
 _site
 run_jekyll.sh
+*~
+.DS_Store
+.bundle
+Gemfile.lock
