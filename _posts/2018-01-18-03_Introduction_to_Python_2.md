@@ -199,6 +199,60 @@ print("Theta(" + str(x) + ") = " + str(theta))
 Run `heaviside.py` for various values of `x` (at least -3, 0, 3) and
 test the output against the mathematical definition.
 
+#### Activity: Guessing game I
+Write a program that takes a number `guess` as input and compares it to a
+preset number `number`. Tell the player if their guess was "too low",
+"too high", or that they "guessed the number". You can start with the
+code below:
+
+{% highlight python %}
+# guessinggame.py
+
+number = 42   # secret number
+guess = int(input("Guess the number: "))
+
+# add more code here...
+{% endhighlight %}
+
+BONUS: If you want to enhance this code you can try to generate a
+random number using the
+[random.randint()](https://docs.python.org/3.5/library/random.html#random.randrange)
+function. (You will learn more about [importing modules](#modules) and
+[functions](#functions) later in this lesson.)
+
+{% highlight python %}
+import random
+
+number = random.randint(1, 1000)  # secret integer number between 1 and 1000
+{% endhighlight %}
+
+
+#### Activity: Guessing game II
+Perform this activity using *pair programming*[^3].
+
+Enhance the simple guessing game from the previous exercise so that
+the player can guess repeatedly. Count the number of guesses and print
+them once the player guesses correctly.
+
+You *can* use the following *incomplete* code as a starting point:
+
+{% highlight python %}
+# guess.py
+
+import random
+
+number = random.randint(1, 1000)  # secret integer number between 1 and 1000
+
+n_guesses = 0
+guess = int(input("Guess the number between 1 and 1000: "))
+
+while guess != number:
+   # add code
+   
+print("Congratulations, you guessed the number", number, "in", n_guesses, "guesses")
+{% endhighlight %}
+
+
 
 ## Functions
 
