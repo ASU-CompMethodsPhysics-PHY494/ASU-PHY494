@@ -16,3 +16,7 @@ pre.error {
 ol.nonumbers {
     list-style: none;
 }
+
+.note {
+    background: yellow;
+}

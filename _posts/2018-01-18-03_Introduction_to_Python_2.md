@@ -159,6 +159,15 @@ while b < Fmax:
 print()
 {% endhighlight %}
 
+*Before running* `fibonacci.py`, let's try to **anticipate what the code
+will do**. We will then run the code. If we get the expected results
+then, great!, otherwise: try to figure out why.
+
+<p class="note">
+<em>Anticipating results and comparing to the run afterwards is the
+scientific method applied to programming. It is essential if you
+want to become a good programmer.</em>
+</p>
 
 ### Conditionals
 
