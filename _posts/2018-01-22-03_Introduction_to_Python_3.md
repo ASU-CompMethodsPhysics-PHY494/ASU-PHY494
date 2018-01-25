@@ -62,12 +62,37 @@ print("Theta(" + str(x) + ") = " + str(theta))
 and run it. Now the function is being called (`theta = heaviside(x)`)
 and its return value assigned to the variable `theta`.
 
-### Activity: create functions (optional)
+### Activity: create functions
 
 1. create a file `myfuncs.py`
 2. add `heaviside()` to the file
-3. add a function to convert from Fahrenheit to Kelvin
-4. add a function to convert from Kelvin to Celsius (subtract 273.15).
+3. add a function `fahrenheit2kelvin()` to convert from Fahrenheit to
+   Kelvin [^0]
+4. add a function `kelvin2celsius()` to convert from Kelvin to Celsius
+   (subtract 273.15).
+   
+Try out your functions (in `ipython`):
+
+{% highlight python %}
+%run myfuncs.py
+
+heaviside(5)
+fahrenheit2kelvin(100)
+kelvin2celsius(300)
+
+kelvin2celsius(fahrenheit2kelvin(100))
+{% endhighlight %}
+
+should give [^4]
+
+~~~
+1.0
+310.92777777777775
+26.850000000000023
+37.77777777777777
+~~~
+
+
 
 ## Activity: Plotting the step function
 
@@ -462,6 +487,15 @@ and objects.
 
 #### Footnotes ####
 
+[^0]:
+
+     See the [conversion from Fahrenheit to Kelvin]({{site.baseurl}}{%post_url
+     2018-01-16-03_Introduction_to_Python_1%}#activity-operators)
+      
+     $$
+     T = \frac{5}{9} (\theta - 32) + 273.15
+     $$
+
 
 [^1]:
 
@@ -498,3 +532,7 @@ and objects.
    
     Do not type the standard Python prompt `>>>`, it is just shown to distinguish input
     from output.
+
+[^4]:
+
+    You can compare your solution to [myfuncs.py]({{site.baseurl}}/{{site.code}}/myfuncs.py).

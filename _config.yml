@@ -34,6 +34,7 @@ gems:
 
 # use as {{site.baseurl}}/{{site.data}}
 data:                "public/data"
+code:                "public/code"
 figs:                "public/figs"
 lectures:            "public/lectures"
 docs:                "public/docs"
