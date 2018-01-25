@@ -109,7 +109,15 @@ program `step_plot.py` that
    `[-4, -3.5, -3, ..., 0, 0.5, 1, 1.5, ... 4]`;
 3. evaluates $$\Theta(x)$$ for all $$x$$ values and stores the results
    in a list;
-4. prints the lists of $$x$$ and $$\Theta(x)$$ values;
+4. prints the lists of $$x$$ and $$\Theta(x)$$ values; it should look
+   like
+   ~~~
+	-4.0 0.0
+	-3.5 0.0
+    ...
+    3.5 1.0
+	4.0 1.0 
+   ~~~
 5. BONUS: plots $$\Theta(x)$$ against $$x$$; see the
    [Basic Plotting]({{site.baseurl}}{%post_url
    2018-01-16-02_HelloWorld%}#basic-plotting) example, namely you can
@@ -121,7 +129,10 @@ program `step_plot.py` that
    plt.show()
    {% endhighlight %}
    
-   Does your graph look the way that you expect it?
+   Does your graph look the way that you expect it? [^5]
+
+   ![Plot of the Heaviside step function]({{site.baseurl}}/{{site.figs}}/heaviside.png)
+
 
 
 ## Modules
@@ -536,3 +547,7 @@ and objects.
 [^4]:
 
     You can compare your solution to [myfuncs.py]({{site.baseurl}}/{{site.code}}/myfuncs.py).
+
+[^5]:
+
+    You can compare your solution to [step_plot.py]({{site.baseurl}}/{{site.code}}/step_plot.py).

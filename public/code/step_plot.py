@@ -41,3 +41,5 @@ for x, y in zip(xvalues, thetas):
 plt.plot(xvalues, thetas, '-o', color="red", linewidth=2)
 plt.show()
 
+# write to a file
+plt.savefig("heaviside.png")
