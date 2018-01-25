@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 03 Introduction to Python III
+title: 03 Introduction to Python III — Functions
 ---
 
 We are continuing from

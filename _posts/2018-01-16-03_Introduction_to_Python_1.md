@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 03 Introduction to Python I
+title: 03 Introduction to Python I — Variables and Python data types
 ---
 
 The [Python](http://www.python.org) programming language is used

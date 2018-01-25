@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 03 Introduction to Python IV
+title: 03 Introduction to Python IV — Modules and Objects
 ---
 
 We are continuing from

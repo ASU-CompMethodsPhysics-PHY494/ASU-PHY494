@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 03 Introduction to Python II
+title: 03 Introduction to Python II — Flow control
 ---
 
 We are continuing from
