@@ -39,7 +39,12 @@ is a cleaned-up and commented solution. The lesson showed how
 ## Resources ##
 
 * _Computational Modelling_: Chapter **3**
-
+* See Homework [Assignment 7
+  (pdf)]({{site.assignments.fileurl}}/assignment_07/assignment_07.pdf)
+  for a summary of *Baseball Physics*, extensions to the physical
+  model (including the velocity-dependence of the quadratic drag
+  coefficient and the "drag crisis" around typical baseball
+  velocities), and links to the literature.
 
 ------------------------------------------------------------
 
