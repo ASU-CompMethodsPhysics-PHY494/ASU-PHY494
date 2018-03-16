@@ -49,6 +49,12 @@ resources:
  url:                https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources
  fileurl:            https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
 
+assignments:
+ name:               ASU-CompMethodsPhysics-PHY494/PHY494-assignments-skeleton
+ shortname:          PHY494-assignments
+ url:                https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-assignments-skeleton
+ fileurl:            https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-assignments-skeleton/blob/master
+ 
 
 org:
  name:               ASU-CompMethodsPhysics-PHY494
