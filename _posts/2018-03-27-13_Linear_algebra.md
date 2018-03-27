@@ -137,11 +137,11 @@ $$
 
 The Jupyter notebook [13_Linear_Algebra.ipynb]({{site.nbviewer.resources}}/13_linear_algebra/13_Linear_Algebra.ipynb) contains the
 (life-coded) lecture notes on **basic linear algebra**. Skeleton code for in-class exercises can
-be found in [13_linear_algebra-students-1.ipynb]({{site.nbviewer.resources}}/13_linear_algebra/13_linear_algebra-students-1.ipynb).[^4]
+be found in [13_Linear_Algebra-students-1.ipynb]({{site.nbviewer.resources}}/13_linear_algebra/13_Linear_Algebra-students-1.ipynb).[^4]
 
 To get started on the **1 rod/2 masses/3 strings problem** work with the
 notebook
-[13_String_Problem-Students.ipynb]({{site.nbviewer.resources}}/13_linear_algebra/13_String_Problem-Students.ipynb). The
+[13_String_Problem-Students.ipynb]({{site.nbviewer.resources}}/13_linear_algebra/13_String_Problem-Students-1.ipynb). The
 full solution can be found in [13_String_Problem.ipynb]({{site.nbviewer.resources}}/13_linear_algebra/13_String_Problem.ipynb).
 
 The notebook
