@@ -36,6 +36,7 @@ gems:
 data:                "public/data"
 code:                "public/code"
 figs:                "public/figs"
+movies:              "public/movies"
 lectures:            "public/lectures"
 docs:                "public/docs"
 siteresources:       "public/resources"
