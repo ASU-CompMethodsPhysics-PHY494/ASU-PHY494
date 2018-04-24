@@ -33,7 +33,9 @@ Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. 
   * discussion on the stability of the simple leapfrog algorithm and
     how the *relaxation* Jacobi algorithm for [solving Poisson's
     equation]({{site.baseurl}}{% post_url 2018-04-05-14_PDEs %}#solving-pdes-numerically) numerically
-    implements solving a diffusion equation: [notes on stability and
+    implements solving a diffusion equation:
+    [15_PDEs_comments.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs_comments.ipynb) ([PDF]({{site.resources.fileurl}}/15_PDEs/15_PDEs_comments.pdf))
+    and [notes on stability and
     relaxation
     (PDF)]({{site.resources.fileurl}}/15_PDEs/15_LectureNotes_Stability_and_Relaxation.pdf)
   * [15_CrankNicholson.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_CrankNicholson.ipynb)
