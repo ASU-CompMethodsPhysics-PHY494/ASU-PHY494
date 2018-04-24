@@ -23,10 +23,19 @@ Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. 
 
 * Student notebooks [^1]
   * Leap-frog method for the heat equation and von Neumann stability
-    analysis: [15_PDEs-Students.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs-Students.ipynb)
+    analysis:
+    [15_PDEs-Students.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs-Students.ipynb)
   * Crank-Nicholson method applied to the heat equation: [15_CrankNicholson-Students.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_CrankNicholson-Students.ipynb)
 * Lecture notebooks [^2] (correspond to the student notebooks):
-  * [15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb) and [derivation of of the heat equation (PDF)]({{site.resources.fileurl}}/15_PDEs/15_PDEs_LectureNotes_HeatEquation.pdf)
+  * [15_PDEs.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_PDEs.ipynb)
+    and [derivation of of the heat equation
+    (PDF)]({{site.resources.fileurl}}/15_PDEs/15_PDEs_LectureNotes_HeatEquation.pdf)
+  * discussion on the stability of the simple leapfrog algorithm and
+    how the *relaxation* Jacobi algorithm for [solving Poisson's
+    equation]({{site.baseurl}}{% post_url 2018-04-05-14_PDEs %}#solving-pdes-numerically) numerically
+    implements solving a diffusion equation: [notes on stability and
+    relaxation
+    (PDF)]({{site.resources.fileurl}}/15_PDEs/15_LectureNotes_Stability_and_Relaxation.pdf)
   * [15_CrankNicholson.ipynb]({{site.nbviewer.resources}}/15_PDEs/15_CrankNicholson.ipynb)
     and [derivation of the Crank-Nicholson algorithm (PDF)]({{site.resources.fileurl}}/15_PDEs/15_LectureNotes_CrankNicholson.pdf)
 
