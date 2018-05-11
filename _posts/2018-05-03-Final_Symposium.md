@@ -20,11 +20,11 @@ Six teams looked at problems ranging from quantum mechanics to black holes. Each
 
 The proposals, code, and the posters are available in the public GitHub repositories. Further details, including abstracts and licensing information, is available in the [Symposium Program (PDF)]({{site.baseurl}}/{{site.docs}}/program_symposium_2018.pdf).
 
-<!-- 
-The winner of the **Poster Prize** [^2]  was team #x with the project []().
+The winner of the **Poster Prize** [^2] was team #3 with the project
+[final-2018-fourier-transforms](https://github.com/ASU-CompMethodsPhysics-PHY494/final-2018-fourier-transforms)
+(see their [poster
+(PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/final-2018-fourier-transforms/blob/master/poster/poster.pdf)).
 
-![Winner of the Poster Prize: xxx](https://github.com/ASU-CompMethodsPhysics-PHY494/final-2017-bogus_project/raw/master/poster/2_visualizing_wave_packets.JPG)
--->
 
 --------
 
@@ -38,4 +38,4 @@ The winner of the **Poster Prize** [^2]  was team #x with the project []().
 [^2]: The Poster Prize was awarded based on a vote by all
       participants. Winners received the recognition by their peers,
       and they also got fancy USB sticks to store a bootable Linux
-      system on but winning the prize had no influence on the grade.
+      system on (but winning the prize had no influence on the grade).
