@@ -12,14 +12,14 @@ description:         >
                      at Arizona State University</a> that teaches
                      students how to use the computer as a tool to
                      solve problems in physics
-url:                 http://asu-compmethodsphysics-phy494.github.io
+url:                 https://asu-compmethodsphysics-phy494.github.io
 baseurl:             /ASU-PHY494
 paginate:            1
 
 # About/contact
 author:
   name:              'Oliver Beckstein'
-  url:               http://becksteinlab.physics.asu.edu/people/11/oliver-beckstein
+  url:               https://becksteinlab.physics.asu.edu/people/11/oliver-beckstein
   email:             oliver.beckstein@asu.edu
 
 # Custom vars
@@ -42,7 +42,7 @@ docs:                "public/docs"
 siteresources:       "public/resources"
 
 course:
- url:                http://becksteinlab.physics.asu.edu/learning/76/phy494-computational-physics
+ url:                https://becksteinlab.physics.asu.edu/learning/76/phy494-computational-physics
 
 resources:
  name:               ASU-CompMethodsPhysics-PHY494/PHY494-resources
@@ -72,11 +72,6 @@ nbviewer:
    resources:        http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
    slides:           http://nbviewer.jupyter.org/format/slides/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
 
-#--------------------------------------------------------------------------------
-# Standard Software Carpentry settings - only included what is be needed
-#--------------------------------------------------------------------------------
-swc_installer   : "http://files.software-carpentry.org/SWCarpentryInstaller.exe"
-swc_site        : "http://software-carpentry.org"
 
 #--------------------------------------------------------------------------------
 # Settings for Jekyll - should not need to be modified.

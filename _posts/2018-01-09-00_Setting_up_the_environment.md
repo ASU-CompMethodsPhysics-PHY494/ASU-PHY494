@@ -10,7 +10,7 @@ Note: the course website is accessible at **https://goo.gl/bXs7NE**
 ----
 
 The instructions were taken from [Software
-Carpentry]({[site.swc_site}}) (in particular [David
+Carpentry](https://software-carpentry.org/) (in particular [David
 Dotson's 2016 workshop at
 ASU](http://smallerthings.org/2016-01-07_asu_physics/)) and adapted
 for the PHY 494 class.
