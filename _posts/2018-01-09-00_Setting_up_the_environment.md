@@ -321,7 +321,7 @@ editor.</li>
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
       <ol>
-        <li>Open <a href="http://anaconda.com/download/#windows">http://anaconda.com/download/#windows</a> with your web browser.</li>
+        <li>Open <a href="https://anaconda.com/download/#windows">https://anaconda.com/download/#windows</a> with your web browser.</li>
         <li>Download the Python 3 installer for Windows.</li>
         <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
       </ol>
@@ -335,7 +335,7 @@ editor.</li>
     present then you will need to install your own anaconda <em>and</em> make
     sure that it is being used.</p>
       <ol>
-        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
+        <li>Open <a href="https://anaconda.com/download/#windows">https://anaconda.com/download/#windows</a> with your web browser.</li>
         <li>Download the Python 3 installer for Windows.</li>
         <li>Install Python 3 using all of the defaults for
     installation <em>except</em> make sure to check <strong>Make
@@ -359,7 +359,7 @@ before anything else.</li>
     <div class="col-md-4">
       <h4 id="python-macosx">macOS / Mac OS X</h4>
       <ol>
-        <li>Open <a href="http://anaconda.com/download/#macos">http://anaconda.com/download/#macos</a> with your web browser.</li>
+        <li>Open <a href="https://anaconda.com/download/#macos">https://anaconda.com/download/#macos</a> with your web browser.</li>
         <li>Download the Python 3 installer for OS X.</li>
         <li>Install Python 3 using all of the defaults for
 		installation.</li>
@@ -369,7 +369,7 @@ before anything else.</li>
     <div class="col-md-4">
       <h4 id="python-linux">Linux</h4>
       <ol>
-        <li>Open <a href="http://anaconda.com/download/#linux">http://anaconda.com/download/#linux</a> with your web browser.</li>
+        <li>Open <a href="https://anaconda.com/download/#linux">https://anaconda.com/download/#linux</a> with your web browser.</li>
         <li>Download the Python 3 installer for Linux.</li>
         <li>Install Python 3 using all of the defaults for installation.
         (Installation requires using the shell. If you aren't
