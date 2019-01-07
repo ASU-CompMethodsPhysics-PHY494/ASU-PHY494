@@ -61,42 +61,28 @@ installation](#testing).
         <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
         <li>Run the installer and follow the steps bellow:
           <ol>
-            <!-- Git 2.6.1 Setup -->
-            <!-- Welcome to the Git Setup Wizard -->
             <li>Click on "Next".</li>
-            <!-- Information -->
             <li>Click on "Next".</li>
-            <!-- Select Destination Location -->
             <li>Click on "Next".</li>
-            <!-- Select Components -->
-            <li>Click on "Next".</li>
-            <!-- Select Start Menu Folder -->
-            <li>Click on "Next".</li>
-            <!-- Adjusting your PATH environment -->
             <li>
-              <strong>
-                Select "Use Git from the Windows Command Prompt" and click on "Next".
-              </strong>
-                If you forgot to do this programs that you need for the class will not work properly.
-                If this happens rerun the installer and select the appropriate option.
-            </li>
-            <!-- Configuring the line ending conversions -->
+		<strong> 
+			Select "Use Git and optional Unix tools from the Command Prompt" and click
+			on "Next".
+		</strong>
+	    </li>
+            <li>Click on "Next".</li>
             <li>
               Click on "Next".
               <strong>
                 Keep "Checkout Windows-style, commit Unix-style line endings" selected.
               </strong>
             </li>
-            <!-- Configuring the terminal emulator to use with Git Bash -->
             <li>
               <strong>
                 Select "Use Windows' default console window" and click on "Next".
               </strong>
             </li>
-            <!-- Configuring experimental performance tweaks -->
             <li>Click on "Next".</li>
-            <!-- Installing -->
-            <!-- Completing the Git Setup Wizard -->
             <li>Click on "Finish".</li>
           </ol>
         </li>
@@ -310,7 +296,7 @@ editor.</li>
     scientific computing, and great for general-purpose programming as
     well.  Installing all of its scientific packages individually can be
     a bit difficult, so we recommend
-    <a href="https://www.continuum.io/anaconda">Anaconda</a>,
+    <a href="https://anaconda.com/download">Anaconda</a>,
     an all-in-one installer.
   </p>
 
@@ -335,7 +321,7 @@ editor.</li>
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
       <ol>
-        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
+        <li>Open <a href="http://anaconda.com/download/#windows">http://anaconda.com/download/#windows</a> with your web browser.</li>
         <li>Download the Python 3 installer for Windows.</li>
         <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
       </ol>
@@ -373,7 +359,7 @@ before anything else.</li>
     <div class="col-md-4">
       <h4 id="python-macosx">macOS / Mac OS X</h4>
       <ol>
-        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
+        <li>Open <a href="http://anaconda.com/download/#macos">http://anaconda.com/download/#macos</a> with your web browser.</li>
         <li>Download the Python 3 installer for OS X.</li>
         <li>Install Python 3 using all of the defaults for
 		installation.</li>
@@ -383,7 +369,7 @@ before anything else.</li>
     <div class="col-md-4">
       <h4 id="python-linux">Linux</h4>
       <ol>
-        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
+        <li>Open <a href="http://anaconda.com/download/#linux">http://anaconda.com/download/#linux</a> with your web browser.</li>
         <li>Download the Python 3 installer for Linux.</li>
         <li>Install Python 3 using all of the defaults for installation.
         (Installation requires using the shell. If you aren't
