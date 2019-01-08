@@ -23,7 +23,7 @@ author:
   email:             oliver.beckstein@asu.edu
 
 # Custom vars
-version:             'Spring 2018'
+version:             'Spring 2019'
 
 # see https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
 gems:

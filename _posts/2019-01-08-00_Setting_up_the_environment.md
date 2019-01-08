@@ -9,11 +9,6 @@ Note: the course website is accessible at **https://goo.gl/bXs7NE**
 
 ----
 
-The instructions were taken from [Software
-Carpentry](https://software-carpentry.org/) (in particular [David
-Dotson's 2016 workshop at
-ASU](http://smallerthings.org/2016-01-07_asu_physics/)) and adapted
-for the PHY 494 class.
 
 ## Overview
 
@@ -586,3 +581,10 @@ If you have problems, ask an instructor.
 See also [trouble shooting problems during the installation](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting)
 
 
+## Credit
+
+The instructions were taken from [Software
+Carpentry](https://software-carpentry.org/) (in particular [David
+Dotson's 2016 workshop at
+ASU](http://smallerthings.org/2016-01-07_asu_physics/)) and adapted
+for the PHY 494 class.
