@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 03 Introduction to Python I — Variables and Python data types
+title: 04 Introduction to Python I — Variables and Python data types
 ---
 
 The [Python](http://www.python.org) programming language is used
@@ -8,8 +8,8 @@ widely in the sciences, the computational physics, biology, and
 economics/quantitative finance
 communities, and in big companies such as Google and Facebook.
 
-For this class we are using **Python 3** (e.g. Python 3.4 or Python
-3.5), which is the current standard. A lot of older code is still only
+For this class we are using **Python 3** (e.g. Python 3.5/3.6/3.7),
+which is the current standard. A lot of older code is still only
 available for Python 2.7 (and there are a number of sometimes subtle
 incompatibilities between 2 and 3) but once you know Python 3 you will
 have no problems dealing with Python 2 code.
@@ -32,8 +32,8 @@ and have a look at [Python questions on StackOverflow](http://stackoverflow.com/
 ### work directory
 
 1. Open a terminal.
-2. Create our "work directory" `~/PHY494/03_python`
-3. `cd` into `~/PHY494/03_python`
+2. Create our "work directory" `~/PHY494/04_python`
+3. `cd` into `~/PHY494/04_python`
 
 
 ### ipython
@@ -45,7 +45,7 @@ in a terminal window with
 ipython
 {% endhighlight %}
 
-Check that you are in the `~/PHY494/03_python` directory by typing in
+Check that you are in the `~/PHY494/04_python` directory by typing in
 ipython (note the percentage sign in `%pwd`):
 {% highlight python %}
 %pwd
@@ -53,7 +53,7 @@ ipython (note the percentage sign in `%pwd`):
 You should see
 
 ~~~~~
-Out[1]: '/Users/YOUR_USERNAME/PHY494/03_python'
+Out[1]: '/Users/YOUR_USERNAME/PHY494/04_python'
 ~~~~~
 
 or similar. 
@@ -62,8 +62,8 @@ or similar.
 ### editor
 
 You will also edit files with *your editor* (see the lesson on
-[creating text files with a text editor]({{site.baseurl}}{%post_url 2018-01-11-01_Unix_Shell%}#creating-text-files-with-a-text-editor)). If you use a
-point-and-click editor, make sure that you can [find the work directory]({{site.baseurl}}{%post_url 2018-01-16-02_HelloWorld%}#fn:1).
+[creating text files with a text editor]({{site.baseurl}}{%post_url 2019-01-10-01_Unix_Shell%}#creating-text-files-with-a-text-editor)). If you use a
+point-and-click editor, make sure that you can [find the work directory]({{site.baseurl}}{%post_url 2019-01-15-02_HelloWorld%}#fn:1).
 
 ### python
 
@@ -127,7 +127,8 @@ h = 2 * pi * h_bar
 label = "energy (MeV)"
 2thirds = 2/3
 one = 1.
-threehalfpi = 0.5 - 0.5j 
+symmetrical = True
+threehalfpi = 0.5 - 0.5j
 {% endhighlight %}
 
 Make sure that each variable contains what you expect.
@@ -170,7 +171,7 @@ returns `int`.
 
 #### Activity: types
 Determine the type of the variables from the previous activity:
-`half`, `h_bar`, `h`, `label`, `one`, `threehalfpi`.
+`half`, `h_bar`, `h`, `label`, `one`, `symmetrical`, `threehalfpi`.
 
 #### Type conversion
 {% highlight python %}
@@ -184,6 +185,24 @@ float("pi")
 {% endhighlight %}
 raises a `ValueError`.
 
+#### Activity: True or False
+Work with your neighbor. Try the following code and figure out why the
+following expressions return `True` or `False`:
+{% highlight python %}
+True
+False
+bool(True)
+bool(False)
+bool(0)
+bool(1)
+bool(2)
+bool("True")
+bool("true")
+bool("False")
+bool("")
+bool(" ")
+bool(None)
+{% endhighlight %}
 
 
 ### Operators
@@ -192,11 +211,15 @@ raises a `ValueError`.
 
   * [comparison operators](https://docs.python.org/3.5/library/stdtypes.html#comparisons),
 	e.g., `x == y`, `x != y`, `x > y`, `x <= y`, ...
+	
+	A comparison has a boolean value.
 
   * [numerical operators](https://docs.python.org/3.5/library/stdtypes.html#numeric-types-int-float-complex),
-    e.g., `x + y`, `x - y`, `x * y`, `x / y`, `x ** y` (power). Also
-    *in-place* operations, which combine numerical operation with
-    assignment (`x += y` is the same as `x = x + y`)	
+    e.g., `x + y`, `x - y`, `x * y`, `x / y`, `x ** y` (power), `x //
+    y` (floor division), `x % y` (remainder). 
+	
+	Also *in-place* operations, which combine numerical operation with
+    assignment (`x += y` is the same as `x = x + y`)
 
 * ternary (`x < y < z`, `x if y else z`)
 
@@ -226,11 +249,21 @@ square brackets `[]` or `list()`):
 {% highlight python %}
 temperatures = [60.1, 78.3, 98.8, 97.1, 101.3, 110.0]
 stuff = ["dog", 42, -1.234, "cat", [3, 2, 1]]
+empty = []
+two = [[], []]
 {% endhighlight %}
 
 Important list operations:
 
 #### Indexing ####
+
+Each element has an **index**:
+```
+temperatures = [60.1, 78.3, 98.8, 97.1, 101.3, 110.0]   elements
+               |    |     |     |     |      |      |
+               |  0 |   1 |   2 |   3 |    4 |    5 |   index
+```
+
 First element
 {% highlight python %}
 temperatures[0]
@@ -241,12 +274,33 @@ Arbitrary elements
 temperatures[3]
 {% endhighlight %}
 
-**Note**: Python indices are **0-based**.
+**Note**: Python indices are **0-based**. 
+
+For example, the *third* element is at index *2*:
+{% highlight python %}
+temperatures[2]
+{% endhighlight %}
+
+**Negative indices** count from the last element to the first:
+
+```
+temperatures = [60.1, 78.3, 98.8, 97.1, 101.3, 110.0]   elements
+               |    |     |     |     |      |      |
+               |  0 |   1 |   2 |   3 |    4 |    5 |   index
+               | -6 |  -5 |  -4 |  -3 |   -2 |   -1 |   negative index
+```
+
 
 Last element
 {% highlight python %}
 temperatures[-1]
 {% endhighlight %}
+
+Third element from the end
+{% highlight python %}
+temperatures[-3]
+{% endhighlight %}
+
 
 Python
 [built-in function](https://docs.python.org/3.5/library/functions.html#built-in-functions)
@@ -259,9 +313,20 @@ gives 6.
 
 
 #### Slicing ####
-General slicing syntac: `list_var[start:stop:step]` where index
-`start` is *included* and `stop` is *excluded*; the default for `step`
-is 1, i.e., include every element.
+Slicing produces a new list by extracting a subset of elements as
+determined by the "slice" _start:stop:step_. The general slicing syntax for a list `a`: 
+{% highlight python %}
+a[start:stop:step]
+{% endhighlight %}
+where 
+- index `start` is *included* and 
+- `stop` is *excluded*; 
+- `start`, `stop`, `step` are each optional:
+   - default for `start`: first element (index 0)
+   - default for `stop`: after last element
+   - default for `step` is 1, i.e., include every element. 
+
+Negative values are also allowed for indices and negative step counts backwards.
 
 First 3 elements
 {% highlight python %}
@@ -270,8 +335,52 @@ temperatures[:3]
 {% endhighlight %}
 (`start` defaults to 0 and can be omitted).
 
+Omitting parameters:
+{% highlight python %}
+temperatures[::2] == [60.1, 98.8, 101.3]
+temperatures[2::2] == [98.8, 101.3]
+temperatures[:2:2] == [60.1]
+{% endhighlight %}
+
+##### Example: slicing #####
+
+A list with the first 6 letters of the English alphabet:
+{% highlight python %}
+letters = ['A', 'B', 'C', 'D', 'E', 'F']
+{% endhighlight %}
+```
++---+---+---+---+---+---+
+|'A'|'B'|'C'|'D'|'E'|'F'|  elements 
++---+---+---+---+---+---+
+| 0 | 1 | 2 | 3 | 4 | 5 |  index
++---+---+---+---+---+---+
+|-6 |-5 |-4 |-3 |-2 |-1 |  index
++---+---+---+---+---+---+
+```
+
+Refer to the schema above to understand which part of the list the
+following slices extract:
+{% highlight python %}
+letters[:3] == ['A', 'B', 'C']
+letters[0:3] == ['A', 'B', 'C']
+letters[1:3] == ['B', 'C']
+letters[-3] == 'D'
+letters[-3:-1] == ['D', 'E']
+letters[-3:] == ['D', 'E', 'F']
+letters[1::2] == ['B', 'D', 'F']
+{% endhighlight %}
+
+
+
+
 ##### Activity: extracting from lists
 
+1. extract the letter 'E' from `letters` 
+1. extract the letter 'E' from `letters` (in a different way)
+1. extract the letters 'C', 'D' from letters
+1. extract the letters 'A', 'D' from `letters`
+1. extract the letters 'E', 'F' from `letters` (use negative indices)
+1. extract the letters 'D', 'E' from `letters` (use negative indices)
 1. extract the second element from `stuff`
 1. extract the first two values from `temperatures`
 1. extract the second-but last  value from `temperatures`
@@ -285,6 +394,9 @@ temperatures[:3]
 
 
 #### List construction
+Lists are
+[mutable](https://docs.python.org/3/library/stdtypes.html#mutable-sequence-types),
+which means that they can be *changed*:
 {% highlight python %}
 stuff = []              # empty list
 stuff.append("dog")     # append
@@ -295,6 +407,31 @@ print(stuff)
 {% endhighlight %}
 
 gives `['dog', 42, -1.234, 'cat', [3, 2, 1]]` as above.
+
+You can also *replace parts of a list* (continuing):
+{% highlight python %}
+stuff[1:3] = ['python', 'swallow']
+stuff[-1:] = ['Hund', 'Python', 'Schwalbe', 'Katze']
+print(stuff)
+{% endhighlight %}
+
+gives `['dog', 'python', 'swallow', 'cat', 'Hund', 'Python',
+'Schwalbe', 'Katze']` (note that the last list was inserted).
+
+One can also *insert into a list* without deleting an element by
+assigning to an empty slice:
+{% highlight python %}
+stuff[2:2] = ['parrot', 'llama']
+print(stuff)
+{% endhighlight %}
+
+gives `['dog', 'python', 'parrot', 'llama', 'swallow', 'cat', 'Hund', 'Python', 'Schwalbe', 'Katze']`.
+
+Alternatively (and more clearly), use
+{% highlight python %}
+stuff.insert(2, ['parrot', 'llama'])
+{% endhighlight %}
+
 
 
 ### Tuples
