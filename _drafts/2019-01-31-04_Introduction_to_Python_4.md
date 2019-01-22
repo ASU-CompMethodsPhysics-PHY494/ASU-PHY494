@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 03 Introduction to Python IV — Modules and Objects
+title: 04 Introduction to Python IV — Modules and Objects
 ---
 
 We are continuing from
 [the previous lesson]({{site.baseurl}}/{%post_url
-2018-01-25-03_Introduction_to_Python_3%}) in the "work directory"
-`~/PHY494/03_python`. We will use `ipython` and your text editor.
+2019-01-24-04_Introduction_to_Python_3%}) in the "work directory"
+`~/PHY494/04_python`. We will use `ipython` and your text editor.
 
 Re-using code is key to writing maintainable and correct code. We
 already learnt how to package code into [functions]({{site.baseurl}}/{%post_url
-2018-01-25-03_Introduction_to_Python_3%}#functions). Now we learn how
+2019-01-24-04_Introduction_to_Python_3%}#functions). Now we learn how
 to package functions into [modules](#modules). 
 
 We will also briefly talk about [objects](#objects) because everything
