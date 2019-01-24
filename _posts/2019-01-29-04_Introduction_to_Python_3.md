@@ -4,8 +4,7 @@ title: 04 Introduction to Python III — Functions
 ---
 
 We are continuing from
-[the previous lesson]({{site.baseurl}}/{%post_url
-2019-01-24-04_Introduction_to_Python_2%}) in the "work directory"
+[the previous lesson]({{site.baseurl}}/{%post_url 2019-01-24-04_Introduction_to_Python_2%}) in the "work directory"
 `~/PHY494/04_python`. We will use `ipython` and your text editor.
 
 
@@ -98,8 +97,7 @@ should give [^4]
 
 Perform this activity using *pair programming*[^1].
 
-Use what you learnt about [loops]({{site.baseurl}}/{%post_url
-2018-01-18-03_Introduction_to_Python_2%}#loops) and
+Use what you learnt about [loops]({{site.baseurl}}/{%post_url 2019-01-24-04_Introduction_to_Python_2%}#loops) and
 [functions](#functions) to plot the Heaviside step function. Create a
 program `step_plot.py` that
 
@@ -120,7 +118,7 @@ program `step_plot.py` that
    ~~~
 5. BONUS: plots $$\Theta(x)$$ against $$x$$; see the
    [Basic Plotting]({{site.baseurl}}{%post_url
-   2018-01-16-02_HelloWorld%}#basic-plotting) example, namely you can
+   2019-01-15-02_HelloWorld %}#basic-plotting) example, namely you can
    use code like
    
    {% highlight python %}
@@ -143,7 +141,7 @@ program `step_plot.py` that
 [^0]:
 
      See the [conversion from Fahrenheit to Kelvin]({{site.baseurl}}{%post_url
-     2018-01-16-03_Introduction_to_Python_1%}#activity-operators)
+     2019-01-22-04_Introduction_to_Python_1%}#activity-operators)
       
      $$
      T = \frac{5}{9} (\theta - 32) + 273.15
