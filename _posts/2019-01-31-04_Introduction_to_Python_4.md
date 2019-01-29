@@ -4,13 +4,12 @@ title: 04 Introduction to Python IV — Modules and Objects
 ---
 
 We are continuing from
-[the previous lesson]({{site.baseurl}}/{%post_url
-2019-01-24-04_Introduction_to_Python_3%}) in the "work directory"
+[the previous lesson]({{site.baseurl}}/{%post_url 2019-01-29-04_Introduction_to_Python_3%}) in the "work directory"
 `~/PHY494/04_python`. We will use `ipython` and your text editor.
 
 Re-using code is key to writing maintainable and correct code. We
 already learnt how to package code into [functions]({{site.baseurl}}/{%post_url
-2019-01-24-04_Introduction_to_Python_3%}#functions). Now we learn how
+2019-01-29-04_Introduction_to_Python_3%}#functions). Now we learn how
 to package functions into [modules](#modules). 
 
 We will also briefly talk about [objects](#objects) because everything
@@ -64,7 +63,7 @@ h_bar = c.h / (2*c.pi)
 ### Activity: Import and use your `myfuncs` module
 
 In the previous lesson you created [myfuncs.py]({{site.baseurl}}/{%post_url
-2018-01-25-03_Introduction_to_Python_3%}#activity-create-functions),
+2019-01-29-04_Introduction_to_Python_3%}#activity-create-functions),
 which contains three different functions. Now treat it as a *module*
 and import it and use the functions in the module.
 
