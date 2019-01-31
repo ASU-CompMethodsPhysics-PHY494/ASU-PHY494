@@ -132,6 +132,55 @@ program `step_plot.py` that
    ![Plot of the Heaviside step function]({{site.baseurl}}/{{site.figs}}/heaviside.png)
 
 
+## Advanced: Optional keyword arguments
+
+Functions have arguments in their "call signature", e.g., the `x` in
+`def heaviside(x)` or `x` and `y` in a function `area()`
+
+
+{% highlight python %}
+def area(x, y):
+   """Calculate area of rectangle with lengths x and y"""
+   return x*y
+{% endhighlight %}
+
+Let's assume that you might also want to be able to calculate the area
+when you scale the rectangle with a factor `scale`. Obviously you can
+do `scale * area(x, y)`. You could also add a third argument
+
+{% highlight python %}
+def area(x, y, scale):
+   """Calculate scaled area of rectangle with lengths x and y and scale factor scale"""
+   return scale*x*y
+{% endhighlight %}
+
+But this means that even for unscaled rectangles you will have to
+provide `scale=1`, i.e., `area(x, y, 1)`. 
+
+With an **optional argument** you can set a **default value** that is
+used if the argument is not provided:
+
+{% highlight python %}
+def area(x, y, scale=1):
+   """Calculate scaled area of rectangle with lengths `x` and `y`.
+   
+   scale factor `scale` defaults to 1
+   """
+   return scale*x*y
+{% endhighlight %}
+
+which can be used as
+{% highlight python %}
+x, y = 2, 10.5
+area(x, y)             # uses scale=1
+area(x, y, scale=0.5)
+area(x, y, scale=2)
+area(x, y, 2)          # DISCOURAGED, use scale=2
+{% endhighlight %}
+
+For further details see [More on Defining
+Functions](https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions).
+
 
 
 ------------------------------------------------------------

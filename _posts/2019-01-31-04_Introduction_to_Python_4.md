@@ -185,6 +185,13 @@ sentence.<TAB>
 
 This will show you all methods and attributes.
 
+##### Activity: string methods
+
+Given the sentence `"MAY THE FORCE BE WITH YOU!"`
+1. test if it is lower case
+2. make it lower case
+
+
 #### Lists
 The [`list`](https://docs.python.org/3/library/stdtypes.html#lists)
 type contains a [large number of useful
