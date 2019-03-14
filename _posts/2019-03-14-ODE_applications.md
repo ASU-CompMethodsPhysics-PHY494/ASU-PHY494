@@ -1,26 +1,25 @@
 ---
 layout: post
-title: "11 ODEs: Applications"
+title: "12 ODEs: Applications"
 ---
 
 After implementing a number of
-[integrators for ODEs]({{site.baseurl}}{% post_url 2018-02-20-10_ODEs
+[integrators for ODEs]({{site.baseurl}}{% post_url 2019-02-19-10_ODEs
 %}) we are now in the position to solve some practical problems:
 
 - projectile movement with air resistance
 - realistic movement of a spinning baseball
 
 For the problem that you should solve during the class, get the
-notebook[^1] 
-[11-ODE-applications-students.ipynb]({{site.nbviewer.resources}}/11_ODE_applications/11-ODE-applications-students.ipynb)
-and see 
-notebook
-[11-ODE-applications.ipynb]({{site.nbviewer.resources}}/11_ODE_applications/11-ODE-applications.ipynb)
+notebook[^1]
+[12-ODE-applications-students.ipynb]({{site.nbviewer.resources}}/12_ODE_applications/12-ODE-applications-students.ipynb)
+and see notebook
+[12-ODE-applications.ipynb]({{site.nbviewer.resources}}/12_ODE_applications/12-ODE-applications.ipynb)
 for the full solution.[^2]
 
 The baseball problem was live-coded from scratch during class and the
 notebook
-[baseball_solution.ipynb]({{site.nbviewer.resources}}/11_ODE_applications/baseball_solution.ipynb)
+[baseball_solution.ipynb]({{site.nbviewer.resources}}/12_ODE_applications/baseball_solution.ipynb)[^2]
 is a cleaned-up and commented solution. The lesson showed how
 
 1. to define the physical problem (obtain trajectory of a baseball
@@ -39,12 +38,14 @@ is a cleaned-up and commented solution. The lesson showed how
 ## Resources ##
 
 * _Computational Modelling_: Chapter **3**
-* See Homework [Assignment 7
-  (pdf)]({{site.assignments.fileurl}}/assignment_07/assignment_07.pdf)
+
+{% comment %}
+* See Homework [Assignment 9 (pdf)]({{site.assignments.fileurl}}/assignment_09/assignment_09.pdf)
   for a summary of *Baseball Physics*, extensions to the physical
   model (including the velocity-dependence of the quadratic drag
   coefficient and the "drag crisis" around typical baseball
   velocities), and links to the literature.
+{% endcomment %}
 
 ------------------------------------------------------------
 
