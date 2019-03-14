@@ -66,7 +66,9 @@ particles (use numpy arrays!) and to obtain sufficient performance.
 
 #### Additional resources:
 
-* [Lecture Notes: 11 MD (pdf)]({{site.baseurl}}/{{site.lectures}}/11_MD.pdf)
+* [Lecture Notes: 11 MD
+  (pdf)]({{site.baseurl}}/{{site.lectures}}/11_MD.pdf)
+* _Computational Modelling_: Chapter **11.4** 
 * _Computational Physics_: Chapter **18**
 * Daan Frenkel and Berend Smit. Understanding molecular simulation:
   from algorithms to applications. 2002, 2nd ed., Computational
