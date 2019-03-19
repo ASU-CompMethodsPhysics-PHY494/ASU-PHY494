@@ -29,11 +29,11 @@ We will study two algorithms:
 *[Newton-Raphson searching](http://mathworld.wolfram.com/NewtonsMethod.html)*.
  
 The Jupyter notebook
-[13-Root-finding.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/13_root_finding/13-Root-finding.ipynb)
+[13-Root-finding.ipynb]({{site.nbviewer.resources}}/13_root_finding/13-Root-finding.ipynb)
 contains the lecture notes.[^1] The [derivations of
 the bisection and the Newton-Raphson algorithms (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/13_root_finding/13_Root-finding-algorithms.pdf) can be found in the board notes. Skeleton code for
 in-class problem exercises can be found in the notebook
-[13-Root-finding-students.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/13_root_finding/13-Root-finding-students.ipynb).[^2]
+[13-Root-finding-students.ipynb]({{site.nbviewer.resources}}/13_root_finding/13-Root-finding-students.ipynb).[^2]
 
 
 #### Additional resources:
