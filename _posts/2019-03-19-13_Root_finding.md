@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 12 Root finding by trial-and-error
+title: 13 Root finding by trial-and-error
 ---
 
 An elementary numerical problem is to find the root $$x_0$$ of an equation
@@ -14,7 +14,7 @@ derivative of another function  $$f(x) = \frac{dg}{dx}$$ then finding
 a root allows us to find extrema (maxima or mimima) or saddle points
 (depending on the values of the higher
 [derivatives]({{site.baseurl}}/{% post_url
-2018-02-15-09_Differentiation %})) 
+2019-02-14-09_Differentiation %})) 
 of the function $$g$$.
 
 **Trial-and-error root finding methods** move along the function graph
@@ -29,11 +29,11 @@ We will study two algorithms:
 *[Newton-Raphson searching](http://mathworld.wolfram.com/NewtonsMethod.html)*.
  
 The Jupyter notebook
-[12-Root-finding.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_root_finding/12-Root-finding.ipynb)
+[13-Root-finding.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/13_root_finding/13-Root-finding.ipynb)
 contains the lecture notes.[^1] The [derivations of
-the bisection and the Newton-Raphson algorithms (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_root_finding/12_Root-finding-algorithms.pdf) can be found in the board notes. Skeleton code for
+the bisection and the Newton-Raphson algorithms (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/13_root_finding/13_Root-finding-algorithms.pdf) can be found in the board notes. Skeleton code for
 in-class problem exercises can be found in the notebook
-[12-Root-finding-students.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/12_root_finding/12-Root-finding-students.ipynb).[^2]
+[13-Root-finding-students.ipynb](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/13_root_finding/13-Root-finding-students.ipynb).[^2]
 
 
 #### Additional resources:
