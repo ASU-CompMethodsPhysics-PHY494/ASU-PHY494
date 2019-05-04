@@ -23,7 +23,7 @@ The proposals, code, and the posters are available in the public GitHub reposito
 
 The winner of the **Poster Prize** [^2] was team #6 with the project *Jupiter's Trojan Asteroids*:
 
-![Winners of the poster prize: Team #6]({{ site.figs }}/winners_2019.jpg)
+![Winners of the poster prize: Team #6]({{ site.baseurl }}/{{ site.figs }}/winners_2019.jpg)
 
 --------
 
