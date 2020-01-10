@@ -211,10 +211,10 @@ installation](#testing).
 	<h4 id="editor-windows-asu">Windows (on ASU laptop without superuser
       privileges)</h4>
 	  
-      <p>On the ASU school laptops, <b>Sublime Text 3</b> is pre-installed
-    and you can use it instead of <tt>atom</tt>. Launch the editor from the Start Menu.
+      <p>On the ASU school laptops, <b>atom</b> should pre-installed
+    and you can use. Launch the editor from the Start Menu.
     </p>
-	
+	<!--
 	<p>Customize the PATH environment so that you can launch
     <tt>sublime_text.exe</tt> from the command line:</p>
 	<ol>
@@ -228,6 +228,7 @@ EOF
 </pre>This will instruct Bash to look for your sublime text
 editor.</li>
     </ol>
+	-->
     </div>
 
     <div class="col-md-4">
@@ -298,15 +299,14 @@ editor.</li>
     <p>
       Regardless of how you choose to install it,
       <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.4 or 3.5 is fine).
+      (e.g., 3.6 or 3.8 is fine).
     </p>
 
     <p>
       We will teach Python using the Jupyter notebook, a programming environment
       that runs in a web browser. For this to work you will need a reasonably
       up-to-date browser. The current versions of the Chrome, Safari and
-      Firefox browsers are all <a
-      href='http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility'>supported</a>
+      Firefox browsers should all be supported
       (some older browsers, including Internet Explorer version 9
       and below, are not).
       </p>
@@ -324,10 +324,10 @@ editor.</li>
 
     <div class="col-md-4">
       <h4 id="python-windows-asu">Windows (on ASU laptops without
-      sysadmin and existing system anaconda)</h4>
+      sysadmin and existing outdated system anaconda)</h4>
 	  <p>If you are stuck with a laptop where you can only install as
     a user <em>and</em> there is already a system-wide anaconda installation
-    present then you will need to install your own anaconda <em>and</em> make
+    present that you do not want to used then you will need to install your own anaconda <em>and</em> make
     sure that it is being used.</p>
       <ol>
         <li>Open <a href="https://anaconda.com/download/#windows">https://anaconda.com/download/#windows</a> with your web browser.</li>
@@ -393,40 +393,6 @@ before anything else.</li>
 </div> <!-- End of 'Python' section. -->
 
 
-  <h3>VPython</h3>
-
-<p>For 3D visualization, we will use Jupyter <a href="http://vpython.org/">vpython</a> within the Jupyter notebook
-interface. This is not part of anaconda and so we need to install it separately after the anaconda installation.
-</p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="vpython-windows">Windows</h4>
-      <ol>
-        <li>Open the git-bash shell commandline (Start Menu: All
-    Programs: Git: Git Bash)</li>
-    <li>Type in the command line
-	<pre>pip install vpython</pre>
-	</li>
-    </ol>
-    </div>
-    <div class="col-md-4">
-      <h4 id="vpython-macosx">macOS / Mac OS X</h4>
-      <ol>
-      <li>Open the Terminal (command line)</li>
-      <li>Type
-         <pre>pip install vpython</pre>
-	   </li>
-      </ol>
-    </div>
-    <div class="col-md-4">
-      <h4 id="vpython-linux">Linux</h4>
-      <ol>
-	   <li>Open the Terminal (command line)</li>
-            <li>Type <pre>pip install vpython</pre></li>
-      </ol>
-    </div>
-  </div> <!-- End of 'VPython' section. -->
 </div>
 
 
@@ -511,13 +477,13 @@ In the shell, type
 python -c 'import sys; print(sys.version)'
 {% endhighlight %}
 
-which should give something similar to `3.5.3 |Anaconda custom (x86_64)| (default, Mar  6 2017, 12:15:08)` (and more
+which should give something similar to `Python 3.6.8 |Anaconda, Inc.| (default, Dec 29 2018, 19:04:46)` (and more
 stuff). Important: you should have *Python 3*, i.e., a version like
-3.5.x or 3.6.x
+3.6.x or 3.8.x
 
 
 
-### Jupyter notebook and VPython
+### Jupyter notebook
 
 <ol>
 <li>
@@ -538,19 +504,6 @@ print("Hello World!")
 {% endhighlight %}
 and press <tt>shift</tt> and <tt>return</tt> keys simultaneously to evaluate the
 cell. It should print "Hello World!".</li>
-<li>Close the browser tab with menu <tt>File: Close and Halt</tt>.</li>
-<li>In the files listing, select from <tt>New</tt> under <tt>Notebooks</tt> select
-<tt>Python [conda root]</tt> or <tt>VPython</tt> (if available)</li>
-<li>In the new window ("Untitled2"), type
-{% highlight python %}
-import vpython as vp
-box = vp.box()
-{% endhighlight %}
-and press <tt>shift</tt> and <tt>return</tt> keys simultaneously to evaluate the
-cell. It should open a graphics window in the notebook showing a
-cube. Use the mouse with right mouse button presse to turn the cube
-(on macOS, press <tt>control</tt> while clicking/pressing the touch pad to
-get "right click").</li>
 <li>Close the browser tab with menu <tt>File: Close and Halt</tt>.</li>
 </ol>
 
