@@ -54,11 +54,13 @@ installation](#testing).
       <h4 id="shell-windows">Windows</h4>
       <ol>
         <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
-        <li>Run the installer and follow the steps bellow:
+        <li>Run the installer and follow the steps below:
           <ol>
             <li>Click on "Next".</li>
             <li>Click on "Next".</li>
             <li>Click on "Next".</li>
+            <li>Click on "Next".</li>
+            <li>Click on "Next".</li>			
             <li>
 		<strong> 
 			Select "Use Git and optional Unix tools from the Command Prompt" and click
@@ -78,7 +80,7 @@ installation](#testing).
               </strong>
             </li>
             <li>Click on "Next".</li>
-            <li>Click on "Finish".</li>
+            <li>Click on "Install".</li>
           </ol>
         </li>
       </ol>
