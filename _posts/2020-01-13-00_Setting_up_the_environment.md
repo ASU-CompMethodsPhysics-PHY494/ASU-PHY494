@@ -468,10 +468,10 @@ commands. The Atom menu bar has a command named *"Install Shell
 Commands"* which installs the atom and apm commands, as described
 under [Opening a
 File](https://flight-manual.atom.io/getting-started/sections/atom-basics/#opening-a-file)
-(and provide your system administrator password if requested).
-
-(If this does not work, add the atom directory to your bash start file
-manually as described under Wiki:[start atom from the git-bash commandline]({{site.wiki.url}}/installation-troubleshooting#solution-2).)
+(and provide your system administrator password if requested). Then
+add the atom directory to your bash start file manually as described
+under Wiki:[start atom from the git-bash
+commandline]({{site.wiki.url}}/installation-troubleshooting#start-atom-from-the-git-bash-commandline).)
 
 
 ### Python
