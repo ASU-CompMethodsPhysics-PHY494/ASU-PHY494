@@ -336,20 +336,22 @@ editor.</li>
         <li>Download the Python 3 installer for Windows.</li>
         <li>Install Python 3 using all of the defaults for
     installation <em>except</em> make sure to check <strong>Make
-    Anaconda the default Python</strong>.</li>
+    Anaconda the default Python</strong> and set the destination folder to <strong>C:\ProgramData\Anaconda3</strong>.</li>
 		<li>Open the Git-Bash command line</li>
 		<li>Append (<tt>>></tt>) to the file <tt>$HOME/.bash_profile</tt> the following content by typing
 		<pre>
 cat >> $HOME/.bash_profile << 'EOF'
 # PHY494 bash startup for local Anaconda
-MYCONDA="$HOME/Anaconda3"
+MYCONDA="/c/ProgramData/Anaconda3"
 export PATH="$MYCONDA:$MYCONDA/Scripts:$MYCONDA/libs/bin:$PATH"
 unset MYCONDA
 EOF
 </pre>This will instruct Bash to look for your conda installation
 before anything else.</li>
     <li>Close the Git-Bash window.</li>
-	<li>Open a new Git-Bash window (so that your changes take effect).</li>
+	<li>Open a new Git-Bash window and type <strong>conda init bash</strong> (so that your conda can work under bash).</li>
+	<li>Close current Git-Bash window and open a new one to let all settings take effect.</li>
+	<li>If you still have problems running conda/python on windows, please visit: <a href="https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting#pip-or-python-are-not-found-in-git-bash">trouble shooting</a>.</li>
     </ol>
     </div>
 
