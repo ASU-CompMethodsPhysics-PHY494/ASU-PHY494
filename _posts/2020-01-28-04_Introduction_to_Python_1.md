@@ -8,11 +8,12 @@ widely in the sciences, the computational physics, biology, and
 economics/quantitative finance
 communities, and in big companies such as Google and Facebook.
 
-For this class we are using **Python 3** (e.g. Python 3.5/3.6/3.7),
+For this class we are using **Python 3** (e.g. Python 3.6/3.7/3.8),
 which is the current standard. A lot of older code is still only
-available for Python 2.7 (and there are a number of sometimes subtle
-incompatibilities between 2 and 3) but once you know Python 3 you will
-have no problems dealing with Python 2 code.
+available for Python 2.7 even though Python 2 is no longer officially
+supported. (There are a number of sometimes subtle
+incompatibilities between 2 and 3 but once you know Python 3 you will
+have no problems dealing with Python 2 code if you really have to.)
 
 1. [Resources](#resources)
 2. [Starting Python](#getting-started-)
@@ -22,10 +23,10 @@ have no problems dealing with Python 2 code.
 
 * Official [Beginner's Guide to Python](https://www.python.org/about/gettingstarted/)
 * Official [Python 3 Tutorial](https://docs.python.org/3/tutorial/)
-* [Python Scripting for Computational Science](http://www.springerlink.com/content/978-3-540-73915-9/), Hans Petter Langtangen. Texts in Computational Science and Engineering, Volume 3, 2008. Springer. DOI: [10.1007/978-3-540-73916-6](http://dx.doi.org/10.1007/978-3-540-73916-6) (free access to the [PDF](http://link.springer.com.ezproxy1.lib.asu.edu/book/10.1007%252F978-3-540-73916-6) through the ASU Library — requires ASU login)
+* [Python Scripting for Computational Science](http://www.springerlink.com/content/978-3-540-73915-9/), Hans Petter Langtangen. Texts in Computational Science and Engineering, Volume 3, 2008. Springer. DOI: [10.1007/978-3-540-73916-6](https://doi.org/10.1007/978-3-540-73916-6) (free access to the [PDF](https://link-springer-com.ezproxy1.lib.asu.edu/book/10.1007%2F978-3-540-73916-6) through the ASU Library — requires ASU login)
 
-Keep the [Python documentation](http://www.python.org/doc/) close by
-and have a look at [Python questions on StackOverflow](http://stackoverflow.com/questions/tagged/python).
+Keep the [Python documentation](https://www.python.org/doc/) close by
+and have a look at [Python questions on StackOverflow](https://stackoverflow.com/questions/tagged/python).
 
 ## Getting started ...
 
@@ -62,8 +63,8 @@ or similar.
 ### editor
 
 You will also edit files with *your editor* (see the lesson on
-[creating text files with a text editor]({{site.baseurl}}{%post_url 2019-01-10-01_Unix_Shell%}#creating-text-files-with-a-text-editor)). If you use a
-point-and-click editor, make sure that you can [find the work directory]({{site.baseurl}}{%post_url 2019-01-15-02_HelloWorld%}#fn:1).
+[creating text files with a text editor]({{site.baseurl}}{%post_url 2020-01-16-01_Unix_Shell%}#creating-text-files-with-a-text-editor)). If you use a
+point-and-click editor, make sure that you can [find the work directory]({{site.baseurl}}{%post_url 2020-01-21-02_HelloWorld%}#fn:1).
 
 ### python
 
