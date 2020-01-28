@@ -5,7 +5,7 @@ title: 04 Introduction to Python II — Flow control
 
 We are continuing from
 [the previous lesson]({{site.baseurl}}/{%post_url
-2019-01-22-04_Introduction_to_Python_1%}) in the "work directory"
+2020-01-28-04_Introduction_to_Python_1%}) in the "work directory"
 `~/PHY494/04_python`. We will use `ipython` and your text editor.
 
 
@@ -75,7 +75,7 @@ Note:
 ##### Loops with `range()` #####
 
 The
-[range()](https://docs.python.org/3.5/library/functions.html#func-range)
+[range()](https://docs.python.org/3/library/functions.html#func-range)
 "function" provides "standard" (as in e.g., C) for-loop behavior:
 
 `range(stop)` iterates through 0, 1, 2, ..., stop-1
@@ -225,7 +225,7 @@ guess = int(input("Guess the number: "))
 
 BONUS: If you want to enhance this code you can try to generate a
 random number using the
-[random.randint()](https://docs.python.org/3.5/library/random.html#random.randrange)
+[random.randint()](https://docs.python.org/3/library/random.html#random.randrange)
 function. (You will learn more about [importing modules](#modules) and
 [functions](#functions) later in this lesson.)
 
@@ -290,7 +290,7 @@ print("Congratulations, you guessed the number", number, "in", n_guesses, "guess
 [^3]:
 
 	 We will try a software engineering technique called
-     [pair programming](http://guide.agilealliance.org/guide/pairing.html)
+     [pair programming](https://guide.agilealliance.org/guide/pairing.html)
      (borrowed from
      agile/[extreme programming](http://www.extremeprogramming.org/))
 	 
