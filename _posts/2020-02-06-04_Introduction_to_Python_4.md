@@ -4,12 +4,12 @@ title: 04 Introduction to Python IV — Modules and Objects
 ---
 
 We are continuing from
-[the previous lesson]({{site.baseurl}}/{%post_url 2019-01-29-04_Introduction_to_Python_3%}) in the "work directory"
+[the previous lesson]({{site.baseurl}}/{%post_url 2020-02-04-04_Introduction_to_Python_3%}) in the "work directory"
 `~/PHY494/04_python`. We will use `ipython` and your text editor.
 
 Re-using code is key to writing maintainable and correct code. We
 already learnt how to package code into [functions]({{site.baseurl}}/{%post_url
-2019-01-29-04_Introduction_to_Python_3%}#functions). Now we learn how
+2020-02-04-04_Introduction_to_Python_3%}#functions). Now we learn how
 to package functions into [modules](#modules). 
 
 We will also briefly talk about [objects](#objects) because everything
@@ -63,7 +63,7 @@ h_bar = c.h / (2*c.pi)
 ### Activity: Import and use your `myfuncs` module
 
 In the previous lesson you created [myfuncs.py]({{site.baseurl}}/{%post_url
-2019-01-29-04_Introduction_to_Python_3%}#activity-create-functions),
+2020-02-04-04_Introduction_to_Python_3%}#activity-create-functions),
 which contains three different functions. Now treat it as a *module*
 and import it and use the functions in the module.
 
@@ -87,7 +87,7 @@ and get output
 ### Standard Library and the Python Eco System
 
 The
-[Python Standard Library](https://docs.python.org/3.5/library/index.html)
+[Python Standard Library](https://docs.python.org/3/library/index.html)
 contains many useful packages/modules. They are always available. For
 example
 
@@ -201,38 +201,45 @@ done "in place", i.e., they change the list itself.
 
 
 {% highlight python %}
->>> rebels = ["Luke", "Leia", "Han", "Chewie"]
+# Episode VI - The Empire Strikes Back: Cloud City 
+# (SPOILER ALERT!)
+
+>>> rebels = ["Leia", "Han", "Chewie", "C3PO"]
 >>> print(rebels)
-['Luke', 'Leia', 'Han', 'Chewie']
+['Luke', 'Leia', 'Han', 'Chewie', 'C3PO']
 
 >>> rebels.append("Lando")
 >>> print(rebels)
-['Luke', 'Leia', 'Han', 'Chewie', 'Lando']
+['Leia', 'Han', 'Chewie', 'C3PO', 'Lando']
+
+>>> rebels.remove("C3PO")
+>>> print(rebels)
+['Leia', 'Han', 'Chewie', 'Lando']
 
 >>> rebels.pop()
 'Lando'
 >>> print(rebels)
-['Luke', 'Leia', 'Han', 'Chewie']
+['Leia', 'Han', 'Chewie']
+
+>>> rebels.insert(2, "C3PO")
+>>> print(rebels)
+['Leia', 'Han', 'C3PO', 'Chewie']
 
 >>> rebels.remove("Han")
 >>> print(rebels)
-['Luke', 'Leia', 'Chewie']
+['Leia', 'C3PO', 'Chewie']
 
->>> rebels.extend(["R2D2", "C3PO"])
+>>> rebels.extend(["Luke", "R2D2"])
 >>> print(rebels)
-['Luke', 'Leia', 'Chewie', 'R2D2', 'C3PO']
+['Leia', 'C3PO', 'Chewie', 'Luke', 'R2D2']
 
 >>> rebels.reverse()
 >>> print(rebels)
-['C3PO', 'R2D2', 'Chewie', 'Leia', 'Luke']
+['R2D2', 'Luke', 'Chewie', 'C3PO', 'Leia']
 
 >>> rebels.sort()
 >>> print(rebels)
-['C3PO', 'Chewie', 'Leia', 'Luke', 'R2D2']
-
->>> rebels.insert(2, "Han")
->>> print(rebels)
-['C3PO', 'Chewie', 'Han', 'Leia', 'Luke', 'R2D2']
+'C3PO', 'Chewie', 'Leia', 'Luke', 'R2D2']
 
 >>> rebels.clear()
 >>> print(rebels)
