@@ -93,7 +93,7 @@ should give [^4]
 
 
 
-## Activity: Plotting the step function
+### Activity: Plotting the step function
 
 Perform this activity using *pair programming*[^1].
 
