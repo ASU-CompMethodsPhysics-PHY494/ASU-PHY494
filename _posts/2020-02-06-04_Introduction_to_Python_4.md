@@ -247,6 +247,15 @@ done "in place", i.e., they change the list itself.
 {% endhighlight %}
 
 
+#### Activity: List methods
+
+1. generate a list with all even numbers from -100 to +100
+2. sum these numbers with `sum()` -- should be 0
+3. remove the last number and sum --- should be -100
+4. remove numbers -100 and 50 and sum --- should be -50
+5. extend by -100, 200, -200, and sum --- should be -250
+6. extend by 50
+7. remove the highest number and sum -- should be -400
 
 
 
@@ -403,6 +412,26 @@ print(earth.density())
 
 gives 5513 kg/m<sup>3</sup> because the `Planet` class inherited the
 `volume()` method from `Sphere`.
+
+#### Activity: Moons and Planets
+
+1. Put the `Sphere` class into a file `bodies.py`. 
+2. Put the planet class into a file `astronomy.py` and and import `Sphere`
+   from bodies.
+3. Create a new class `Moon` with the same functionality as the
+   `Planet` class shown above.
+3. Add an attribute `moons` to `Planet` that is initialized with the
+   optional keyword argument `moons` and which stores a list of `Moon`
+   instances.
+4. Add a method `systemmass()` that calculates the total mass of the
+   planet together with all its moons.
+5. Create
+   - a `Moon` instance for Earth's moon Luna
+   - a `Planet` instance for Earth with `moon=[luna]`
+   - Mars with its two moons Phobos and Deimos
+6. Calculate the total system masses.
+7. Extend this example...
+
 
 ### Final comments on objects
 
