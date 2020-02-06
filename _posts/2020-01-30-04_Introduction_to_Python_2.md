@@ -114,6 +114,40 @@ for theta in temperatures:
 
 {% endhighlight %}
 
+##### List comprehensions (advanced)
+
+We often have to generate a list from computed values as the example
+`T` above. Instead of starting with an empty list and appending
+values, we can also use a [**list
+comprehension**](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions):
+the following code does the same as the one above:
+
+{% highlight python %}
+# temperature conversion: list comprehension
+
+temperatures = [60.1, 78.3, 98.8, 97.1, 101.3, 110.0]
+temp_Kelvin = [(theta - 32) * (5/9) + 273.15 for theta in temperatures]
+{% endhighlight %}
+
+We write a `for` loop inside the list brackets where the "body" of the
+loop consists of a single expression that typically uses the list
+variable. It results in concise code that also generally executes much
+faster. 
+
+##### Activity: Generate values from -10 to 10 in steps of 0.25
+
+Perform this activity using *pair programming*[^3].
+
+We often need a range of values at arbitrary step size, e.g., for plotting a function. The
+`range()` function only provides integer numbers. Find a way to
+generate a list of numbers from `start=-10` to `stop=10` (exclusive)
+with `step=0.25`, i.e., `[-10., -9.75, -9.5, ..., 9.5, 9.75]`.
+
+(You can use list comprehensions. Think about how to use `range()` and
+how to use the integers to generate the floating point numbers.)
+
+
+
 #### The `while` loop
 
 The
@@ -226,8 +260,8 @@ guess = int(input("Guess the number: "))
 BONUS: If you want to enhance this code you can try to generate a
 random number using the
 [random.randint()](https://docs.python.org/3/library/random.html#random.randrange)
-function. (You will learn more about [importing modules](#modules) and
-[functions](#functions) later in this lesson.)
+function. (You will learn more about *importing modules* and
+*functions* later in this lesson.)
 
 {% highlight python %}
 import random
