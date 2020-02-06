@@ -413,7 +413,7 @@ print(earth.density())
 gives 5513 kg/m<sup>3</sup> because the `Planet` class inherited the
 `volume()` method from `Sphere`.
 
-#### Activity: Moons and Planets
+#### BONUS: Activity: Moons and Planets
 
 1. Put the `Sphere` class into a file `bodies.py`. 
 2. Put the planet class into a file `astronomy.py` and and import `Sphere`
@@ -429,6 +429,8 @@ gives 5513 kg/m<sup>3</sup> because the `Planet` class inherited the
    - a `Moon` instance for Earth's moon Luna
    - a `Planet` instance for Earth with `moon=[luna]`
    - Mars with its two moons Phobos and Deimos
+   You can use [WolframAlpha](https://www.wolframalpha.com) or NASA's
+   [HORIZONS](https://ssd.jpl.nasa.gov/horizons.cgi) system to obtain data.
 6. Calculate the total system masses.
 7. Extend this example...
 
