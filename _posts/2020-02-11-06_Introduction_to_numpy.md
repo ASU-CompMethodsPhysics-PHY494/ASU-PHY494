@@ -4,7 +4,7 @@ title: 06 Introduction to NumPy
 ---
 
 We saw in the
-[Introduction to Python]({{site.baseurl}}{%post_url 2019-01-24-04_Introduction_to_Python_2%})
+[Introduction to Python]({{site.baseurl}}{%post_url 2020-01-30-04_Introduction_to_Python_2%})
 that the Python language has the control and data structures to do
 numerical calculations. For instance, a vector $$\mathbf{r} = \left(
 \begin{array}{c}x\\ y\\ z \end{array} \right)$$
@@ -24,7 +24,7 @@ of use that come with Python come at the cost of pure performance.
 However, though Python code itself may be slow, Python can be used to
 run code that is written in a compiled language and already
 compiled. We will use a library (a.k.a., a [Python
-**package**]({{site.baseurl}}{%post_url 2019-01-31-04_Introduction_to_Python_4%}#modules)) that does exactly
+**package**]({{site.baseurl}}{%post_url 2020-02-06-04_Introduction_to_Python_4%}#modules)) that does exactly
 this underneath the hood to get fast performance for numerical
 operations on arrays: We load the [NumPy](https://www.numpy.org/)
 package:
@@ -36,10 +36,11 @@ import numpy
 ## Class material
 
 The class will be live-coded in a Jupyter notebook. The annotated
-notebook is available as [06-intro-numpy.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-numpy.ipynb).
+notebook is available as
+[06-intro-numpy.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-numpy.ipynb).
 
-You can load the notebook yourself: first update your local [PHY494-resources
-repository]({{site.resources.url}})[^0]
+You can load the notebook yourself: first update your local
+[PHY494-resources repository]({{site.resources.url}})[^0]
 
 {% highlight bash %}
 cd ~/PHY494-resources
@@ -88,7 +89,7 @@ Basic Jupyter notebook commands:
 
 
 ## Resources
-* NumPy [Quickstart Tuorial](https://docs.scipy.org/doc/numpy/user/quickstart.html)
+* NumPy [Quickstart Tutorial](https://docs.scipy.org/doc/numpy/user/quickstart.html)
 * Software Carpentry
   [Analysing data with numpy and matplotlib](http://swcarpentry.github.io/python-novice-inflammation-2.7/01-numpy.html)
 * Software Carpentry
@@ -103,7 +104,7 @@ Basic Jupyter notebook commands:
 
     If you have not set up your PHY494-resources repository then
     revisit [Git Basics: Class resources]({{site.baseurl}}{% post_url
-    2019-01-17-03_Git_basics %}#class-resources-on-github).
+    2020-01-23-03_Git_basics %}#class-resources-on-github).
 
 [^1]:
 
