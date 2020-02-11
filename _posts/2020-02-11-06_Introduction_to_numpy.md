@@ -33,11 +33,15 @@ package:
 import numpy
 {% endhighlight %}
 
+We will learn the basics of [NumPy](https://www.numpy.org/) and
+plotting with [matplotlib](https://matplotlib.org/).
+
 ## Class material
 
 The class will be live-coded in a Jupyter notebook. The annotated
 notebook is available as
-[06-intro-numpy.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-numpy.ipynb).
+[06-intro-numpy.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-numpy.ipynb)
+and [06-intro-matplotlib.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-matplotlib.ipynb)
 
 You can load the notebook yourself: first update your local
 [PHY494-resources repository]({{site.resources.url}})[^0]
@@ -47,13 +51,13 @@ cd ~/PHY494-resources
 git pull
 {% endhighlight %}
 
-Copy the notebook to your work directory
+Copy the notebooks to your work directory
 
 {% highlight bash %}
 cd
 mkdir ~/PHY494/06_numpy
 cd ~/PHY494/06_numpy
-cp ~/PHY494-resources/06_numpy/06-intro-numpy.ipynb .
+cp ~/PHY494-resources/06_numpy/06-intro-*.ipynb .
 {% endhighlight %}
 
 
@@ -63,8 +67,11 @@ and launch the Jupyter notebook interface in your web browser[^1]:
 jupyter notebook
 {% endhighlight %}
 
-Select the notebook *06-intro-numpy.ipynb* from the list.
+Select the notebooks *06-intro-numpy.ipynb* and
+*06-intro-matplotlib.ipynb* from the list. They run in separate
+browser tabs.
 
+### Jupyter notebook
 Basic Jupyter notebook commands:
 
 * Look at the **Help** menu! (see also the
