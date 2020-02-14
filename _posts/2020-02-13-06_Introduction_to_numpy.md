@@ -104,7 +104,7 @@ Basic Jupyter notebook commands:
   NumPy](http://paris-swc.github.io/advanced-numpy-lesson/index.html)
 * **SciPy Lectures [1.3. NumPy: creating and manipulating numerical
   data](https://scipy-lectures.org/intro/numpy/)** by Emmanuelle
-  Gouillart, Didrik Pinte, Gaël Varoquaux, and Pauli Virtanen. 
+  Gouillart, Didrik Pinte, GaÃ«l Varoquaux, and Pauli Virtanen. 
   
   (The [SciPy lectures](https://scipy-lectures.org) are an
   *outstanding learning resource* and if you only had one place on the
