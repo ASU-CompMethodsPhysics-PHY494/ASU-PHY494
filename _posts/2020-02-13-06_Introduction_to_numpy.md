@@ -100,7 +100,16 @@ Basic Jupyter notebook commands:
 * Software Carpentry
   [Analysing data with numpy and matplotlib](http://swcarpentry.github.io/python-novice-inflammation-2.7/01-numpy.html)
 * Software Carpentry
-  [Advanced NumPy](http://paris-swc.github.io/advanced-numpy-lesson/index.html)
+  [Advanced
+  NumPy](http://paris-swc.github.io/advanced-numpy-lesson/index.html)
+* **SciPy Lectures [1.3. NumPy: creating and manipulating numerical
+  data](https://scipy-lectures.org/intro/numpy/)** by Emmanuelle
+  Gouillart, Didrik Pinte, Gaël Varoquaux, and Pauli Virtanen. 
+  
+  (The [SciPy lectures](https://scipy-lectures.org) are an
+  *outstanding learning resource* and if you only had one place on the
+  internet to learn scientific programming in Python then this would
+  be it!)
 
 
 ----------
