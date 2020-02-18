@@ -1,10 +1,9 @@
 ---
 layout: post
-title: special Random Walk 
+title: 06 Random Walk with NumPy
 ---
 
-## Random walk
-A random walk is a mathematical object, known as a stochastic 
+A **random walk** is a mathematical object, known as a stochastic 
 or random process, that describes a path that consists of a 
 succession of random steps on some mathematical space such 
 as the integers.
@@ -18,8 +17,21 @@ In simple symmetric random walk on a locally finite
 lattice, the probabilities of the location jumping to 
 each one of its immediate neighbors are the same.[^0]
 
-Today, we are going to use numpy package to implement the
- 1D(example), 2D(skeleton and solutions) random walk models.
+[![1D random walk. Source: SciPy Lectures 1.3.2 NumPy: Numerical
+  operations on arrays: Reductions by Emmanuelle Gouillart, Didrik
+  Pinte, Gaël Varoquaux, and Pauli
+  Virtanen.](https://scipy-lectures.org/_images/random_walk.png)](https://scipy-lectures.org/intro/numpy/operations.html#other-reductions)
+  <small>**Simple 1D random walk**. At every time step, a particle can
+  hop to the left or right with equal probability. How far from the
+  origin will it have moved after time _t_, expressed as the distance
+  \\(d(t)\\)? Image Source: _SciPy Lectures 1.3.2 NumPy: Numerical
+  operations on arrays: Reductions_ by Emmanuelle Gouillart, Didrik
+  Pinte, Gaël Varoquaux, and Pauli Virtanen.</small>
+
+
+Today, we are going to use the [NumPy]({{ site.baseurl }}{%post_url
+2020-02-13-06_Introduction_to_numpy %}) package to implement the 1D
+(example), 2D (skeleton and solutions) random walk models.
 
 
 ## Class material
@@ -50,18 +62,17 @@ and launch the Jupyter notebook interface in your web browser[^2]:
 jupyter notebook
 {% endhighlight %}
 
-The notebook 1D-example contains external images that go along with the folder.
-To view the image, you may need to change the file path in the notebook to your 
-current path
 
+## Notebooks
+* [random-walk-1D-example.ipynb]({{site.nbviewer.resources}}/random-walk/random-walk-1D-example.ipynb) 
+* [random-walk-2D-solutions.ipynb]({{site.nbviewer.resources}}/random-walk/random-walk-2D-solutions.ipynb) 
 
 
 ## Resources
 * NumPy [Quickstart Tutorial](https://docs.scipy.org/doc/numpy/user/quickstart.html)
-
-* SciPy Lectures [1.3.2 NumPy:  Numerical operations on arrays]
-  (https://scipy-lectures.org/intro/numpy/operations.html#other-reductions)** by Emmanuelle
-  Gouillart, Didrik Pinte, Gaël Varoquaux, and Pauli Virtanen. 
+* SciPy Lectures [1.3.2 NumPy:  Numerical operations on arrays: Reductions](https://scipy-lectures.org/intro/numpy/operations.html#other-reductions) by Emmanuelle
+  Gouillart, Didrik Pinte, Gaël Varoquaux, and Pauli Virtanen. (The
+  materials for the 1D random walk in this lecture are based on this chapter.)
 
 
   
@@ -70,7 +81,7 @@ current path
 #### Footnotes
 
 [^0]:
-    [random walk wiki](https://en.wikipedia.org/wiki/Random_walk)
+    Wikipedia: [Random Walk](https://en.wikipedia.org/wiki/Random_walk)
 
 
 [^1]:
