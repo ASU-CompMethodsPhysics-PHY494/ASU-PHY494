@@ -46,4 +46,4 @@ notebook
 [^2]:
 
     `git pull` [your PHY494-resources repository]({{site.baseurl}}{%
-    post_url 2019-01-17-03_Git_basics %}#class-resources-on-github)).
+    post_url 2020-01-23-03_Git_basics %}#class-resources-on-github).
