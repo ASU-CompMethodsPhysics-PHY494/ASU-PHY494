@@ -37,7 +37,8 @@ notebook
 
 [^1]:
 
-    The notebook is not complete yet ("part 1"); the full notebook
+    The notebook is not complete yet (only the theory/background and
+    the student problem is available); the full notebook
     [09-differentiation.ipynb]({{site.nbviewer.resources}}/09_differentiation/09-differentiation.ipynb)
     will be posted *after* the student exercise
     [09-differentiation-students.ipynb]({{site.nbviewer.resources}}/09_differentiation/09-differentiation-students.ipynb)
