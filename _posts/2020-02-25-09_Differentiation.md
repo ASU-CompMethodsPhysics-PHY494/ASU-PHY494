@@ -15,7 +15,7 @@ derivative and assess their error.
 ## Class material
 
 You can follow the lecture in the slides
-[09-differentiation.ipynb]({{site.nbviewer.resources}}/09_differentiation/09-differentiation-part-1.ipynb).
+[09-differentiation.ipynb]({{site.nbviewer.resources}}/09_differentiation/09-differentiation-theory.ipynb).
 [^1]
 
 For the problem that you should solve during the class, get the
