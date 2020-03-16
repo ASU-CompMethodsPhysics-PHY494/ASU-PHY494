@@ -33,7 +33,7 @@ or calculations of *distributions* of quantitites of interest.
 ## Integrating the equations of motions
 In order to integrate the EOMs we use an integrator that closely
 matches the underlying physics. The
-[Verlet-type integrators]({{site.baseurl}}{%post_url 2019-02-19-10_ODEs%}#verlet-integrators) have
+[Verlet-type integrators]({{ site.baseurl }}{%post_url 2020-02-27-10_ODEs%}#verlet-integrators) have
 built-in time reversal symmetry (like Newton's and Hamilton's EOMs),
 are phase-space area conserving, and have the symplectic structure of
 Hamilton's equations. They have moderate short-term stability and
@@ -66,8 +66,7 @@ particles (use numpy arrays!) and to obtain sufficient performance.
 
 #### Additional resources:
 
-* [Lecture Notes: 11 MD
-  (pdf)]({{site.baseurl}}/{{site.lectures}}/11_MD.pdf)
+* [Lecture Notes: 11 MD (pdf)]({{ site.baseurl }}/{{ site.lectures }}/11_MD.pdf)
 * _Computational Modelling_: Chapter **11.4** 
 * _Computational Physics_: Chapter **18**
 * Daan Frenkel and Berend Smit. Understanding molecular simulation:
