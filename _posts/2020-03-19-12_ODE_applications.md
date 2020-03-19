@@ -4,8 +4,7 @@ title: "12 ODEs: Applications"
 ---
 
 After implementing a number of
-[integrators for ODEs]({{site.baseurl}}{% post_url 2019-02-19-10_ODEs
-%}) we are now in the position to solve some practical problems:
+[integrators for ODEs]({{site.baseurl}}{% post_url 2020-02-27-10_ODEs %}) we are now in the position to solve some practical problems:
 
 - projectile movement with air resistance
 - realistic movement of a spinning baseball
