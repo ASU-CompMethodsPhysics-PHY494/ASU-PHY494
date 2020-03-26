@@ -13,8 +13,7 @@ The applications are manifold. For instance, if the function $$f$$ is a
 derivative of another function  $$f(x) = \frac{dg}{dx}$$ then finding
 a root allows us to find extrema (maxima or mimima) or saddle points
 (depending on the values of the higher
-[derivatives]({{site.baseurl}}/{% post_url
-2019-02-14-09_Differentiation %})) 
+[derivatives]({{site.baseurl}}/{% post_url 2020-02-25-09_Differentiation %})) 
 of the function $$g$$.
 
 **Trial-and-error root finding methods** move along the function graph
