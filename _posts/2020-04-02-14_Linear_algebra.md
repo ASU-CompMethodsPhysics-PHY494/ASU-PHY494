@@ -116,7 +116,7 @@ $$\sin\theta_i$$ and $$\cos\theta_i$$ as independent)
 
 we can use the generalization of the
 [Newton-Raphson algorithm]({{site.baseurl}}/{%post_url
-2019-03-19-13_Root_finding %}) to $$n$$ dimensions to solve it.
+2020-03-26-13_Root_finding %}) to $$n$$ dimensions to solve it.
 The generalization involves the computation of the "$$n$$-dimensional
 derivative", the
 [Jacobian matrix](http://mathworld.wolfram.com/Jacobian.html) $$J_{ij}
