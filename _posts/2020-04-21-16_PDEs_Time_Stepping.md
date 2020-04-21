@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 17 Solving PDEs with time stepping
+title: 16 Solving PDEs with time stepping
 ---
 
-[Partial differential equations (PDEs)]({{site.baseurl}}{% post_url 2019-04-11-16_PDEs %}) may depend on both space and time derivatives such as the parabolic *heat equation*
+[Partial differential equations (PDEs)]({{site.baseurl}}{% post_url 2020-04-14-15_PDEs %}) may depend on both space and time derivatives such as the parabolic *heat equation*
 
 $$
 \frac{\partial T(\mathbf{x}, t)}{\partial t} = \frac{K}{C\rho} \nabla^2 T(\mathbf{x}, t),
@@ -24,22 +24,22 @@ Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. 
 * Student notebooks [^1]
   * Leap-frog method for the heat equation and von Neumann stability
     analysis:
-    [17_PDEs-Students.ipynb]({{site.nbviewer.resources}}/17_PDEs/17_PDEs-Students.ipynb)
-  * Crank-Nicholson method applied to the heat equation: [17_CrankNicholson-Students.ipynb]({{site.nbviewer.resources}}/17_PDEs/17_CrankNicholson-Students.ipynb)
+    [16_PDEs-Students.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_PDEs-Students.ipynb)
+  * Crank-Nicholson method applied to the heat equation: [16_CrankNicholson-Students.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_CrankNicholson-Students.ipynb)
 * Lecture notebooks [^2] (correspond to the student notebooks):
-  * [17_PDEs.ipynb]({{site.nbviewer.resources}}/17_PDEs/17_PDEs.ipynb)
+  * [16_PDEs.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_PDEs.ipynb)
     and [derivation of of the heat equation
-    (PDF)]({{site.resources.fileurl}}/17_PDEs/17_PDEs_LectureNotes_HeatEquation.pdf)
+    (PDF)]({{site.resources.fileurl}}/16_PDEs/16_PDEs_LectureNotes_HeatEquation.pdf)
   * discussion on the stability of the simple leapfrog algorithm and
     how the *relaxation* Jacobi algorithm for [solving Poisson's
-    equation]({{site.baseurl}}{% post_url 2019-04-11-16_PDEs %}#solving-pdes-numerically) numerically
+    equation]({{site.baseurl}}{% post_url 2020-04-14-15_PDEs %}#solving-pdes-numerically) numerically
     implements solving a diffusion equation:
-    [17_PDEs_comments.ipynb]({{site.nbviewer.resources}}/17_PDEs/17_PDEs_comments.ipynb) ([PDF]({{site.resources.fileurl}}/17_PDEs/17_PDEs_comments.pdf))
+    [16_PDEs_comments.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_PDEs_comments.ipynb) ([PDF]({{site.resources.fileurl}}/16_PDEs/16_PDEs_comments.pdf))
     and [notes on stability and
     relaxation
-    (PDF)]({{site.resources.fileurl}}/17_PDEs/17_LectureNotes_Stability_and_Relaxation.pdf)
-  * [17_CrankNicholson.ipynb]({{site.nbviewer.resources}}/17_PDEs/17_CrankNicholson.ipynb)
-    and [derivation of the Crank-Nicholson algorithm (PDF)]({{site.resources.fileurl}}/17_PDEs/17_LectureNotes_CrankNicholson.pdf)
+    (PDF)]({{site.resources.fileurl}}/16_PDEs/16_LectureNotes_Stability_and_Relaxation.pdf)
+  * [16_CrankNicholson.ipynb]({{site.nbviewer.resources}}/16_PDEs/16_CrankNicholson.ipynb)
+    and [derivation of the Crank-Nicholson algorithm (PDF)]({{site.resources.fileurl}}/16_PDEs/16_LectureNotes_CrankNicholson.pdf)
 
 #### Additional resources  ####
 
