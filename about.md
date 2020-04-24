@@ -24,6 +24,9 @@ repository [{{site.resources.name}}]({{site.resources.url}}).
 
 For further details see the [PHY494 Course Page]({{site.course.url}}).
 
+For a number of lessons,
+[videos](https://fast.wistia.net/embed/channel/bp7lsp6dmx) are available.
+
 ### Books ###
 
 The two **recommended books** for the class are
