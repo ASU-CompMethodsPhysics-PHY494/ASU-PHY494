@@ -87,13 +87,28 @@ installation](#testing).
       <p>This will provide you with both Git and Bash in the Git Bash program.</p>
     </div>
     <div class="col-md-4">
-      <h4 id="shell-macosx">macOS / Mac OS X</h4>
+      <h4 id="shell-macosx">macOS</h4>
       <p>
-        The default shell in all versions of macOS (formerly Mac OS X) is Bash, so no
-        need to install anything.  You access Bash from the Terminal
+	You access Bash from the Terminal
         (found in
         <code>/Applications/Utilities</code>). You may want to keep
         Terminal in your dock for this class.
+	</p>
+	<p>	
+	Recent versions of macOS (starting with Catalina 10.15) ship
+	with zsh as the default shell but also have Bash installed.
+	You can either type
+	<code>bash</code> in the terminal to switch to Bash or <a
+	href="https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/">change
+	permanently to Bash</a> by executing the following command in
+	the terminal:</p>
+	<pre>chsh -s /bin/bash</pre>
+	<p>
+	(and enter your password when asked).
+	</p>
+	<p>
+        In earlier versions, the default shell is Bash, so no
+        need to install or change anything.
       </p>
     </div>
     <div class="col-md-4">
@@ -131,9 +146,9 @@ installation](#testing).
       </p>
     </div>
     <div class="col-md-4">
-      <h4 id="git-macosx">macOS / Mac OS X</h4>
+      <h4 id="git-macosx">macOS</h4>
       <p>
-        <strong>For OS X 10.9 and higher</strong>, install Git for Mac
+        <strong>For macOS/Mac OS X 10.9 and higher</strong>, install Git for Mac
         by downloading and running the most recent "mavericks" installer from
         <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
         After installing Git, there will not be anything in your <code>/Applications</code> folder,
@@ -234,7 +249,7 @@ editor.</li>
     </div>
 
     <div class="col-md-4">
-      <h4 id="editor-macosx">macOS / Mac OS X</h4>
+      <h4 id="editor-macosx">macOS</h4>
       <p>
 		We recommend <a href="https://atom.io/">atom</a> as a good editor that is
         suitable for professional coding but also accessible to
@@ -319,7 +334,7 @@ editor.</li>
       <h4 id="python-windows">Windows</h4>
       <ol>
         <li>Open <a href="https://anaconda.com/download/#windows">https://anaconda.com/download/#windows</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Windows.</li>
+        <li>Download the Python 3 64-Bit installer for Windows.</li>
         <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
       </ol>
     </div>
@@ -356,10 +371,10 @@ before anything else.</li>
     </div>
 
     <div class="col-md-4">
-      <h4 id="python-macosx">macOS / Mac OS X</h4>
+      <h4 id="python-macosx">macOS</h4>
       <ol>
         <li>Open <a href="https://anaconda.com/download/#macos">https://anaconda.com/download/#macos</a> with your web browser.</li>
-        <li>Download the Python 3 installer for OS X.</li>
+        <li>Download the Python 3 installer for MacOS.</li>
         <li>Install Python 3 using all of the defaults for
 		installation.</li>
       </ol>
@@ -369,7 +384,7 @@ before anything else.</li>
       <h4 id="python-linux">Linux</h4>
       <ol>
         <li>Open <a href="https://anaconda.com/download/#linux">https://anaconda.com/download/#linux</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Linux.</li>
+        <li>Download the Python 3 installer for Linux. (Most likely the 64-Bit (x86) Installer is correct for your laptop.)</li>
         <li>Install Python 3 using all of the defaults for installation.
         (Installation requires using the shell. If you aren't
         comfortable doing the installation yourself
@@ -378,7 +393,7 @@ before anything else.</li>
           Open a terminal window.
         </li>
         <li>
-          Type <pre>bash Anaconda-</pre> and then press
+          Type <pre>bash ./Anaconda-</pre> and then press
           tab. The name of the file you just downloaded should
           appear.
         </li>
@@ -416,7 +431,7 @@ echo $SHELL
 
 Should show `/bin/bash` or `/usr/bin/bash` (or similar).
 
-We use "shell" and "terminal" (and "console") pretty
+We use "shell" and "terminal" (and "console") pretty much
 interchangeably.
 
 ### Git
@@ -525,7 +540,7 @@ If you have problems, ask an instructor.
 
 * On Windows, the `pip` or `python` commands are not found. Follow the
   steps under [solution: pip or python are not found in
-  git-bash](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting#pip-or-python-are-not-found-in-git-bash)
+  git-bash]({{ site.wiki.url }}/installation-troubleshooting#pip-or-python-are-not-found-in-git-bash)
 * On macOS, if you get the error *OSError: [Errno 49] Can't assign
   requested address* you might need to use `jupyter notebook
   --ip=127.0.0.1`
@@ -534,13 +549,10 @@ If you have problems, ask an instructor.
   Windows: `/c/Users/Physics/Anaconda3/conda`, macOS:
   `/Users/physics/Anaconda3/conda`, Linux:
   `/home/physics/Anaconda3/conda`). Try exiting the terminal and open
-  a new terminal (or git bash) and try again. Changes to PATH only
+  a new terminal (or git bash) and try again. Changes to `PATH` only
   take effect when a new shell is opened.
-* The box in VPython is not visible, only a blank square. Try
-  opening the notebook in the Chrome web browser instead of
-  Explorer/Edge: Just type `http://localhost:8888` in Chrome's URL bar.
 
-See also [trouble shooting problems during the installation](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki/installation-troubleshooting)
+See also [trouble shooting problems during the installation]({{ site.wiki.url }}/installation-troubleshooting)
 
 
 ## Credit
