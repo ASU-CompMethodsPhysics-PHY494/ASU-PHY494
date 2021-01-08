@@ -26,7 +26,7 @@ author:
 version:             'Spring 2021'
 
 # see https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-sitemap
   - jekyll-feed
