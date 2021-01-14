@@ -499,13 +499,16 @@ In the shell, type
 python -c 'import sys; print(sys.version)'
 {% endhighlight %}
 
-which should give something similar to `Python 3.6.8 |Anaconda, Inc.| (default, Dec 29 2018, 19:04:46)` (and more
+which should give something similar to `Python 3.8.5  (default, Sep 4 2018, 07:30:14)` (and more
 stuff). Important: 
 * you should have *Python 3*, i.e., a version like 3.6.x or 3.8.x
-* the name **Anaconda** must appear there (otherwise you are not
-  running the correct Python interpreter)
 
-
+Also try
+{% highlight bash %}
+which conda 
+which python
+{% endhighlight %}
+which should give something similar to `/homes/USERNAME/anaconda3/bin/conda`, `/homes/USERNAME/anaconda3/bin/python`
 
 ### Jupyter notebook
 
