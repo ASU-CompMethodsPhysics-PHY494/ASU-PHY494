@@ -2,7 +2,7 @@
 layout: post
 title: 01' Intermediate Shell Hacks (optional)
 date: 2021-01-14 15:00:00
-weight: 20
+number: 11
 ---
 
 The real power of the [shell]({{ site.baseurl }}{% post_url

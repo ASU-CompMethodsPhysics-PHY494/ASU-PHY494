@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 00 Installing the environment
+number: 0
 ---
 
 ----

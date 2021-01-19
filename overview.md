@@ -12,7 +12,7 @@ The lessons in chronological order so far[^1] (the list will be complete
 at the end of the semester):
 
 <ol class="nonumbers">
-{% assign pages_list = site.posts | sort:"url" | sort:"weight" %}
+{% assign pages_list = site.posts | sort:"url" | sort:"number", "last" %}
 	{% for node in pages_list %}
 	   {% if node.title != null %}
             {% if node.layout == "post" %}
