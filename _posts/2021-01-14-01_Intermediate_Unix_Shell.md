@@ -25,14 +25,87 @@ with it.
 The following is very useful but for right now not essential and is
 *optional*. **You can work through the tutorial in your own time.**
 
+* [Wildcards](#wildcards)
 * [Pipes and Filters](#pipes-and-filters)
 * [Using `git` to get data for the shell example](#using-git-to-get-data-for-the-class) (we will do this again in the lesson on version control and `git`)
 * [Shell scripts](#shell-scripts)
 
+If you want to dive _much_ deeper into bash then start reading the
+[Advanced Bash-Scripting
+Guide](https://tldp.org/LDP/abs/html/index.html), an "in-depth
+exploration of the art of shell scripting".
 
-### Pipes and Filters ###
+## Wildcards ##
 
-#### Commands ####
+The shell contains a simple *pattern matching* syntax (wildcards or "glob patterns") to select all files that match the pattern.
+Commonly used patterns are
+* `*`: matches zero or more characters in a name, e.g., `*.dat` matches all files ending in `.dat`, and `report_2021-*.txt` matches `report-2021-11.txt`, `report-2021-12.txt`, but not <strike><code>report-2020-2.txt</code></strike>.
+* `?` matches a single character in a name, e.g., `?.jpg` matches `1.jpg`, `a.jpg`, but not <strike><code>ab.jpg</code></strike>
+
+Neither of them matches a leading `.` in a file name or a space or the directory separator `/`.
+
+### Examples
+
+#### List all dat files
+
+List all "dat" files in the current directory: Use the character `*`
+to match "any part of a file name"
+
+{% highlight bash %}
+ls *.dat
+{% endhighlight %}
+
+#### List all commands with "oo" in their name
+
+List all files containing "oo" in the `/usr/bin` directory (will only
+work on Linux or macOS):
+
+{% highlight bash %}
+ls /usr/bin/*oo*
+{% endhighlight %}
+
+#### Delete jpg files in directories 19xx
+
+**Warning**: DO NOT COPY AND PASTE ANY COMMAND LINE CONTAING `rm`
+WITHOUT THINKING *TWICE* ABOUT IT. You have been warned.
+
+Delete all jpg images in directories from the last century
+
+{% highlight bash %}
+rm Pictures/19??/*.jpg
+{% endhighlight %}
+
+(Note that `19??` matches anything that looks like a year from the
+last century such as 1999, 1969, ... although it would also match
+19xy; the `*.jpg` pattern matches all files with suffix jpg.)
+
+#### Show all two-letter Unix commands
+
+Show commands with exactly two letters (assuming that you have a
+Unix-like OS such as Linux or macOS where the commands are located in
+`/bin` and `/usr/bin`):
+
+{% highlight bash %}
+ls /bin/?? /usr/bin/??
+{% endhighlight %}
+
+(Two letter commands are important — learn more about these commands,
+e.g., with the three-letter command `man`.)
+
+#### Copy Jupyter notebooks to another directory
+
+As part of working with code in this class, we will have to copy
+Jupyter notebooks from one directory to another directory
+
+{% highlight bash %}
+cp ~/PHY494-resources/10_ODEs/*.ipynb ~/PHY494/10_ODEs/
+{% endhighlight %}
+
+
+
+## Pipes and Filters ##
+
+### Commands ###
 
 * `cat`
 * `head`
@@ -50,7 +123,7 @@ and special shell characters
 * `>` (redirects output to a file)
 * `<` (redirects file to input)
 
-#### Working with redirection and command pipelines ####
+### Working with redirection and command pipelines ###
 
 Download [planets.dat]({{site.baseurl}}/{{site.data}}/planets.dat)[^3]
 and put it in the directory `data/`. You can do this with your web
@@ -103,7 +176,7 @@ cat planets.dat planets.dat > planets_2.dat
 (`cat` concatenates files and then you redirect it to a new file.)
 
 
-##### Activity #####
+#### Activity ####
 
 1. Test that `wc -l` gives just the number of lines ("60").
 2. What does `wc planets.dat planets_2.dat` do?
@@ -112,7 +185,7 @@ cat planets.dat planets.dat > planets_2.dat
    to terminate each line) and when you get bored, press `^D`
    (control+D). What happened?
 
-##### Pipes #####
+### Pipes ###
 
 Sort by name and look at the first five using a **pipes** and
 **filters**:
@@ -158,19 +231,6 @@ cut -b 29-  planets.dat
 4. What is the most frequent and the least frequent first letter
    amongst these planets? (Hint: `uniq -c`)
 
-
-#### Shell glob patterns ####
-
-Use the character `*` to match "any part of a file name", e.g.
-
-{% highlight bash %}
-ls *.dat
-{% endhighlight %}
-
-will list all files ending in `.dat`.
-
-The `?` character matches a single character. Neither of them matches
-a leading `.` in a file name or a space.
 
 
 ## Using `git` to get data for the class ##
