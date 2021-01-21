@@ -4,3 +4,4 @@ run_jekyll.sh
 .DS_Store
 .bundle
 Gemfile.lock
+.jekyll-metadata
