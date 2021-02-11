@@ -1,10 +1,11 @@
 ---
 layout: post
-title: 06 Introduction to NumPy 
+title: 05 Introduction to NumPy
+number: 50
 ---
 
 We saw in the
-[Introduction to Python]({{site.baseurl}}{%post_url 2020-01-30-04_Introduction_to_Python_2%})
+[Introduction to Python]({{ site.baseurl }}{% post_url 2021-02-02-04_Python_2 %})
 that the Python language has the control and data structures to do
 numerical calculations. For instance, a vector $$\mathbf{r} = \left(
 \begin{array}{c}x\\ y\\ z \end{array} \right)$$
@@ -23,11 +24,11 @@ of use that come with Python come at the cost of pure performance.
 
 However, though Python code itself may be slow, Python can be used to
 run code that is written in a compiled language and already
-compiled. We will use a library (a.k.a., a [Python
-**package**]({{site.baseurl}}{%post_url 2020-02-06-04_Introduction_to_Python_4%}#modules)) that does exactly
-this underneath the hood to get fast performance for numerical
-operations on arrays: We load the [NumPy](https://www.numpy.org/)
-package:
+compiled. We will use a library (a.k.a., a [Python **package**]({{
+site.baseurl }}{% post_url 2021-02-09-04_Python_4 %}#modules)) that
+does exactly this underneath the hood to get fast performance for
+numerical operations on arrays: We load the
+[NumPy](https://www.numpy.org/) package:
 
 {% highlight python %}
 import numpy
@@ -40,7 +41,7 @@ plotting with [matplotlib](https://matplotlib.org/).
 
 The class will be live-coded in a Jupyter notebook. The annotated
 notebook is available as
-[06-intro-numpy.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-numpy.ipynb)
+[06-intro-numpy.ipynb]({{ site.nbviewer.resources }}/06_numpy/06-intro-numpy.ipynb)
 and [06-intro-matplotlib.ipynb]({{site.nbviewer.resources}}/06_numpy/06-intro-matplotlib.ipynb)
 
 You can load the notebook yourself: first update your local
@@ -119,8 +120,8 @@ Basic Jupyter notebook commands:
 [^0]:
 
     If you have not set up your PHY494-resources repository then
-    revisit [Git Basics: Class resources]({{site.baseurl}}{% post_url
-    2020-01-23-03_Git_basics %}#class-resources-on-github).
+    revisit [Git Basics: Class resources]({{ site.baseurl }}{% post_url
+    2021-01-19-02_Git_basics %}#class-resources-on-github).
 
 [^1]:
 
