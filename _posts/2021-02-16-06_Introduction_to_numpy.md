@@ -98,6 +98,7 @@ Basic Jupyter notebook commands:
 
 ## Resources
 * NumPy [Quickstart Tutorial](https://docs.scipy.org/doc/numpy/user/quickstart.html)
+* Jay Alammar's [A Visual Intro to NumPy and Data Representation](http://jalammar.github.io/visual-numpy/)
 * Software Carpentry
   [Analysing data with numpy and matplotlib](http://swcarpentry.github.io/python-novice-inflammation-2.7/01-numpy.html)
 * Software Carpentry
