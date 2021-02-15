@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 05 Introduction to NumPy
-number: 50
+title: 06 Introduction to NumPy
+number: 60
 ---
 
 We saw in the
