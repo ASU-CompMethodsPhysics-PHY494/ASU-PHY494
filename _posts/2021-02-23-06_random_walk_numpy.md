@@ -63,9 +63,9 @@ a randomly diffusing particle.
 
 ![Trajectories of a diffusing particle]({{ site.baseurl }}/{{ site.figs
   }}/diffusion_trajectories.png) <small>**Diffusion
-  trajectories**. The random movement of a [Brome Mosaic
+  trajectories**. The 1D random movement of a [Brome Mosaic
   Virus](https://en.wikipedia.org/wiki/Brome_mosaic_virus) in water
-  was simulated for 1000 time steps and repeated 100 times. A single
+  was simulated for 10,000 time steps and repeated 100 times. A single
   realization of the stochastic diffusion trajectory is highlighted in
   red.</small>
 
@@ -82,7 +82,7 @@ coefficient* \\(D\\).
 
 ![Mean square displacement as function of time]({{ site.baseurl }}/{{
   site.figs }}/diffusion_sim_theory_fit.png) <small>**Mean square
-  displacement as function of time for diffusion**. The MSD of the
+  displacement (1D) as function of time for diffusion**. The MSD of the
   simulation trajectories (red) increases linear with time as
   predicted by theory (blue line). A fit of \\(y = 2Dt\\) to the
   simulation data recovers the true diffusion coefficient almost
