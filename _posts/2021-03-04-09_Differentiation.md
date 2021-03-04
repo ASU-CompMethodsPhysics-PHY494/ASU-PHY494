@@ -16,12 +16,14 @@ derivative and assess their error.
 ## Class material
 
 You can follow the lecture in the slides
-[09-differentiation.ipynb]({{ site.nbviewer.resources }}/09_differentiation/09-differentiation-theory.ipynb).
-[^1]
+[09-differentiation-theory.ipynb]({{ site.nbviewer.slides }}/09_differentiation/09-differentiation-theory.ipynb).
 
-For the problem that you should solve during the class, get the
-notebook
-[09-differentiation-students.ipynb]({{ site.nbviewer.resources }}/09_differentiation/09-differentiation-students.ipynb).[^2]
+For the problem that you should solve during the class, accept the
+GitHub Classroom
+[Activity 11](https://github.com/ASU-CompMethodsPhysics-PHY494/Activity_11_differential_operators) via Canvas (or clone the repository
+[ASU-CompMethodsPhysics-PHY494/Activity_11_differential_operators](https://github.com/ASU-CompMethodsPhysics-PHY494/Activity_11_differential_operators)). The
+instructions are in the notebook [differentiation.ipynb]({{
+site.org.url }}/Activity_11_differential_operators/blob/main/differentiation.ipynb).
 
 
 #### Additional resources
@@ -32,19 +34,5 @@ notebook
   this year we are skipping this part in favor of more in-depth
   programming exercises.
 
---------
 
-#### Footnotes
 
-[^1]:
-
-    The notebook is not complete yet (only the theory/background and
-    the student problem is available); the full notebook
-    [09-differentiation.ipynb]({{ site.nbviewer.resources }}/09_differentiation/09-differentiation.ipynb)
-    will be posted *after* the student exercise
-    [09-differentiation-students.ipynb]({{ site.nbviewer.resources }}/09_differentiation/09-differentiation-students.ipynb)
-    has been completed.
-
-[^2]:
-
-    `git pull` your PHY494-resources repository
