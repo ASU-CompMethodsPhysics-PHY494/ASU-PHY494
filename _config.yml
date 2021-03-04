@@ -68,9 +68,9 @@ wiki:
  url:                https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/wiki
 
 nbviewer:
-   show:             http://nbviewer.jupyter.org/github
-   resources:        http://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
-   slides:           http://nbviewer.jupyter.org/format/slides/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
+   show:             https://nbviewer.jupyter.org/github
+   resources:        https://nbviewer.jupyter.org/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
+   slides:           https://nbviewer.jupyter.org/format/slides/github/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master
 
 
 #--------------------------------------------------------------------------------
