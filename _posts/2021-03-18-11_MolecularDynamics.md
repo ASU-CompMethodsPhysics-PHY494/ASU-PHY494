@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 11 Molecular Dynamics (MD) Simulations
+number: 110
 ---
 
 Classical **molecular dynamics** (MD) simulations consist of a large
@@ -32,14 +33,14 @@ or calculations of *distributions* of quantitites of interest.
 
 ## Integrating the equations of motions
 In order to integrate the EOMs we use an integrator that closely
-matches the underlying physics. The
-[Verlet-type integrators]({{ site.baseurl }}{%post_url 2020-02-27-10_ODEs%}#verlet-integrators) have
-built-in time reversal symmetry (like Newton's and Hamilton's EOMs),
-are phase-space area conserving, and have the symplectic structure of
-Hamilton's equations. They have moderate short-term stability and
-energy conservation but good long term stability and conserve energy
-for simulations in the microcanonical ensemble (i.e., without any
-coupling to external sources of heat or mechanical work).
+matches the underlying physics. The [Verlet-type integrators]({{
+site.baseurl }}{% post_url 2021-03-09-10_ODEs %}#verlet-integrators)
+have built-in time reversal symmetry (like Newton's and Hamilton's
+EOMs), are phase-space area conserving, and have the symplectic
+structure of Hamilton's equations. They have moderate short-term
+stability and energy conservation but good long term stability and
+conserve energy for simulations in the microcanonical ensemble (i.e.,
+without any coupling to external sources of heat or mechanical work).
 
 ## Basic MD program
 
