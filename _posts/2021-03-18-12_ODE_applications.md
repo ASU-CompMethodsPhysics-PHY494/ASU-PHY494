@@ -10,12 +10,16 @@ After implementing a number of
 - projectile movement with air resistance
 - realistic movement of a spinning baseball
 
+### Linear air resistance
+
 For the problem that you should solve during the class, get the
 notebook[^1]
-[12-ODE-applications-students.ipynb]({{ site.nbviewer.resources }}/12_ODE_applications/12-ODE-applications-students.ipynb)
+[12-ODE-lineardrag-students.ipynb]({{ site.nbviewer.resources }}/12_ODE_applications/12-ODE-lineardrag-students.ipynb)
 and see notebook
-[12-ODE-applications.ipynb]({{ site.nbviewer.resources }}/12_ODE_applications/12-ODE-applications.ipynb)
+[12-ODE-lineardrag.ipynb]({{ site.nbviewer.resources }}/12_ODE_applications/12-ODE-lineardrag.ipynb)
 for the full solution.[^2]
+
+### Baseball physics
 
 The baseball problem was live-coded from scratch during class and the
 notebook
