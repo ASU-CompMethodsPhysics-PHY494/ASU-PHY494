@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 13 Root finding by trial-and-error
+number: 130
 ---
 
 An elementary numerical problem is to find the root $$x_0$$ of an equation
@@ -13,7 +14,7 @@ The applications are manifold. For instance, if the function $$f$$ is a
 derivative of another function  $$f(x) = \frac{dg}{dx}$$ then finding
 a root allows us to find extrema (maxima or mimima) or saddle points
 (depending on the values of the higher
-[derivatives]({{site.baseurl}}/{% post_url 2020-02-25-09_Differentiation %})) 
+[derivatives]({{ site.baseurl }}/{% post_url 2021-03-04-09_Differentiation %})) 
 of the function $$g$$.
 
 **Trial-and-error root finding methods** move along the function graph
@@ -24,15 +25,15 @@ steps). Trial-and-error search is a common technique for cases where
 analytic solutions are lacking or not practical.
 
 We will study two algorithms:
-*[bisection](http://mathworld.wolfram.com/Bisection.html)* and
-*[Newton-Raphson searching](http://mathworld.wolfram.com/NewtonsMethod.html)*.
+*[bisection](https://mathworld.wolfram.com/Bisection.html)* and
+*[Newton-Raphson searching](https://mathworld.wolfram.com/NewtonsMethod.html)*.
  
 The Jupyter notebook
-[13-Root-finding.ipynb]({{site.nbviewer.resources}}/13_root_finding/13-Root-finding.ipynb)
+[13-Root-finding.ipynb]({{ site.nbviewer.resources }}/13_root_finding/13-Root-finding.ipynb)
 contains the lecture notes.[^1] The [derivations of
-the bisection and the Newton-Raphson algorithms (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/13_root_finding/13_Root-finding-algorithms.pdf) can be found in the board notes. Skeleton code for
+the bisection and the Newton-Raphson algorithms (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/13_root_finding/13_rootfinding.pdf) can be found in the slides. Skeleton code for
 in-class problem exercises can be found in the notebook
-[13-Root-finding-students.ipynb]({{site.nbviewer.resources}}/13_root_finding/13-Root-finding-students.ipynb).[^2]
+[13-Root-finding-students.ipynb]({{ site.nbviewer.resources }}/13_root_finding/13-Root-finding-students.ipynb).[^2]
 
 
 #### Additional resources:
@@ -52,7 +53,7 @@ in-class problem exercises can be found in the notebook
 [^2]:
 
      As usual, `git pull` the resources repository
-     [{{site.resources.shortname}}]({{site.resources.url}}) to get a
+     [{{ site.resources.shortname }}]({{ site.resources.url }}) to get a
      local copy of the notebook. Then **copy the notebook and all other
      code into your work directory** in order to complete the exercises.
 
