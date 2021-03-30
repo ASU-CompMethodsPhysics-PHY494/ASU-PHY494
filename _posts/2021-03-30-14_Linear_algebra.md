@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 14 Linear Algebra
+number: 140
 ---
 
 A large number of problems in physics can be formulated in the
@@ -87,7 +88,7 @@ will be a useful answer:
 
 Efficient algorithms exist to solve these problems and we will
 primarily use the optimized algorithms in the
-[numpy.linalg](http://docs.scipy.org/doc/numpy/reference/routines.linalg.html)
+[numpy.linalg](https://docs.scipy.org/doc/numpy/reference/routines.linalg.html)
 package:
 {% highlight python %}
 import numpy.linalg
@@ -100,7 +101,10 @@ precision is, the better one can distinguish a nearly singular matrix
 from a truly singular one.
 
 ## Problem: One rod, two masses, three strings
-![Problem: What are the angles $$\theta_i$$ and tensions $$T_i$$, given the geometry of the rod and strings and the two masses?]({{site.baseurl}}/{{site.figs}}/1rod2masses3strings.png)
+
+![Problem: What are the angles $$\theta_i$$ and tensions $$T_i$$,
+given the geometry of the rod and strings and the two
+masses?]({{ site.baseurl }}/{{ site.figs }}/1rod2masses3strings.png)
 
 Following _Computational Physics_ (Chapter 6), we want to solve the
 problem of two masses suspended via three strings from a horizontal
@@ -114,13 +118,12 @@ $$\sin\theta_i$$ and $$\cos\theta_i$$ as independent)
 \mathbf{f}(\mathbf{x}) = \mathbf{0}
 \end{gather}
 
-we can use the generalization of the
-[Newton-Raphson algorithm]({{site.baseurl}}/{%post_url
-2020-03-26-13_Root_finding %}) to $$n$$ dimensions to solve it.
-The generalization involves the computation of the "$$n$$-dimensional
-derivative", the
-[Jacobian matrix](http://mathworld.wolfram.com/Jacobian.html) $$J_{ij}
-= \frac{\partial f_i}{\partial x_j}$$, and the Newton-Raphson method
+we can use the generalization of the [Newton-Raphson algorithm]({{
+site.baseurl }}/{% post_url 2021-03-25-13_Root_finding %}) to $$n$$
+dimensions to solve it.  The generalization involves the computation
+of the "$$n$$-dimensional derivative", the [Jacobian
+matrix](https://mathworld.wolfram.com/Jacobian.html) $$J_{ij} =
+\frac{\partial f_i}{\partial x_j}$$, and the Newton-Raphson method
 becomes to repeatedly solve the linear matrix problem
 
 $$
@@ -135,27 +138,31 @@ $$
 
 ## Class material
 
-The Jupyter notebook [14_Linear_Algebra.ipynb]({{site.nbviewer.resources}}/14_linear_algebra/14_Linear_Algebra.ipynb) contains the
+The Jupyter notebook [14_Linear_Algebra.ipynb]({{
+site.nbviewer.resources }}/14_linear_algebra/14_Linear_Algebra.ipynb) contains the
 (life-coded) lecture notes on **basic linear algebra**. Skeleton code for in-class exercises can
-be found in [14_Linear_Algebra-students-1.ipynb]({{site.nbviewer.resources}}/14_linear_algebra/14_Linear_Algebra-students-1.ipynb).[^4]
+be found in [14_Linear_Algebra-students-1.ipynb]({{
+site.nbviewer.resources }}/14_linear_algebra/14_Linear_Algebra-students-1.ipynb).[^4]
 
 To get started on the **1 rod/2 masses/3 strings problem** work with the
 notebook
-[14_String_Problem-Students.ipynb]({{site.nbviewer.resources}}/14_linear_algebra/14_String_Problem-Students-1.ipynb). The
-full solution can be found in [14_String_Problem.ipynb]({{site.nbviewer.resources}}/14_linear_algebra/14_String_Problem.ipynb).
+[14_String_Problem-Students.ipynb]({{ site.nbviewer.resources }}/14_linear_algebra/14_String_Problem-Students-1.ipynb). The
+full solution can be found in [14_String_Problem.ipynb]({{
+site.nbviewer.resources }}/14_linear_algebra/14_String_Problem.ipynb).
 
 The notebook
-[14_SVD.ipynb]({{site.nbviewer.resources}}/14_linear_algebra/14_SVD.ipynb)
+[14_SVD.ipynb]({{ site.nbviewer.resources }}/14_linear_algebra/14_SVD.ipynb)
 shows the principles and applications of **SVD** (with skeleton code
-in [14_SVD-Students-1.ipynb]({{site.nbviewer.resources}}/14_linear_algebra/14_SVD-Students-1.ipynb)).
+in [14_SVD-Students-1.ipynb]({{ site.nbviewer.resources }}/14_linear_algebra/14_SVD-Students-1.ipynb)).
 
 
 #### Additional resources:
 
 * _Computational Physics_: Chapter **6**
-* [14_linear_algebra notebook (PDF)]({{site.resources.fileurl}}/14_linear_algebra/14_linear_algebra.pdf)
-* [Lecture notes for the 1 rod/2 masses/3 strings problem (PDF)]({{site.resources.fileurl}}/14_linear_algebra/14_String_Problem_lecture_notes.pdf) and [solution for the problem (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/14_linear_algebra/14_String_Problem.pdf)
-* [14_SVD notebook (PDF)]({{site.resources.fileurl}}/14_linear_algebra/14_SVD.pdf)
+* [14_linear_algebra notebook (PDF)]({{ site.resources.fileurl }}/14_linear_algebra/14_linear_algebra.pdf)
+* [Lecture notes for the 1 rod/2 masses/3 strings problem (PDF)]({{
+  site.resources.fileurl }}/14_linear_algebra/14_String_Problem_lecture_notes.pdf) and [solution for the problem (PDF)](https://github.com/ASU-CompMethodsPhysics-PHY494/PHY494-resources/blob/master/14_linear_algebra/14_String_Problem.pdf)
+* [14_SVD notebook (PDF)]({{ site.resources.fileurl }}/14_linear_algebra/14_SVD.pdf)
 * _[Numerical Recipes in C](http://apps.nrbook.com/c/index.html)_, WH
   Press, SA Teukolsky, WT Vetterling, BP Flannery. 2nd
   ed, 2002. Cambridge University Press. Chapter **2**.
