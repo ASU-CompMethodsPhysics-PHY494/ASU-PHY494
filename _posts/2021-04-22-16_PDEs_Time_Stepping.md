@@ -44,7 +44,7 @@ Not all combinations of $$\Delta t$$ and $$\Delta x$$ lead to stable solutions. 
     (PDF)]({{ site.resources.fileurl }}/16_PDEs/16_LectureNotes_Stability_and_Relaxation.pdf)
   * [16_CrankNicholson.ipynb]({{ site.nbviewer.resources }}/16_PDEs/16_CrankNicholson.ipynb)
     and [derivation of the Crank-Nicholson algorithm (PDF)]({{
-    site.resources.fileurl }}/16_PDEs/16_LectureNotes_CrankNicholson.pdf)
+    site.resources.fileurl }}/16_PDEs/16_PDEs_stability_CrankNicholson.pdf)
 
 #### Additional resources  ####
 
